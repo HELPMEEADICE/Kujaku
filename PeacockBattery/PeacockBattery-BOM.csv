@@ -1,10 +1,10 @@
 ﻿位号,数量,规格,厂商,订购型号或规格,KiCad 封装,安装面,装配说明
-BT1,1,18650 - contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
-BT2,1,18650 + contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
-BT3,1,18650 - contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
-BT4,1,18650 + contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
-BT5,1,18650 - contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
-BT6,1,18650 + contact,通用,TBD,PeacockBattery:Contact_18650_SMT,F,A0 样板占位。A1 等待 66–68 mm 凸口电芯配套的 THT 铜合金端子图纸、行程和 ≥15 A 连续额定。见 Design.md
+BT1,0,18650 - contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
+BT2,0,18650 + contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
+BT3,0,18650 - contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
+BT4,0,18650 + contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
+BT5,0,18650 - contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
+BT6,0,18650 + contact,待定,DNP,PeacockBattery:Contact_18650_SMT,F,A1 SMT 占位。弹片装配未放行。候选 Keystone 5209 的穿板与 68 mm 凸口行程待确认。
 C1,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C2,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C3,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
@@ -14,7 +14,6 @@ C6,1,100n,通用,100n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐�
 C7,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C8,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C9,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C10,1,100n,通用,100n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C11,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C12,1,1u / 25V,通用,1u / 25V,Capacitor_SMD:C_0805_2012Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 C13,1,10u / 16V,通用,10u / 16V,Capacitor_SMD:C_0805_2012Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
@@ -25,18 +24,17 @@ C17,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,X7R，±10%�
 C18,1,10u / 25V,通用,10u / 25V,Capacitor_SMD:C_1206_3216Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
 D1,1,1N4148W,Diodes Inc.,1N4148W-7-F,Diode_SMD:D_SOD-123,B,SOD-123，1 为阴极
 D2,1,SMBJ15A,Littelfuse,SMBJ15A,Diode_SMD:D_SMB,B,SMB，单向 TVS，1 为阴极
-D3,1,BAT54C,Nexperia,"BAT54C,215",Package_TO_SOT_SMD:SOT-23,B,双肖特基，3 为公共阴极
-D4,1,APHBM2012SURKCGKC,Kingbright,APHBM2012SURKCGKC,PeacockBattery:LED_Kingbright_APHBM2012_4P,F,红绿双色，发光中心 X=46 mm。A1 待验证充电、终止与异常指示，绿常亮目前仅表示输入供电
+D4,1,APHBM2012SURKCGKC,Kingbright,APHBM2012SURKCGKC,PeacockBattery:LED_Kingbright_APHBM2012_4P,F,"红绿双色，电芯侧发光中心 (52.00, 2.00) mm。绿通道表示保护后输入供电。"
 F1,1,20A / 65V,Littelfuse,0451020.MRL,Fuse:Fuse_Littelfuse-NANO2-451_453,B,20 A 快断保险丝，按装壳温度复核降额
-J1,1,USB4125-GF-A,GCT,USB4125-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal,B,六触点 USB-C，仅取电，伸出 0.80 mm
-J2,1,XT30PW-M30.G.Y,AMASS,XT30PW-M30.G.Y,PeacockBattery:XT30PW-M_Edge,B,卧式公头，5.00 mm 脚距，1=P+，2=P−
+J1,1,USB4125-GF-A,GCT,USB4125-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal,B,六触点 USB-C，仅取 5 V。插口中心 X=46.00 mm，向底边外伸 0.80 mm。
+J2,1,XT30PW-M30.G.Y,AMASS,XT30PW-M30.G.Y,PeacockBattery:XT30PW-M_Edge,B,"卧式公头，插合面中心 (46.00, 66.00) mm。5.00 mm 脚距，1=P+，2=P−。"
 J3,1,10k BMS sensor,通用,"10k NTC, insulated leads",Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,需另装电芯贴附式 10 kΩ NTC，温度动作点需标定
 J4,1,100k charge sensor,通用,"100k at 25C, B=4100 K",Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,需另装电芯贴附式 100 kΩ NTC，B=4100 K
 L1,1,2.2uH,Coilcraft,XAL5030-222MEC,Inductor_SMD:L_Coilcraft_XAL5030-XXX,B,
-Q1,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,1=G，2=D，3=S。两颗并联一组，共两组
-Q2,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,1=G，2=D，3=S。两颗并联一组，共两组
-Q3,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,1=G，2=D，3=S。两颗并联一组，共两组
-Q4,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,1=G，2=D，3=S。两颗并联一组，共两组
+Q1,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (41.00, 46.60) mm。1=G，2=D，3=S。"
+Q2,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (41.00, 37.20) mm。1=G，2=D，3=S。"
+Q3,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (51.00, 46.60) mm。1=G，2=D，3=S。"
+Q4,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (51.00, 37.20) mm。1=G，2=D，3=S。"
 R1,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R2,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R3,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
@@ -47,26 +45,24 @@ R7,1,2k,通用,2k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R8,1,10M,通用,10M,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R9,1,2k,通用,2k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R10,1,10M,通用,10M,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R11,1,4m / 3W / 1%,Vishay,WSLP25124L000FEA,PeacockBattery:WSLP2512_4m,B,3 W，1%，Vishay 4 mΩ 对应专用焊盘
+R11,1,4m / 3W / 1%,Vishay,WSLP25124L000FEA,PeacockBattery:WSLP2512_4m,B,4 mΩ，3 W，1%，专用焊盘。两端从电阻端铜区采样。
 R12,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R13,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R14,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R15,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R16,1,5.1k 1%,通用,5.1k 1%,Resistor_SMD:R_0603_1608Metric,B,CC1 独立 Rd，5.1 kΩ / 1% 接 P−
 R17,1,5.1k 1%,通用,5.1k 1%,Resistor_SMD:R_0603_1608Metric,B,CC2 独立 Rd，5.1 kΩ / 1% 接 P−
-R18,1,57.6k 1%,通用,57.6k 1%,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R19,1,10k 1%,通用,10k 1%,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R20,1,100k,通用,100k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R21,1,1.13k 1%,通用,1.13k 1%,Resistor_SMD:R_0603_1608Metric,B,A0 RILM 为 1.13 kΩ。A1 预审 1.21 kΩ 对应约 1.69 A 典型保护限流，另需按源端通告控制充电输入电流
+R18,1,26.1k 1%,通用,26.1k 1%,Resistor_SMD:R_0603_1608Metric,B,U3 VBUS 欠压分压上臂，与 R19 设定约 4.33 V 启动门槛。
+R19,1,10k 1%,通用,10k 1%,Resistor_SMD:R_0603_1608Metric,B,U3 VBUS 欠压分压下臂。
+R21,1,1.21k 1%,通用,1.21k 1%,Resistor_SMD:R_0603_1608Metric,B,TPS259531DSGR 的 ILM 电阻，典型限流约 1.69 A。
 R22,1,0.51R,通用,0.51R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R23,1,120k,通用,120k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R24,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R25,1,180k 1%,通用,180k 1%,Resistor_SMD:R_0603_1608Metric,B,IP2326 电池侧 0.50 A 标称，A1 弱电源档须降流
+R25,1,180k 1%,通用,180k 1%,Resistor_SMD:R_0603_1608Metric,B,IP2326 电池侧 0.50 A 标称。输入进入 VINDPM 时降流。
 R26,1,82k,通用,82k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R27,1,330R,通用,330R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 R28,1,3.3k,通用,3.3k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
 U1,1,BM3451TNDC-T20B,BYD Semiconductor,BM3451TNDC-T20B,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,B,TSSOP-20，3S，单节 4.25 V 过充及 2.8 V 过放。TNDC-T20B 无均衡
-U2,1,TLV7032DDFR,TI,TLV7032DDFR,PeacockBattery:TLV7032_DDFR_SOT23-8,B,DDF/SOT-23-8，A0 比较器判别 3 A 并联锁。A1 预审改为由 VBUS 启动并按 CC 通告限流
-U3,1,TPS259510DSGR,TI,TPS259510DSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,B,A0 订购号在 TI 公共型号表待确认。A1 预审候选 TPS259531DSGR，5.7 V 典型钳位，保护限流及采购待核实
-U4,1,IP2326,Injoinic,IP2326,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm,B,标准 IP2326，3S，VSET 悬空 12.60 V 标称。VIN_UVSET 悬空 4.65 V 典型。内置均衡限 2S
-CELL,3,18650 动力电芯，4.20 V 充电,待定,同型号、同批次，单节放电额定覆盖 15 A 连续和 20 A 脉冲,外壳与弹片配合,F,A1 目标为无保护板凸口，标称 67.0 mm，验收长度 66–68 mm，直径 18.3–18.5 mm。待取得实物尺寸和额定
+U3,1,TPS259531DSGR,TI,TPS259531DSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,B,5.7 V 典型过压钳位门槛，过流保护与热关断自动重试。
+U4,1,IP2326,Injoinic,IP2326,Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm,B,IP2326，3S，VSET 悬空为 12.60 V，VIN_UVSET 悬空为 4.65 V VINDPM。EN 接 VIN_S，无 3S 均衡。
+CELL,3,18650 动力电芯，4.20 V 充电,待定,同型号、同批次，单节放电额定覆盖 15 A 连续和 20 A 脉冲,外壳与弹片配合,F,A1 设计包络为无保护板凸口 18650，长度 66.50–68.00 mm，直径 18.50 mm。弹片与电芯装配待放行。
