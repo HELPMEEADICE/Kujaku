@@ -1,16 +1,38 @@
 ** Drc report for PeacockMainV2.kicad_pcb **
-** Created on 2026-11-23T23:36:10 **
-** Report includes: Errors, Warnings **
+** Created on 2026-11-24T00:09:22 **
+** Report includes: Errors, Warnings, Exclusions **
 
-** Found 2 DRC violations **
-[track_dangling]: Track has unconnected end
-    Local override; warning
-    @(63.6433 mm, 80.1632 mm): Track [3.3V_SYS] on F.Cu, length 0.0256 mm
-[track_dangling]: Track has unconnected end
-    Local override; warning
-    @(165.5397 mm, 48.5000 mm): Track [/Control/BTN_FLASH] on F.Cu, length 0.1100 mm
+** Found 0 DRC violations **
 
-** Found 54 unconnected pads **
+** Found 44 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'GND reference plane' [GND] on B.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'GND reference plane' [GND] on B.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
+    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
 [unconnected_items]: Missing connection between items
     Local override; error
     @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
@@ -25,52 +47,8 @@
     @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(17.0000 mm, 115.7000 mm): Zone 'GND reference plane' [GND] on B.Cu, priority 0
     @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-    @(17.0000 mm, 115.7000 mm): Zone 'Local top ground' [GND] on F.Cu, priority 0
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(142.9068 mm, 45.7733 mm): Pad 2 [/Channels 2/GATE_5] of R17 on F.Cu
-    @(145.2117 mm, 44.0761 mm): Pad 1 [/Channels 2/GATE_5] of R29 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(63.6433 mm, 80.1632 mm): Track [3.3V_SYS] on F.Cu, length 6.2679 mm
-    @(53.7889 mm, 89.5250 mm): Track [3.3V_SYS] on F.Cu, length 0.5401 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(82.0933 mm, 66.4435 mm): Pad 4 [3.3V_SYS] of U5 on F.Cu
-    @(81.5448 mm, 63.5214 mm): Pad 16 [3.3V_SYS] of U5 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(122.4350 mm, 48.7875 mm): Track [3.3V_SYS] on F.Cu, length 2.0900 mm
-    @(124.4800 mm, 41.5000 mm): Track [3.3V_SYS] on F.Cu, length 1.6950 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(128.5466 mm, 63.6376 mm): Track [3.3V_SYS] on F.Cu, length 0.4215 mm
-    @(124.4015 mm, 68.9570 mm): Track [3.3V_SYS] on B.Cu, length 0.1100 mm
 [unconnected_items]: Missing connection between items
     Local override; error
     @(55.4605 mm, 87.3181 mm): Pad 7 [I2C_SDA] of U6 on F.Cu
@@ -109,23 +87,11 @@
     @(149.2000 mm, 65.8000 mm): Pad 18 [I2C_SDA] of U8 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(146.6900 mm, 61.3250 mm): Track [/Power/VBAT_IN] on F.Cu, length 0.0283 mm
-    @(140.2000 mm, 67.2650 mm): Track [/Power/VBAT_IN] on F.Cu, length 0.1100 mm
+    @(121.3750 mm, 49.8375 mm): Pad 26 [I2C_SCL] of U9 on F.Cu
+    @(120.9600 mm, 37.5000 mm): Track [I2C_SCL] on F.Cu, length 2.9024 mm
 [unconnected_items]: Missing connection between items
     Local override; error
     @(121.3750 mm, 49.8375 mm): Pad 26 [I2C_SCL] of U9 on F.Cu
-    @(128.0250 mm, 39.8000 mm): Pad 2 [I2C_SCL] of R63 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(121.3750 mm, 49.8375 mm): Pad 26 [I2C_SCL] of U9 on F.Cu
-    @(131.6115 mm, 56.1803 mm): Pad 6 [I2C_SCL] of U4 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(121.3750 mm, 49.8375 mm): Pad 26 [I2C_SCL] of U9 on F.Cu
-    @(99.5839 mm, 51.9300 mm): Track [I2C_SCL] on F.Cu, length 2.3100 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(142.6950 mm, 64.7800 mm): Track [I2C_SCL] on F.Cu, length 1.6900 mm
     @(131.6115 mm, 56.1803 mm): Pad 6 [I2C_SCL] of U4 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
@@ -157,12 +123,8 @@
     @(134.7026 mm, 54.3689 mm): Pad 12 [/Channels 2/CH4_SENSE_P] of U4 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(119.5647 mm, 47.4065 mm): Track [/Channels 2/CH6_SENSE_P] on F.Cu, length 0.3300 mm
+    @(119.5647 mm, 47.7365 mm): Track [/Channels 2/CH6_SENSE_P] on F.Cu, length 0.7778 mm
     @(131.0054 mm, 53.5762 mm): Pad 2 [/Channels 2/CH6_SENSE_P] of U4 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(156.0974 mm, 46.5202 mm): Pad 2 [/Channels 2/CH4_SENSE_N] of R108 on F.Cu
-    @(152.1729 mm, 61.3939 mm): Track [/Channels 2/CH4_SENSE_N] on B.Cu, length 6.8564 mm
 [unconnected_items]: Missing connection between items
     Local override; error
     @(133.6095 mm, 52.9701 mm): Pad 14 [/Channels 2/CH5_SENSE_N] of U4 on F.Cu
@@ -181,11 +143,7 @@
     @(157.2935 mm, 56.0281 mm): Pad 1 [PWM_4] of R16 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(147.8297 mm, 49.0500 mm): Track [/Control/BTN_FLASH] on F.Cu, length 8.1400 mm
-    @(145.2997 mm, 56.7500 mm): Track [/Control/BTN_FLASH] on F.Cu, length 2.4890 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(154.0000 mm, 65.8000 mm): Track [/Control/CHG_DET] on F.Cu, length 0.6717 mm
+    @(127.4260 mm, 59.3920 mm): Track [/Control/CHG_DET] on B.Cu, length 2.0318 mm
     @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
@@ -201,10 +159,6 @@
     @(89.5167 mm, 62.3792 mm): Track [/Power/BUCK_EN] on F.Cu, length 0.5363 mm
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(158.1800 mm, 71.8300 mm): Track [/Control/MIC_VDD] on F.Cu, length 0.1556 mm
-    @(162.5100 mm, 79.5083 mm): Track [/Control/MIC_VDD] on F.Cu, length 1.0500 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(123.3250 mm, 55.5625 mm): Pad 6 [PWM_1] of U9 on F.Cu
     @(186.2723 mm, 107.8735 mm): Pad 1 [PWM_1] of R13 on F.Cu
 [unconnected_items]: Missing connection between items
@@ -218,7 +172,7 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(125.9250 mm, 55.5625 mm): Pad 10 [PWM_5] of U9 on F.Cu
-    @(141.9644 mm, 45.3829 mm): Pad 1 [PWM_5] of R17 on F.Cu
+    @(140.0644 mm, 42.4829 mm): Pad 1 [PWM_5] of R17 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(51.0281 mm, 66.1065 mm): Pad 1 [PWM_10] of R22 on F.Cu
