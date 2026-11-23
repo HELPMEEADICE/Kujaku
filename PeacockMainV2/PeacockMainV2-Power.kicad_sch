@@ -1,0 +1,2633 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "5572930e-0df0-5620-afb8-266aa25f2ca9") (paper "A3")
+    (title_block (title "Power") (rev "V2") (company "Peacock") (comment 1 ""))
+    (lib_symbols (symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Transistor_FET:Q_PMOS_GDS"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_PMOS_GDS"
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, gate/drain/source"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Q_PMOS_GDS_0_1"
+			(polyline
+				(pts
+					(xy 0.254 1.905) (xy 0.254 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 2.286) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.508) (xy 0.762 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.27) (xy 0.762 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 1.651 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 2.54 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 2.54 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.921 -0.381) (xy 3.683 -0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Q_PMOS_GDS_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Sensor_Energy:INA226"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -6.35 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA226"
+			(at 3.81 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 20.32 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+			(at 8.89 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "ADC I2C 16-Bit Oversampling Current Shunt"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*TSSOP*3x3mm?P0.5mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "INA226_0_1"
+			(rectangle
+				(start 7.62 10.16)
+				(end -7.62 -10.16)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "INA226_1_1"
+			(pin input line
+				(at 10.16 7.62 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "~{Alert}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 12.7 270)
+				(length 2.54)
+				(name "VS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -12.7 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 0)
+				(length 2.54)
+				(name "Vbus"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "Vin-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "Vin+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Regulator_Switching:TPS54302"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS54302"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 1.27 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
+			(at -7.62 8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switching buck converter power-supply voltage regulator emi spread spectrum"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TPS54302_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TPS54302_1_1"
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "BOOT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "PeacockMainV2:AP2112K-3.3"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -5.08 5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AP2204K-1.5"
+			(at 0 5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 0 8.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2204.pdf"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "150mA low dropout linear regulator, wide input voltage range, 1.5V fixed positive output, SOT-23-5"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "linear regulator ldo fixed positive"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23?5*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AP2112K-3.3_0_1"
+			(rectangle
+				(start -5.08 4.445)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "AP2112K-3.3_1_1"
+			(pin power_in line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 5.08 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:D_Zener"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "D_Zener_0_1"
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Zener_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:C_Polarized"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C_Polarized"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "CP_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_Polarized_0_1"
+			(rectangle
+				(start -2.286 0.508)
+				(end 2.286 1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.778 2.286) (xy -0.762 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.794) (xy -1.27 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 2.286 -0.508)
+				(end -2.286 -1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "C_Polarized_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Mechanical:MountingHole"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "H"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "mounting hole"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "MountingHole*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "MountingHole_0_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 1.27)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:L"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:D_Schottky"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode Schottky"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "D_Schottky_0_1"
+			(polyline
+				(pts
+					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Schottky_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+    (text "Power" (at 17.78 14 0) (effects (font (size 3 3)) (justify left)) (uuid "02a6ad16-ebe2-5684-8670-8e9508dee842")) (text "3S battery / high-side master / total Kelvin sense" (at 17.78 24 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "cebe0dbe-6529-5c92-9bae-d3d0ba463563")) (text "TPS54302 5 V / three-input Schottky OR / AP2112K 3.3 V" (at 17.78 133 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "aad84630-0154-5b3c-8279-6cb54c3dc262"))
+    (symbol (lib_id "Connector_Generic:Conn_01x02") (at 38.1 53.34 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "87f62893-6c21-5cc8-8e33-e8b4ef0f45f6")
+        (property "Reference" "J13" (at 42.4 52.04 0) (effects (font (size 1 1)) (justify left))) (property "Value" "BATTERY 16AWG" (at 42.4 53.69 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:Battery_16AWG" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d0e4d201-1d55-57ab-879a-6f7f18dd5094")) (pin "2" (uuid "65084584-0fc9-50d8-8389-9d276a061c2f")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "J13") (unit 1)))))
+        (wire (pts (xy 33.02 53.34) (xy 29.21 53.34)) (stroke (width 0) (type default)) (uuid "79d42d8b-98a3-509f-b5db-05cc612db02e"))
+(label "VBAT_IN" (at 29.21 53.34 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "2c3d9388-c8a4-546d-af0f-7f6a4575421c"))
+(wire (pts (xy 33.02 55.88) (xy 29.21 55.88)) (stroke (width 0) (type default)) (uuid "32cc445d-90fd-525a-beb7-69ce75fc31c4"))
+(global_label "GND" (shape passive) (at 29.21 55.88 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "8ed32ba2-9c7c-552e-979b-84bd87ae7252") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 29.21 55.88 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Connector_Generic:Conn_01x02") (at 87.63 53.34 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "21dad3b3-c4fd-5c70-a7de-31e07151e6eb")
+        (property "Reference" "J14" (at 91.93 52.04 0) (effects (font (size 1 1)) (justify left))) (property "Value" "MASTER" (at 91.93 53.69 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:Remote_Switch" (at 87.63 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 87.63 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 87.63 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 87.63 53.34 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "f262a435-16cf-520a-a642-ce0a1e4f5dd7")) (pin "2" (uuid "29914718-4096-55ee-9a1b-fb980bcef1f0")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "J14") (unit 1)))))
+        (wire (pts (xy 82.55 53.34) (xy 78.74 53.34)) (stroke (width 0) (type default)) (uuid "f0206b61-0b67-5477-888e-f93f67aad8bb"))
+(label "MASTER_SW" (at 78.74 53.34 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "73a22f72-9f5a-5499-ab52-e12e1aff81ef"))
+(wire (pts (xy 82.55 55.88) (xy 78.74 55.88)) (stroke (width 0) (type default)) (uuid "95b7d7e3-2f2c-5a78-ba4f-8d2b63ff2227"))
+(global_label "GND" (shape passive) (at 78.74 55.88 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "a082a234-afd4-51f9-b14e-9de99f0b42ec") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 78.74 55.88 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Transistor_FET:Q_PMOS_GDS") (at 142.24 53.34 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c2c37254-84dd-5a9d-b986-7ffb3573a59a")
+        (property "Reference" "Q13" (at 136.24 43.18 0) (effects (font (size 1 1)) (justify left))) (property "Value" "DMP3007LK3-13" (at 136.24 45.16 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 142.24 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.diodes.com/datasheet/download/DMP3007LK3.pdf" (at 142.24 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "DMP3007LK3-13" (at 142.24 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 142.24 53.34 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "86abd85c-11e2-559b-88a3-1140d20799cf")) (pin "2" (uuid "8d8fe485-0fde-5b3b-96d3-643709c8c0e8")) (pin "3" (uuid "b2f67644-823b-599e-892b-d8d7a66d73d8")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "Q13") (unit 1)))))
+        (wire (pts (xy 137.16 53.34) (xy 133.35 53.34)) (stroke (width 0) (type default)) (uuid "cee8c4eb-ca45-5af5-9c9a-24a92d2a0f8e"))
+(label "P_GATE13" (at 133.35 53.34 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "5e13e980-2b07-54ce-a493-44ef88ebce0d"))
+(wire (pts (xy 144.78 48.26) (xy 144.78 44.45)) (stroke (width 0) (type default)) (uuid "64277e31-8689-5fe9-8567-ccb326858a58"))
+(label "VBAT_SW_RAW" (at 144.78 44.45 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "8e699fe8-6921-52d6-ba8c-dbff44271443"))
+(wire (pts (xy 144.78 58.42) (xy 144.78 62.23)) (stroke (width 0) (type default)) (uuid "f381eba8-16aa-5dfe-a8c8-8a83c32125e7"))
+(label "VBAT_IN" (at 144.78 62.23 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "fc691815-668f-5f69-bd3b-4d9bb233955c")) (symbol (lib_id "Transistor_FET:Q_PMOS_GDS") (at 194.31 53.34 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f34d5ab5-87e3-535d-9c20-3ef790fe99bf")
+        (property "Reference" "Q14" (at 188.31 43.18 0) (effects (font (size 1 1)) (justify left))) (property "Value" "DMP3007LK3-13" (at 188.31 45.16 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:TO-252-2" (at 194.31 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.diodes.com/datasheet/download/DMP3007LK3.pdf" (at 194.31 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "DMP3007LK3-13" (at 194.31 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 194.31 53.34 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "b0177cb3-a79c-5761-ae39-6d110dea0ea6")) (pin "2" (uuid "c95712ca-3746-559a-a311-aea6ec106102")) (pin "3" (uuid "02dc78e4-eaf2-5ce2-961d-d45c7e74a84d")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "Q14") (unit 1)))))
+        (wire (pts (xy 189.23 53.34) (xy 185.42 53.34)) (stroke (width 0) (type default)) (uuid "8a2ae3bc-3a30-5ff3-b612-188895995f00"))
+(label "P_GATE14" (at 185.42 53.34 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c9d67d04-e364-58c6-ad03-d8884d77a833"))
+(wire (pts (xy 196.85 48.26) (xy 196.85 44.45)) (stroke (width 0) (type default)) (uuid "937d62e2-8f0e-5913-b937-9db63bf06838"))
+(label "VBAT_SW_RAW" (at 196.85 44.45 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "87dccc41-da95-58cc-8437-aa83c1f80fd0"))
+(wire (pts (xy 196.85 58.42) (xy 196.85 62.23)) (stroke (width 0) (type default)) (uuid "4bff72fb-5212-59dc-af10-25934b0645b0"))
+(label "VBAT_IN" (at 196.85 62.23 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c4958e98-0949-5e7f-a0d8-a0851a750880")) (symbol (lib_id "Sensor_Energy:INA226") (at 320.04 66.04 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "318728b9-58aa-588c-b419-3ff8d6222f0f")
+        (property "Reference" "U7" (at 314.04 53.34 0) (effects (font (size 1 1)) (justify left))) (property "Value" "INA226AIDGSR" (at 314.04 55.32 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina226.pdf" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "INA226AIDGSR" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Texas Instruments" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "7f16bbe7-2ffe-541e-afc8-23996801632d")) (pin "2" (uuid "caf7b9fa-9121-5edf-8b75-70362c8ce4bb")) (pin "3" (uuid "b4f83c8c-211f-562a-bffb-b817274375ff")) (pin "4" (uuid "59f23f61-b100-519d-af94-56c2ae108420")) (pin "5" (uuid "e802c4ea-7d86-5f80-9fd0-4d65a69e158d")) (pin "6" (uuid "8f802c00-4ed4-5064-b912-074173686249")) (pin "7" (uuid "56fa3cf8-23bf-506a-8803-951e7476d09a")) (pin "8" (uuid "7701bb5c-4c83-5cfd-a3a2-4c2f07003dda")) (pin "9" (uuid "be46f92d-06ef-5994-b327-9914c9046e97")) (pin "10" (uuid "550a4871-6a80-5ad0-8b04-49804474c19c")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U7") (unit 1)))))
+        (wire (pts (xy 330.2 58.42) (xy 334.01 58.42)) (stroke (width 0) (type default)) (uuid "012129b7-0227-5ac0-8c9a-ce5584d7904c"))
+(global_label "3.3V_SYS" (shape passive) (at 334.01 58.42 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "e24e7132-e3fc-5ba0-8fd8-81841ccaaa10") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 334.01 58.42 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 330.2 60.96) (xy 334.01 60.96)) (stroke (width 0) (type default)) (uuid "09033016-936f-5459-8c3a-340fe4953a6d"))
+(global_label "GND" (shape passive) (at 334.01 60.96 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "9bdd42b6-d38b-59a0-a528-67d8ada68e9b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 334.01 60.96 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(no_connect (at 330.2 73.66) (uuid "5175e6c8-42bc-5cc2-a1c9-a423928fa724"))
+(wire (pts (xy 330.2 66.04) (xy 334.01 66.04)) (stroke (width 0) (type default)) (uuid "a3258bd9-e782-577b-9b19-df9734ce4118"))
+(global_label "I2C_SDA" (shape passive) (at 334.01 66.04 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "58e6757a-1c2a-5568-824d-7c904abb9e38") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 334.01 66.04 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 330.2 68.58) (xy 334.01 68.58)) (stroke (width 0) (type default)) (uuid "27b185cb-e8e5-5804-9f19-a235ce196f7e"))
+(global_label "I2C_SCL" (shape passive) (at 334.01 68.58 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "80063865-03bf-5f80-b1e9-90fbde009235") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 334.01 68.58 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 320.04 53.34) (xy 320.04 49.53)) (stroke (width 0) (type default)) (uuid "7e61a775-ab62-5e9a-b081-b80b615e06f1"))
+(global_label "3.3V_SYS" (shape passive) (at 320.04 49.53 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "fd2595dd-d4c1-5f9d-b9df-9c3bcb077feb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 320.04 49.53 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 320.04 78.74) (xy 320.04 82.55)) (stroke (width 0) (type default)) (uuid "37e0d262-b494-5cd6-b059-d0d8cf12bfa8"))
+(global_label "GND" (shape passive) (at 320.04 82.55 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "58defc19-8b47-5a90-8203-701d7997b5b0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 320.04 82.55 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 309.88 58.42) (xy 306.07 58.42)) (stroke (width 0) (type default)) (uuid "b7d9398d-6882-5c28-b7e3-13be0c41ac18"))
+(global_label "VBAT_SW" (shape passive) (at 306.07 58.42 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "20dd67b2-404d-51a7-9c34-6d9489186555") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 306.07 58.42 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 309.88 71.12) (xy 306.07 71.12)) (stroke (width 0) (type default)) (uuid "51c0e87b-96c4-5fde-b3c0-0eade6ddde79"))
+(label "TOTAL_SENSE_N" (at 306.07 71.12 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "25bdcd34-43c5-5f12-9b09-3dc2cce982b6"))
+(wire (pts (xy 309.88 68.58) (xy 306.07 68.58)) (stroke (width 0) (type default)) (uuid "df1af1aa-370b-58ca-a6d6-54a2ddc07ac9"))
+(label "TOTAL_SENSE_P" (at 306.07 68.58 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "77e2ff82-7965-548a-b8f1-1a5d895dc294")) (symbol (lib_id "Regulator_Switching:TPS54302") (at 96.52 176.53 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3bc1f56b-3f7e-5214-b9cd-67d6fa9a655b")
+        (property "Reference" "U1" (at 90.52 168.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "TPS54302DDCR" (at 90.52 170.89 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54302.pdf" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "TPS54302DDCR" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Texas Instruments" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "5aefe0d8-a10d-5e13-a25f-63a6b8a85bd7")) (pin "2" (uuid "d9f5aa9b-655f-5954-988f-6adfe445c4f1")) (pin "3" (uuid "f5ab73ec-65b4-5d2c-b57a-5248471ad244")) (pin "4" (uuid "c06426e0-ba4d-5e24-b5bb-738794816e83")) (pin "5" (uuid "c918beb1-7aee-52f7-b9c8-ffc36fbe700e")) (pin "6" (uuid "3bf8a615-ea04-572a-83ed-9922091aa714")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U1") (unit 1)))))
+        (wire (pts (xy 96.52 184.15) (xy 96.52 187.96)) (stroke (width 0) (type default)) (uuid "3386853c-ccd6-5fa6-92a9-020dcfb0e996"))
+(global_label "GND" (shape passive) (at 96.52 187.96 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "75885b69-964e-58e6-8419-f9b9b33d5797") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 96.52 187.96 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 106.68 176.53) (xy 110.49 176.53)) (stroke (width 0) (type default)) (uuid "e14f49cb-b808-54d5-8c2c-7d0a9ef99211"))
+(label "BUCK_SW" (at 110.49 176.53 0) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "aefe54ca-6458-54cf-a8e6-6a396cd0ffd8"))
+(wire (pts (xy 86.36 173.99) (xy 82.55 173.99)) (stroke (width 0) (type default)) (uuid "fd94c13a-2b74-5b55-b7c4-c76b087c5a62"))
+(global_label "VBAT_SW" (shape passive) (at 82.55 173.99 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "4b6b85d5-83a9-5a1e-ab9f-35120c3a4b77") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.55 173.99 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 106.68 179.07) (xy 110.49 179.07)) (stroke (width 0) (type default)) (uuid "067d02ff-511a-5526-b68f-873a5325d766"))
+(label "BUCK_FB" (at 110.49 179.07 0) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "3d3cf6fa-4917-5cf6-8c46-44e60cc70ee1"))
+(wire (pts (xy 86.36 179.07) (xy 82.55 179.07)) (stroke (width 0) (type default)) (uuid "9030446f-fe11-52ba-bc4d-debfd147b63f"))
+(label "BUCK_EN" (at 82.55 179.07 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "382c8ee2-4d42-5a02-8342-65aff00e2357"))
+(wire (pts (xy 106.68 173.99) (xy 110.49 173.99)) (stroke (width 0) (type default)) (uuid "8c8d7f6b-4e57-518f-962c-734b8b839cbe"))
+(label "BUCK_BOOT" (at 110.49 173.99 0) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "7796a515-96ce-586b-89ec-e9de468d28d7")) (symbol (lib_id "PeacockMainV2:AP2112K-3.3") (at 297.18 184.15 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8ce0e609-8cdd-502b-b940-99cc2636cfb1")
+        (property "Reference" "U2" (at 291.18 176.53 0) (effects (font (size 1 1)) (justify left))) (property "Value" "AP2112K-3.3TRG1" (at 291.18 178.51 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 297.18 184.15 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 297.18 184.15 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "AP2112K-3.3TRG1" (at 297.18 184.15 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 297.18 184.15 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "1f4783a1-1039-5b5b-a164-ec95f10af800")) (pin "2" (uuid "b4e6e6b7-e169-5efa-b980-7dd050861c17")) (pin "3" (uuid "2698b803-c2cf-57ca-82b9-62cca15cf715")) (pin "4" (uuid "9010ac08-bb17-5095-8d71-331a0c0c1ada")) (pin "5" (uuid "4f32dc5a-424a-5072-a567-d102a41f06d2")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U2") (unit 1)))))
+        (wire (pts (xy 289.56 181.61) (xy 285.75 181.61)) (stroke (width 0) (type default)) (uuid "dcfc23a8-7d76-54ee-8b85-32479627eeff"))
+(label "5V_SYS" (at 285.75 181.61 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "8c10b981-17f3-5adb-9ff6-ac0fc55619f3"))
+(wire (pts (xy 297.18 191.77) (xy 297.18 195.58)) (stroke (width 0) (type default)) (uuid "a97412a2-cf00-5b14-9f8b-721fe97fbb9d"))
+(global_label "GND" (shape passive) (at 297.18 195.58 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "725ef5cd-7a88-5425-b853-a8df988ec987") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 297.18 195.58 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 289.56 184.15) (xy 285.75 184.15)) (stroke (width 0) (type default)) (uuid "087f2990-6f6f-59d4-9ce2-595b4d7a4fc3"))
+(label "5V_SYS" (at 285.75 184.15 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "dfe06f02-4655-527d-8cd2-dd6fa4adef48"))
+(no_connect (at 302.26 184.15) (uuid "beb9ac82-13ed-5612-bc19-c0dbc5386ef2"))
+(wire (pts (xy 304.8 181.61) (xy 308.61 181.61)) (stroke (width 0) (type default)) (uuid "e55408a8-2284-5840-94ef-eba0328010d1"))
+(global_label "3.3V_SYS" (shape passive) (at 308.61 181.61 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "ca099475-9949-5f2b-b86d-264cf6d487f1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 308.61 181.61 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:D_Zener") (at 33.02 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7e4bfd0c-6314-549f-b5fc-c9c53d8df610")
+        (property "Reference" "D1" (at 37.32 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "SMBJ15A" (at 37.32 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Diode_SMD:D_SMB" (at 33.02 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 33.02 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "SMBJ15A" (at 33.02 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Littelfuse" (at 33.02 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "966d904e-301c-576b-91b1-25161eeabd0a")) (pin "2" (uuid "b473ead1-8298-5638-84e2-4b7f1598bc48")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "D1") (unit 1)))))
+        (wire (pts (xy 29.21 82.55) (xy 25.4 82.55)) (stroke (width 0) (type default)) (uuid "82ed2040-4144-5050-ad2e-a24e6605b49f"))
+(label "VBAT_IN" (at 25.4 82.55 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "a38c0bd8-0155-5674-8fc5-9d853ae806b9"))
+(wire (pts (xy 36.83 82.55) (xy 40.64 82.55)) (stroke (width 0) (type default)) (uuid "f7efd457-ef9d-533b-a25f-324401249491"))
+(global_label "GND" (shape passive) (at 40.64 82.55 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "32f5d1d0-1bde-5dbd-913a-d16410c9d97a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 40.64 82.55 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C_Polarized") (at 71.12 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "97961eb6-1ed4-51d2-8270-3297d31fc50b")
+        (property "Reference" "C1" (at 75.42 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "220uF 25V" (at 75.42 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:Cap_8x10p5" (at 71.12 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 71.12 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "EEH-ZA1E221P" (at 71.12 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Panasonic" (at 71.12 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "00bf0632-69fe-575e-b71c-b3bd36efec61")) (pin "2" (uuid "815e7ea6-6369-5c08-9fe8-fa78d4a1e719")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C1") (unit 1)))))
+        (wire (pts (xy 71.12 78.74) (xy 71.12 74.93)) (stroke (width 0) (type default)) (uuid "e8b34f69-2ed1-5d13-b779-db5cfe07f463"))
+(label "VBAT_IN" (at 71.12 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "36270677-6880-5915-a8b7-18511f800b28"))
+(wire (pts (xy 71.12 86.36) (xy 71.12 90.17)) (stroke (width 0) (type default)) (uuid "e9bc8767-01c2-5f94-bc6a-31355f72a8a1"))
+(global_label "GND" (shape passive) (at 71.12 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "324d83cd-ae2a-54f3-a92d-ef66b125ff74") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.12 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C_Polarized") (at 109.22 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d036e066-8a5f-54dc-a2c3-43a0a7fa127e")
+        (property "Reference" "C2" (at 113.52 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "220uF 25V" (at 113.52 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:Cap_8x10p5" (at 109.22 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 109.22 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "EEH-ZA1E221P" (at 109.22 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Panasonic" (at 109.22 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "a36c9a10-8eca-56be-886f-830030bf55b5")) (pin "2" (uuid "e2dbf319-a6b6-5683-acde-2cdd4f13533d")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C2") (unit 1)))))
+        (wire (pts (xy 109.22 78.74) (xy 109.22 74.93)) (stroke (width 0) (type default)) (uuid "d486b8de-db87-575d-b2b5-843e9833f39d"))
+(label "VBAT_IN" (at 109.22 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "994a4e16-810e-594f-a009-02e62daca457"))
+(wire (pts (xy 109.22 86.36) (xy 109.22 90.17)) (stroke (width 0) (type default)) (uuid "fb901418-23eb-5596-b469-f62a59d61538"))
+(global_label "GND" (shape passive) (at 109.22 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "e073dacc-4914-598b-8e58-2c62de3c7c17") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 109.22 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 147.32 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "67634e5e-d24c-5b9a-9790-ed8fb02783d9")
+        (property "Reference" "C3" (at 151.62 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF 50V X7R" (at 151.62 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 147.32 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 147.32 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 147.32 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 147.32 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "696f31dd-0e4d-5e08-8e99-9ff0020fea58")) (pin "2" (uuid "ea4b5873-efcc-56f3-a492-fe4776991196")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C3") (unit 1)))))
+        (wire (pts (xy 147.32 78.74) (xy 147.32 74.93)) (stroke (width 0) (type default)) (uuid "17becac1-e92c-5e37-9756-c85d49863092"))
+(label "VBAT_IN" (at 147.32 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "cf1640ee-46f6-5aaf-a0ae-1f286ff80e28"))
+(wire (pts (xy 147.32 86.36) (xy 147.32 90.17)) (stroke (width 0) (type default)) (uuid "e9554472-2278-51e8-9ae0-dbf36192dd76"))
+(global_label "GND" (shape passive) (at 147.32 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "14e11c83-3a6a-55b7-a750-43359b0cb595") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 147.32 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 185.42 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "fe488006-b726-5258-a318-dac9bdfa82b5")
+        (property "Reference" "C4" (at 189.72 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF 50V X7R" (at 189.72 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 185.42 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 185.42 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 185.42 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 185.42 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "f8ad792e-1cfb-5db7-9ccf-b73292658792")) (pin "2" (uuid "04f62bb9-845f-5b69-b48d-bd2ae4258873")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C4") (unit 1)))))
+        (wire (pts (xy 185.42 78.74) (xy 185.42 74.93)) (stroke (width 0) (type default)) (uuid "f8ce8ab8-0b48-589b-9dec-233a66b3b016"))
+(label "VBAT_IN" (at 185.42 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "485565ed-8ee7-5168-9e27-24672457dc97"))
+(wire (pts (xy 185.42 86.36) (xy 185.42 90.17)) (stroke (width 0) (type default)) (uuid "ab36ea00-4ff1-5957-a18e-164f5b03d2f8"))
+(global_label "GND" (shape passive) (at 185.42 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "aafb1441-1d3a-594e-a9d5-3255c32b390e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 185.42 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:D_Zener") (at 223.52 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "670c7115-71de-531b-9395-3cfe7246e246")
+        (property "Reference" "D2" (at 227.82 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "BZT52C12" (at 227.82 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Diode_SMD:D_SOD-123" (at 223.52 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 223.52 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "BZT52C12-7-F" (at 223.52 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 223.52 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "49188b9a-eef5-590a-8afa-69e49e3af209")) (pin "2" (uuid "c6190eb9-4788-5876-b019-06375e480b27")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "D2") (unit 1)))))
+        (wire (pts (xy 219.71 82.55) (xy 215.9 82.55)) (stroke (width 0) (type default)) (uuid "5c65e072-b156-5108-ad49-2c703d31d1c0"))
+(label "VBAT_IN" (at 215.9 82.55 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "fc9f268d-b553-5c1e-8bf0-efca28b3452f"))
+(wire (pts (xy 227.33 82.55) (xy 231.14 82.55)) (stroke (width 0) (type default)) (uuid "ee140508-fe9c-5454-adf6-cdaabc09294f"))
+(label "MASTER_GATE" (at 231.14 82.55 0) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c68faa3e-74c2-584a-a428-a24faa4d4667")) (symbol (lib_id "Device:R") (at 261.62 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "48a78157-e7a7-521b-8610-f02a4e4ff582")
+        (property "Reference" "R49" (at 265.92 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "2mR 1% 2W" (at 265.92 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_2512_6332Metric" (at 261.62 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 261.62 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "WSL2512R0020FEA18" (at 261.62 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Vishay" (at 261.62 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "4200684a-c6f5-5aad-8fcd-44d738378efd")) (pin "2" (uuid "4c932863-8fea-54e1-8736-660704b7f4d0")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R49") (unit 1)))))
+        (wire (pts (xy 261.62 78.74) (xy 261.62 74.93)) (stroke (width 0) (type default)) (uuid "89b18736-7d74-581a-9f31-0795d609cc27"))
+(label "VBAT_SW_RAW" (at 261.62 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "b97d4ae6-e605-591f-89c4-fa58c94dc7aa"))
+(wire (pts (xy 261.62 86.36) (xy 261.62 90.17)) (stroke (width 0) (type default)) (uuid "8a97fab5-4eb3-59fe-a0f3-eb81a636e9c8"))
+(global_label "VBAT_SW" (shape passive) (at 261.62 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "9d328ab0-2058-5a2e-9c98-93e36a29bb79") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 261.62 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:R") (at 299.72 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2cccefef-9223-53a0-8025-9fa9e705a622")
+        (property "Reference" "R50" (at 304.02 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100k" (at 304.02 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 299.72 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 299.72 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 299.72 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 299.72 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "e9772c4d-2ae9-57ee-b77d-2b89099987be")) (pin "2" (uuid "35ae3727-41e7-5890-a176-a4fc26075e81")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R50") (unit 1)))))
+        (wire (pts (xy 299.72 78.74) (xy 299.72 74.93)) (stroke (width 0) (type default)) (uuid "71dc6157-5b88-5c88-8c6a-58140d861cbd"))
+(label "VBAT_IN" (at 299.72 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "b777557a-1424-5841-80b6-8eb966ca36c9"))
+(wire (pts (xy 299.72 86.36) (xy 299.72 90.17)) (stroke (width 0) (type default)) (uuid "873a9aa1-eb06-5dd9-8f0d-c08f1e1e486f"))
+(label "MASTER_GATE" (at 299.72 90.17 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "9e515994-bace-53de-aade-c5994e01d779")) (symbol (lib_id "Device:R") (at 337.82 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a7f984c1-9efa-5d1c-8f6e-161aa27aff56")
+        (property "Reference" "R51" (at 342.12 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "4.7k" (at 342.12 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 337.82 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 337.82 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 337.82 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 337.82 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "092b69dc-5fbd-56fb-ab6d-1b2ac43c3e5a")) (pin "2" (uuid "27ed8224-5d15-5958-b545-02bdb8379eca")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R51") (unit 1)))))
+        (wire (pts (xy 337.82 78.74) (xy 337.82 74.93)) (stroke (width 0) (type default)) (uuid "c44befb8-66ab-5459-9255-e85b17e0a00f"))
+(label "MASTER_GATE" (at 337.82 74.93 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "dfb8ee92-379a-5aa2-a021-7cb0e458d47e"))
+(wire (pts (xy 337.82 86.36) (xy 337.82 90.17)) (stroke (width 0) (type default)) (uuid "e72f2ae4-3b06-589d-91a1-d2255b5ab169"))
+(label "MASTER_SW" (at 337.82 90.17 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "ad2cf3b4-8002-5b33-bbda-925d314067f0")) (symbol (lib_id "Device:R") (at 375.92 82.55 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f36bf96d-bb3a-53fd-8aaa-f2a0e0d3a370")
+        (property "Reference" "R52" (at 380.22 81.25 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100k" (at 380.22 82.9 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 375.92 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 375.92 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 375.92 82.55 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 375.92 82.55 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "55a8b0d9-8886-5948-9c85-99e00b5c0e9a")) (pin "2" (uuid "1b22da88-5218-5877-bb76-1fcf85be4405")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R52") (unit 1)))))
+        (wire (pts (xy 375.92 78.74) (xy 375.92 74.93)) (stroke (width 0) (type default)) (uuid "75a2adf1-3eab-532a-ae5f-452de98108c2"))
+(global_label "VBAT_SW" (shape passive) (at 375.92 74.93 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "08982eac-8c93-51d0-bcf2-edd5eae42a45") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 375.92 74.93 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 375.92 86.36) (xy 375.92 90.17)) (stroke (width 0) (type default)) (uuid "268ed0b3-15d1-5e7c-a983-a10fb4ffaca4"))
+(global_label "GND" (shape passive) (at 375.92 90.17 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "20f09593-9a4d-54ac-b6c2-a1b2f3b67d74") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 375.92 90.17 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:R") (at 33.02 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "020d2d22-d751-5c93-85c3-dd7f4dbb1ab0")
+        (property "Reference" "R53" (at 37.32 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22R" (at 37.32 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 33.02 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 33.02 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 33.02 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 33.02 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "ae1f58ac-7af5-55f4-8275-c692727cd897")) (pin "2" (uuid "be56bcdc-b7b2-5cfc-a28f-2c9a29be00b0")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R53") (unit 1)))))
+        (wire (pts (xy 33.02 106.68) (xy 33.02 102.87)) (stroke (width 0) (type default)) (uuid "4c1cf524-c7c4-5080-ba19-150a42e1de27"))
+(label "MASTER_GATE" (at 33.02 102.87 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "d4358e03-f8ce-55f9-b9f4-831540de8989"))
+(wire (pts (xy 33.02 114.3) (xy 33.02 118.11)) (stroke (width 0) (type default)) (uuid "f3360cb0-b87f-57d9-a07d-9f032e5ab979"))
+(label "P_GATE13" (at 33.02 118.11 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "3f41817b-ef5f-5009-8215-e76cdc13661f")) (symbol (lib_id "Device:R") (at 71.12 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "00f0ad1e-a314-5c94-ae8b-b7c3f8737d95")
+        (property "Reference" "R54" (at 75.42 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22R" (at 75.42 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 71.12 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 71.12 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 71.12 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 71.12 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "3da658b5-3696-5796-92f9-ab64b8a1b1f7")) (pin "2" (uuid "07255b52-89ed-5062-9614-cf311c411718")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R54") (unit 1)))))
+        (wire (pts (xy 71.12 106.68) (xy 71.12 102.87)) (stroke (width 0) (type default)) (uuid "ceb065fb-1dec-598a-b66a-caef1b3c5952"))
+(label "MASTER_GATE" (at 71.12 102.87 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "62d46426-23fc-5d20-b97a-0a8677645477"))
+(wire (pts (xy 71.12 114.3) (xy 71.12 118.11)) (stroke (width 0) (type default)) (uuid "6f0a17ac-75cf-5c24-aeab-5e941fe89694"))
+(label "P_GATE14" (at 71.12 118.11 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "8e5d7c27-4c0d-5071-8fc9-147029545d36")) (symbol (lib_id "Device:R") (at 109.22 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d3cd742b-985d-5c13-8ff2-fc9b64970fba")
+        (property "Reference" "R59" (at 113.52 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "10R 1%" (at 113.52 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 109.22 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 109.22 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 109.22 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 109.22 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "f97beef3-3174-5aa1-8c7e-698d1181ddce")) (pin "2" (uuid "5a42a63c-e615-59d6-bc43-a8d9657e01dd")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R59") (unit 1)))))
+        (wire (pts (xy 109.22 106.68) (xy 109.22 102.87)) (stroke (width 0) (type default)) (uuid "044d2d6f-72ce-58d7-9355-472f0c72b6e0"))
+(label "VBAT_SW_RAW" (at 109.22 102.87 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "84ae97d9-4aa0-53a0-aff0-7878651aad0b"))
+(wire (pts (xy 109.22 114.3) (xy 109.22 118.11)) (stroke (width 0) (type default)) (uuid "d400fc45-e3f1-5cd2-89b9-218e38fc4ca0"))
+(label "TOTAL_SENSE_P" (at 109.22 118.11 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "328ca9b9-29ed-55bd-97bd-a749fd45c8a0")) (symbol (lib_id "Device:R") (at 147.32 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "85deda11-258e-597e-bf94-ba86266e8142")
+        (property "Reference" "R60" (at 151.62 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "10R 1%" (at 151.62 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 147.32 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 147.32 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 147.32 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 147.32 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "3c4853dc-0438-5e99-b2cb-f61c0d5f1fe3")) (pin "2" (uuid "ddae7278-df04-5358-93e0-cda475c20420")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R60") (unit 1)))))
+        (wire (pts (xy 147.32 106.68) (xy 147.32 102.87)) (stroke (width 0) (type default)) (uuid "2452ebf1-bef0-575c-8e4e-a0d9488e0b4a"))
+(global_label "VBAT_SW" (shape passive) (at 147.32 102.87 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "77001f73-0c72-58cb-a9b9-4848e95ff53c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 147.32 102.87 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 147.32 114.3) (xy 147.32 118.11)) (stroke (width 0) (type default)) (uuid "12e76668-d67b-57a6-9efa-69a3567bf1a4"))
+(label "TOTAL_SENSE_N" (at 147.32 118.11 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "44bc9bb0-b493-5d53-9e06-4380401378d0")) (symbol (lib_id "Device:C") (at 185.42 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3f840df3-3197-56cb-8314-6fea6c0d1c7d")
+        (property "Reference" "C14" (at 189.72 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF X7R" (at 189.72 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 185.42 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 185.42 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 185.42 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 185.42 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "a8c210b2-f222-5f4f-a129-688f21a0c4cd")) (pin "2" (uuid "0e254fa4-3999-5877-a2e0-2dceae43878d")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C14") (unit 1)))))
+        (wire (pts (xy 185.42 106.68) (xy 185.42 102.87)) (stroke (width 0) (type default)) (uuid "dc6c4a34-99fd-5f7b-a638-35c64ba944aa"))
+(label "TOTAL_SENSE_P" (at 185.42 102.87 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "d5f6f5f1-1c7e-5646-8bee-9cfecfbfd152"))
+(wire (pts (xy 185.42 114.3) (xy 185.42 118.11)) (stroke (width 0) (type default)) (uuid "e3aa274a-0162-5997-aa57-1e5a02701b4a"))
+(label "TOTAL_SENSE_N" (at 185.42 118.11 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "a71e42ba-fc7f-56a6-bbce-5c5bbc460391")) (symbol (lib_id "Device:C") (at 223.52 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "441e77cf-1b0c-521d-a3f5-44dfeb7253c3")
+        (property "Reference" "C15" (at 227.82 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF X7R" (at 227.82 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 223.52 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 223.52 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 223.52 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 223.52 110.49 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "f387315e-c382-57c4-8e01-e7fd534fcce4")) (pin "2" (uuid "017e4a7a-356c-5470-8980-ed3ab8dde527")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C15") (unit 1)))))
+        (wire (pts (xy 223.52 106.68) (xy 223.52 102.87)) (stroke (width 0) (type default)) (uuid "af5d3fdd-fb92-5501-bcd3-3a1694f64dbc"))
+(global_label "3.3V_SYS" (shape passive) (at 223.52 102.87 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "37af9754-9b7c-5c84-bd31-418b47f518fa") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.52 102.87 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 223.52 114.3) (xy 223.52 118.11)) (stroke (width 0) (type default)) (uuid "c2417dff-f607-5ce4-b04f-46e3fdb8f970"))
+(global_label "GND" (shape passive) (at 223.52 118.11 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "e9d9ea0e-2722-54df-b942-40cd104f9b00") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 223.52 118.11 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Mechanical:MountingHole") (at 261.62 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "67cfcb41-8c65-5990-ac0b-3c330d84a4d8")
+        (property "Reference" "H1" (at 265.92 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "M3 / 3.2mm" (at 265.92 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 261.62 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 261.62 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 261.62 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 261.62 110.49 0) (effects (font (size 1 1)) (hide yes)))  (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "H1") (unit 1)))))
+         (symbol (lib_id "Mechanical:MountingHole") (at 299.72 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "b38874e0-690c-5b57-b15a-b19d901a351c")
+        (property "Reference" "H2" (at 304.02 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "M3 / 3.2mm" (at 304.02 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 299.72 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 299.72 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 299.72 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 299.72 110.49 0) (effects (font (size 1 1)) (hide yes)))  (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "H2") (unit 1)))))
+         (symbol (lib_id "Mechanical:MountingHole") (at 337.82 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "f77615c3-570a-5b6e-9466-8e3711e039d6")
+        (property "Reference" "H3" (at 342.12 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "M3 / 3.2mm" (at 342.12 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 337.82 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 337.82 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 337.82 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 337.82 110.49 0) (effects (font (size 1 1)) (hide yes)))  (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "H3") (unit 1)))))
+         (symbol (lib_id "Mechanical:MountingHole") (at 375.92 110.49 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "ec4f809b-7608-5d4e-ac2f-63c20bbdd646")
+        (property "Reference" "H4" (at 380.22 109.19 0) (effects (font (size 1 1)) (justify left))) (property "Value" "M3 / 3.2mm" (at 380.22 110.84 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 375.92 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 375.92 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 375.92 110.49 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 375.92 110.49 0) (effects (font (size 1 1)) (hide yes)))  (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "H4") (unit 1)))))
+         (symbol (lib_id "power:PWR_FLAG") (at 33.02 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b3acc34e-1d62-5978-9cb1-53a7d532cb39")
+        (property "Reference" "#FLG1" (at 36.02 153.21 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "PWR_FLAG" (at 38.02 154.21 0) (effects (font (size 0.9 0.9)) )) (property "Footprint" "" (at 33.02 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 33.02 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 33.02 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 33.02 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "10d6a2c4-019b-599e-a70e-0571f8da24bd")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "#FLG1") (unit 1)))))
+        (wire (pts (xy 33.02 156.21) (xy 29.21 156.21)) (stroke (width 0) (type default)) (uuid "b4f406e3-1c1e-56db-af0b-20edde2e9a00"))
+(global_label "GND" (shape passive) (at 29.21 156.21 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "fae5ff39-0c73-570c-943c-57bcc1a1530a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 29.21 156.21 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "power:PWR_FLAG") (at 69.85 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "728f0e19-bf02-5532-8483-745abcba9c93")
+        (property "Reference" "#FLG2" (at 72.85 153.21 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "PWR_FLAG" (at 74.85 154.21 0) (effects (font (size 0.9 0.9)) )) (property "Footprint" "" (at 69.85 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 69.85 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 69.85 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 69.85 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "7ab3a3f1-c052-539f-b1c2-35338e9209e0")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "#FLG2") (unit 1)))))
+        (wire (pts (xy 69.85 156.21) (xy 66.04 156.21)) (stroke (width 0) (type default)) (uuid "8c04ed69-5238-54fa-be23-d870e18a647d"))
+(label "VBAT_IN" (at 66.04 156.21 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c8a7f92d-cd50-58f8-a464-9b09f32a9e3e")) (symbol (lib_id "power:PWR_FLAG") (at 106.68 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "31547437-4dd9-5835-bc51-3b7b9b6e5e51")
+        (property "Reference" "#FLG3" (at 109.68 153.21 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "PWR_FLAG" (at 111.68 154.21 0) (effects (font (size 0.9 0.9)) )) (property "Footprint" "" (at 106.68 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 106.68 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 106.68 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 106.68 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "2efcf93d-f899-537a-9759-54b8baba16f1")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "#FLG3") (unit 1)))))
+        (wire (pts (xy 106.68 156.21) (xy 102.87 156.21)) (stroke (width 0) (type default)) (uuid "730f3249-a489-5537-95bf-1e818cf9c050"))
+(global_label "VBAT_SW" (shape passive) (at 102.87 156.21 0) (effects (font (size 0.9 0.9)) (justify right)) (uuid "f22e45ab-20af-52fc-851e-e87f82fd89d6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 102.87 156.21 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "power:PWR_FLAG") (at 143.51 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "37b64dad-a9c2-596c-98cd-6d8749beb51e")
+        (property "Reference" "#FLG4" (at 146.51 153.21 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "PWR_FLAG" (at 148.51 154.21 0) (effects (font (size 0.9 0.9)) )) (property "Footprint" "" (at 143.51 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 143.51 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 143.51 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 143.51 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "862e9032-eaed-5355-a2e6-d131f80014ad")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "#FLG4") (unit 1)))))
+        (wire (pts (xy 143.51 156.21) (xy 139.7 156.21)) (stroke (width 0) (type default)) (uuid "7c41671c-4112-56ae-b1ec-193f0dc3f313"))
+(label "5V_BUCK" (at 139.7 156.21 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "f80ffa3f-1704-57c6-823c-187ae4f81e98")) (symbol (lib_id "power:PWR_FLAG") (at 180.34 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "95472985-9f56-564c-b27b-507415c593fa")
+        (property "Reference" "#FLG5" (at 183.34 153.21 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "PWR_FLAG" (at 185.34 154.21 0) (effects (font (size 0.9 0.9)) )) (property "Footprint" "" (at 180.34 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 180.34 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 180.34 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 180.34 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "30d431f0-7c81-5103-ae16-d6699b720579")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "#FLG5") (unit 1)))))
+        (wire (pts (xy 180.34 156.21) (xy 176.53 156.21)) (stroke (width 0) (type default)) (uuid "6a16e733-80e1-5aca-9700-a5a2deb01960"))
+(label "5V_SYS" (at 176.53 156.21 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "4ed0e354-c2b9-53eb-a342-4f9b96c6a320")) (symbol (lib_id "Device:L") (at 217.17 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "03271d3c-a7a9-57da-ab60-e51cbb7e8104")
+        (property "Reference" "L1" (at 221.47 154.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "10uH" (at 221.47 156.56 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Inductor_SMD:L_Coilcraft_XAL6060-XXX" (at 217.17 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 217.17 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "XAL6060-103MEC" (at 217.17 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Coilcraft" (at 217.17 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "9544c217-a86f-554d-9a51-3877ee87c026")) (pin "2" (uuid "8ea13c0a-4590-5201-bee7-aa1912534dcb")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "L1") (unit 1)))))
+        (wire (pts (xy 217.17 152.4) (xy 217.17 148.59)) (stroke (width 0) (type default)) (uuid "a8e3d0e6-e52e-59f5-a89b-e5b0c58576fd"))
+(label "BUCK_SW" (at 217.17 148.59 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "ed058912-e085-5e73-b9f5-d0db5168d175"))
+(wire (pts (xy 217.17 160.02) (xy 217.17 163.83)) (stroke (width 0) (type default)) (uuid "a38af181-59f4-5fb9-b8bc-462c299013a3"))
+(label "5V_BUCK" (at 217.17 163.83 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c78d3c69-9b8b-5f3a-a36c-32c7453e0e56")) (symbol (lib_id "Device:C") (at 254 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b97209ee-e7fa-5f38-bef8-3f45d87f5a05")
+        (property "Reference" "C5" (at 258.3 154.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22uF 35V X7R" (at 258.3 156.56 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_1210_3225Metric" (at 254 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 254 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 254 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 254 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "8a383375-41f7-5d12-a6bc-af2bcff33172")) (pin "2" (uuid "fc23832a-099c-56cd-a935-c4db82572873")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C5") (unit 1)))))
+        (wire (pts (xy 254 152.4) (xy 254 148.59)) (stroke (width 0) (type default)) (uuid "f58caa19-e1a3-56db-b11e-67dea039a869"))
+(global_label "VBAT_SW" (shape passive) (at 254 148.59 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "0ac52926-6574-5d28-ad36-f5d30f68b9b0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 254 148.59 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 254 160.02) (xy 254 163.83)) (stroke (width 0) (type default)) (uuid "5cef2274-55c3-538f-b24c-9aa7eac269d3"))
+(global_label "GND" (shape passive) (at 254 163.83 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "ebb14ec0-7c7a-5ece-bc64-7ecc13c11878") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 254 163.83 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 290.83 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "33d55fd7-9d5b-56f0-8e09-423fc217f520")
+        (property "Reference" "C6" (at 295.13 154.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF 50V X7R" (at 295.13 156.56 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 290.83 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 290.83 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 290.83 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 290.83 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d514c37a-9d5b-56af-a7c4-5e51c947d349")) (pin "2" (uuid "c61e24af-a625-5624-bc6b-3b58d50bd068")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C6") (unit 1)))))
+        (wire (pts (xy 290.83 152.4) (xy 290.83 148.59)) (stroke (width 0) (type default)) (uuid "802d2a71-8b4c-5435-95a3-dc4e74bdfcc0"))
+(global_label "VBAT_SW" (shape passive) (at 290.83 148.59 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "257c2bb9-b694-54c7-8191-a75c8278688f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 290.83 148.59 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 290.83 160.02) (xy 290.83 163.83)) (stroke (width 0) (type default)) (uuid "4072d737-24b0-538b-8e9c-6ebb067c0066"))
+(global_label "GND" (shape passive) (at 290.83 163.83 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "9a11a53b-b44d-51ad-b68c-c045eddbd52e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 290.83 163.83 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 327.66 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "627dcf6c-bfef-5612-8aa4-67a54d229b81")
+        (property "Reference" "C7" (at 331.96 154.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF 16V X7R" (at 331.96 156.56 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 327.66 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 327.66 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 327.66 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 327.66 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "b375d5e2-14de-5faf-b7bb-e80678365744")) (pin "2" (uuid "c66bd4e6-0112-56ce-9482-84026fd8d166")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C7") (unit 1)))))
+        (wire (pts (xy 327.66 152.4) (xy 327.66 148.59)) (stroke (width 0) (type default)) (uuid "1e80634f-4c50-598c-b39a-adcad57dae7c"))
+(label "BUCK_BOOT" (at 327.66 148.59 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "64352b49-545f-55d7-b86a-87a51c509eb2"))
+(wire (pts (xy 327.66 160.02) (xy 327.66 163.83)) (stroke (width 0) (type default)) (uuid "cd1bbd00-01ec-5548-a901-f1510cd986f7"))
+(label "BUCK_SW" (at 327.66 163.83 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "0d39989f-1508-5ec4-af15-1bae14a0cf2a")) (symbol (lib_id "Device:C") (at 364.49 156.21 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "82ed3635-c01e-51d4-a05e-42089d48b59f")
+        (property "Reference" "C8" (at 368.79 154.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22uF 25V X7R" (at 368.79 156.56 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 364.49 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 364.49 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 364.49 156.21 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 364.49 156.21 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "e1184456-4e63-57e6-b24b-08debe48cb94")) (pin "2" (uuid "77ebd9d6-c767-5926-a8f1-1bf750d799c6")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C8") (unit 1)))))
+        (wire (pts (xy 364.49 152.4) (xy 364.49 148.59)) (stroke (width 0) (type default)) (uuid "43853f4e-e079-518d-9597-2380b22b0428"))
+(label "5V_BUCK" (at 364.49 148.59 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "bfab2b01-7c40-5f7b-9ab8-d8fa82ae0c17"))
+(wire (pts (xy 364.49 160.02) (xy 364.49 163.83)) (stroke (width 0) (type default)) (uuid "4da77c15-5538-5a6d-8f56-0d9c18833c00"))
+(global_label "GND" (shape passive) (at 364.49 163.83 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "dbf0e2d4-a27e-5297-82b1-160e45fb78ae") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 364.49 163.83 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 33.02 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4f72185a-d998-5845-9f2c-2fef1b46d66e")
+        (property "Reference" "C9" (at 37.32 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22uF 25V X7R" (at 37.32 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 33.02 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 33.02 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 33.02 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 33.02 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "8af9d2e6-db77-53b8-ab69-c0a45d22769a")) (pin "2" (uuid "c952829c-cd34-5c8b-8270-18422c771b86")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C9") (unit 1)))))
+        (wire (pts (xy 33.02 203.2) (xy 33.02 199.39)) (stroke (width 0) (type default)) (uuid "c580abd6-e644-53df-abd2-08f2c2f92063"))
+(label "5V_BUCK" (at 33.02 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "bb262a27-092d-557f-be0f-4742a0106e6b"))
+(wire (pts (xy 33.02 210.82) (xy 33.02 214.63)) (stroke (width 0) (type default)) (uuid "8cb52401-6707-544d-b672-55b782100cfc"))
+(global_label "GND" (shape passive) (at 33.02 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "e15dc90c-5cc6-533b-9c68-b5c8e61c4191") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 33.02 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 69.85 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "85ccfc2b-a432-50df-9d66-7c7764b1d15f")
+        (property "Reference" "C10" (at 74.15 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "75pF C0G" (at 74.15 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 69.85 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 69.85 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 69.85 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 69.85 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "7d9648f3-2dd5-57db-a491-4b2762ab4cc2")) (pin "2" (uuid "8f1fe0c5-7a29-58ca-b99d-2e96792d225e")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C10") (unit 1)))))
+        (wire (pts (xy 69.85 203.2) (xy 69.85 199.39)) (stroke (width 0) (type default)) (uuid "efe51165-3981-58b8-b5f6-35761f78d984"))
+(label "5V_BUCK" (at 69.85 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "968a3839-bfc6-530d-82c8-61817514382a"))
+(wire (pts (xy 69.85 210.82) (xy 69.85 214.63)) (stroke (width 0) (type default)) (uuid "cefc3f67-391f-5a41-8a2b-a89ce0e08119"))
+(label "BUCK_FB" (at 69.85 214.63 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "fba84efb-7183-522b-bab3-a9f1e6b5c6bc")) (symbol (lib_id "Device:C") (at 106.68 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6bfe1a15-0138-5e5b-9c69-4b4b52b09ed5")
+        (property "Reference" "C11" (at 110.98 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "10uF 10V X7R" (at 110.98 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 106.68 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 106.68 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 106.68 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 106.68 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "e5b69ab6-8b8e-5f64-9cea-4eb0de1046b1")) (pin "2" (uuid "5b80fbc1-0ea7-5cca-a38c-47aab08a5c4f")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C11") (unit 1)))))
+        (wire (pts (xy 106.68 203.2) (xy 106.68 199.39)) (stroke (width 0) (type default)) (uuid "5b885b64-99e9-57f4-817c-3e016888a073"))
+(label "5V_SYS" (at 106.68 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "b63049f6-447e-5ba0-8e13-19450e374b5b"))
+(wire (pts (xy 106.68 210.82) (xy 106.68 214.63)) (stroke (width 0) (type default)) (uuid "ecd670cc-6ca4-5358-ba92-635ba5d6c05c"))
+(global_label "GND" (shape passive) (at 106.68 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "9cf74cc0-86a2-525b-a0e4-9ac5e7c9d08a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 106.68 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 143.51 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f53b20e6-78a3-5823-9f52-25fab76635cf")
+        (property "Reference" "C12" (at 147.81 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "22uF 10V X7R" (at 147.81 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 143.51 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 143.51 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 143.51 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 143.51 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "5b7c9fb9-53fe-5cf1-b0dd-11a761279175")) (pin "2" (uuid "785be714-86fd-520a-a06c-c8a2d1948f5c")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C12") (unit 1)))))
+        (wire (pts (xy 143.51 203.2) (xy 143.51 199.39)) (stroke (width 0) (type default)) (uuid "c9e8b3c1-c3e1-5ba5-8096-53072511fcf4"))
+(global_label "3.3V_SYS" (shape passive) (at 143.51 199.39 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "af7f75e1-ecdb-5278-a632-c4f1f381c9f1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 143.51 199.39 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 143.51 210.82) (xy 143.51 214.63)) (stroke (width 0) (type default)) (uuid "009c4e30-5ce4-51cc-9412-a823e895e5b7"))
+(global_label "GND" (shape passive) (at 143.51 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "0a5524c0-4a4c-59bd-a1e9-db4c458078e9") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 143.51 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:C") (at 180.34 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c7b4458f-f688-5f96-827c-5e2ef6461212")
+        (property "Reference" "C13" (at 184.64 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100nF 16V X7R" (at 184.64 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 180.34 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 180.34 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 180.34 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 180.34 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "6e9c6254-ae55-56da-9983-4db1538126ac")) (pin "2" (uuid "5cf8a871-7c2d-5ecd-bf13-3f0c1bc17726")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "C13") (unit 1)))))
+        (wire (pts (xy 180.34 203.2) (xy 180.34 199.39)) (stroke (width 0) (type default)) (uuid "55e9dad1-7a94-5be4-ba18-c106a76afbee"))
+(global_label "3.3V_SYS" (shape passive) (at 180.34 199.39 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "889c9c73-27e1-53df-8065-d54fb23f4c70") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 199.39 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 180.34 210.82) (xy 180.34 214.63)) (stroke (width 0) (type default)) (uuid "107fec9e-92be-538b-8041-d0d1bef5357d"))
+(global_label "GND" (shape passive) (at 180.34 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "a6fff4b6-9616-56a2-906e-5e57df5b1b47") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:R") (at 217.17 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "24d049f9-2667-50ec-8527-d9c321b41b94")
+        (property "Reference" "R55" (at 221.47 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "511k" (at 221.47 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 217.17 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 217.17 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 217.17 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 217.17 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d2ead487-04e1-5d6e-9005-c5ac966bf115")) (pin "2" (uuid "5a57df8b-6170-5631-836b-3bd141a0f817")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R55") (unit 1)))))
+        (wire (pts (xy 217.17 203.2) (xy 217.17 199.39)) (stroke (width 0) (type default)) (uuid "1dbd6fda-3ff0-54bb-b834-382acbb16382"))
+(global_label "VBAT_SW" (shape passive) (at 217.17 199.39 270) (effects (font (size 0.9 0.9)) (justify left)) (uuid "bc3ff9b1-1b48-594a-9ec2-8e4995f5d32b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 217.17 199.39 0) (effects (font (size 0.9 0.9)) (hide yes))))
+(wire (pts (xy 217.17 210.82) (xy 217.17 214.63)) (stroke (width 0) (type default)) (uuid "0c35992d-21c5-5b03-933e-7ec682de2475"))
+(label "BUCK_EN" (at 217.17 214.63 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "9a1ec4ae-cd58-5614-8580-2ca505e62f95")) (symbol (lib_id "Device:R") (at 254 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d78a5bea-338a-52ea-81e6-5764238a1ced")
+        (property "Reference" "R56" (at 258.3 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "105k" (at 258.3 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 254 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 254 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 254 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 254 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "44c0bd9e-6fca-5da8-a03e-a4f46e4efca8")) (pin "2" (uuid "41393a9e-8dfb-5ad5-9c03-3dd23d10fe77")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R56") (unit 1)))))
+        (wire (pts (xy 254 203.2) (xy 254 199.39)) (stroke (width 0) (type default)) (uuid "e76c0492-05b4-5c5f-9e87-7f9d71cb6802"))
+(label "BUCK_EN" (at 254 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "d06c4891-589f-5e35-b30d-99778a85ed10"))
+(wire (pts (xy 254 210.82) (xy 254 214.63)) (stroke (width 0) (type default)) (uuid "3440d4f7-f8aa-5e44-9dd2-d8cd7c0e8468"))
+(global_label "GND" (shape passive) (at 254 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "8ee5755f-6860-52d6-a429-f91a7365e136") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 254 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:R") (at 290.83 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "987f2c5c-0513-54ed-8fc2-67a444ce5ffa")
+        (property "Reference" "R57" (at 295.13 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "100k" (at 295.13 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 290.83 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 290.83 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 290.83 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 290.83 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "eac1dfef-f3f3-53d2-8ac9-467620b7e936")) (pin "2" (uuid "8746d50c-34e2-5372-ad46-924456900636")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R57") (unit 1)))))
+        (wire (pts (xy 290.83 203.2) (xy 290.83 199.39)) (stroke (width 0) (type default)) (uuid "aeb1d8d2-308c-5f17-911d-98e09a22aa34"))
+(label "5V_BUCK" (at 290.83 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "3c1f02c6-acd5-528f-b1d0-2f11fa02edfd"))
+(wire (pts (xy 290.83 210.82) (xy 290.83 214.63)) (stroke (width 0) (type default)) (uuid "33b75b79-aa42-5cd7-9bc2-a75a983d587a"))
+(label "BUCK_FB" (at 290.83 214.63 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "970cef2e-d4d0-5fd9-a6a0-6a478a38ecfc")) (symbol (lib_id "Device:R") (at 327.66 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "61994b65-ebf0-593e-b1d6-a414e375163f")
+        (property "Reference" "R58" (at 331.96 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "13.3k" (at 331.96 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d34884d9-fc29-548d-9369-4948581e5bae")) (pin "2" (uuid "c17b4b34-4783-5d3e-9ff4-1d9514035eda")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R58") (unit 1)))))
+        (wire (pts (xy 327.66 203.2) (xy 327.66 199.39)) (stroke (width 0) (type default)) (uuid "5d3b54d6-f69f-54a2-abe8-6a5382f719f8"))
+(label "BUCK_FB" (at 327.66 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "ac4acb60-9adc-5876-843d-5f6290598d70"))
+(wire (pts (xy 327.66 210.82) (xy 327.66 214.63)) (stroke (width 0) (type default)) (uuid "1feb80e9-4055-5abc-8ab5-a0cf8acc5e33"))
+(global_label "GND" (shape passive) (at 327.66 214.63 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "ac441850-8d7d-58e7-8b9e-c4498ce38ed4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 327.66 214.63 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:D_Schottky") (at 364.49 207.01 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "db7f22a2-6a00-5532-ab5a-7ded76a43a2d")
+        (property "Reference" "D3" (at 368.79 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "B240A" (at 368.79 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Diode_SMD:D_SMA" (at 364.49 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 364.49 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "B240A-13-F" (at 364.49 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 364.49 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "a2b66a21-7046-5b79-9988-834d1396f5b0")) (pin "2" (uuid "591978ac-3075-576d-9be9-f76295a33c40")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "D3") (unit 1)))))
+        (wire (pts (xy 360.68 207.01) (xy 356.87 207.01)) (stroke (width 0) (type default)) (uuid "abd3a83e-61b5-5498-beab-8d44db957940"))
+(label "5V_SYS" (at 356.87 207.01 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "181664f7-2adb-5434-9446-b0ae754d9570"))
+(wire (pts (xy 368.3 207.01) (xy 372.11 207.01)) (stroke (width 0) (type default)) (uuid "29474465-35fa-5da2-ad34-e6bd150b88a9"))
+(label "5V_BUCK" (at 372.11 207.01 0) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "89ce9b91-c6ae-5e6f-9dd1-dd8636e0ef5e")) (symbol (lib_id "Device:D_Schottky") (at 33.02 234.95 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "96f1a3c4-25ec-5e97-8ca5-09f613df669c")
+        (property "Reference" "D4" (at 37.32 233.65 0) (effects (font (size 1 1)) (justify left))) (property "Value" "B240A" (at 37.32 235.3 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Diode_SMD:D_SMA" (at 33.02 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 33.02 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "B240A-13-F" (at 33.02 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 33.02 234.95 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "44bc3de5-0685-5ee3-8870-5ba345a0908b")) (pin "2" (uuid "a5c62d2f-b3ca-5f92-b4ed-faec2c847e57")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "D4") (unit 1)))))
+        (wire (pts (xy 29.21 234.95) (xy 25.4 234.95)) (stroke (width 0) (type default)) (uuid "0f1a2c0c-eeff-551d-a600-6c9c82af5b3c"))
+(label "5V_SYS" (at 25.4 234.95 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "de23ee6f-805d-51c3-9b6b-c379a5b364b9"))
+(wire (pts (xy 36.83 234.95) (xy 40.64 234.95)) (stroke (width 0) (type default)) (uuid "9ef92183-4f3c-594c-b0fe-8dffbc262169"))
+(global_label "CHG_5V" (shape passive) (at 40.64 234.95 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "617bf482-8ec9-572c-ba5c-3be860424bb5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 40.64 234.95 0) (effects (font (size 0.9 0.9)) (hide yes)))) (symbol (lib_id "Device:D_Schottky") (at 69.85 234.95 0) (unit 1)
+        (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "25ac88bf-22f1-5060-8a90-bb847bd87f72")
+        (property "Reference" "D5" (at 74.15 233.65 0) (effects (font (size 1 1)) (justify left))) (property "Value" "B240A" (at 74.15 235.3 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Diode_SMD:D_SMA" (at 69.85 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 69.85 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "B240A-13-F" (at 69.85 234.95 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Diodes Inc." (at 69.85 234.95 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "573ad308-e6d4-5f4d-8171-a9758cce52c3")) (pin "2" (uuid "41a1f34a-b3df-5f5e-b3f3-41ac88d30735")) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "D5") (unit 1)))))
+        (wire (pts (xy 66.04 234.95) (xy 62.23 234.95)) (stroke (width 0) (type default)) (uuid "9855072c-c75c-59fa-899c-e4bc146ce072"))
+(label "5V_SYS" (at 62.23 234.95 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "41bfa922-761c-50f4-b3e1-1913184ee102"))
+(wire (pts (xy 73.66 234.95) (xy 77.47 234.95)) (stroke (width 0) (type default)) (uuid "54d57a1f-6561-54c6-b02a-4f43b5e706a3"))
+(global_label "USB_5V" (shape passive) (at 77.47 234.95 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "5e9635dd-a9c9-577e-a120-c8faa7fd60ea") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 77.47 234.95 0) (effects (font (size 0.9 0.9)) (hide yes))))
+    )
