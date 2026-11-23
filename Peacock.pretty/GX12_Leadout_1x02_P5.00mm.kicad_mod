@@ -1,0 +1,50 @@
+(footprint "GX12_Leadout_1x02_P5.00mm"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "18 AWG wire solder pads for a panel-mounted GX12-2 harness. Pad 1 positive.")
+
+  (property "Reference" "REF**" (at 0 -2.5 0)
+    (layer "F.SilkS")
+    (uuid "941173ac-a9d1-461c-ac46-e02673042575")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "GX12_Leadout_1x02_P5.00mm" (at 0 2.5 0)
+    (layer "F.Fab")
+    (uuid "fa09517e-4017-46cb-a97f-1934b6601883")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "5b49f87d-70dd-498c-ab22-0a14994f0a27")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -4.35 -1.85)
+    (end 4.35 1.85)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "18a28f80-666d-4601-b2a6-624b17abd533")
+  )
+
+  (pad "1" thru_hole roundrect
+    (at -2.5 0)
+    (size 3 3)
+    (drill 1.6)
+    (layers "*.Cu" "*.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "92f6b283-ee02-4fc3-ad7e-b32d82722ac4")
+  )
+
+  (pad "2" thru_hole circle
+    (at 2.5 0)
+    (size 3 3)
+    (drill 1.6)
+    (layers "*.Cu" "*.Mask")
+    (uuid "db3440df-0859-4575-9e9b-aca127c55e13")
+  )
+
+)

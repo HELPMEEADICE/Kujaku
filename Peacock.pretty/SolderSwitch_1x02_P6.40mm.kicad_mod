@@ -1,0 +1,50 @@
+(footprint "SolderSwitch_1x02_P6.40mm"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Two wire solder pads for a panel-mounted normally-open momentary switch.")
+
+  (property "Reference" "REF**" (at 0 -2.5 0)
+    (layer "F.SilkS")
+    (uuid "bcc4e71d-4b62-40b2-83c3-d06f40c0221e")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "SolderSwitch_1x02_P6.40mm" (at 0 2.5 0)
+    (layer "F.Fab")
+    (uuid "6b04d996-9c4c-4fe0-b551-beeee76e7c96")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "ef88adde-441e-407e-a195-460a07ac0727")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -4.95 -1.75)
+    (end 4.95 1.75)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "57345807-e2df-4c76-837a-90463532866c")
+  )
+
+  (pad "1" thru_hole roundrect
+    (at -3.2 0)
+    (size 2.8 2.8)
+    (drill 1.4)
+    (layers "*.Cu" "*.Mask")
+    (roundrect_rratio 0.25)
+    (uuid "58921c78-54ed-4ecf-8b6e-1a9441d43e4d")
+  )
+
+  (pad "2" thru_hole circle
+    (at 3.2 0)
+    (size 2.8 2.8)
+    (drill 1.4)
+    (layers "*.Cu" "*.Mask")
+    (uuid "f9568861-1824-4f42-bfb8-98252c69f804")
+  )
+
+)

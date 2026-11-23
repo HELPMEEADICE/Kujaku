@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Peacock")(type "KiCad")(uri "${KIPRJMOD}/Peacock.pretty")(options "")(descr "Peacock hardware project footprints"))
+)
