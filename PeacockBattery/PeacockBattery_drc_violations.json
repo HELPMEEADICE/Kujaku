@@ -1,0 +1,13 @@
+{
+  "board": "C:\\oss\\\u5b54\u96c0\\PeacockBattery\\PeacockBattery.kicad_pcb",
+  "timestamp": "2026-11-23T18:43:59",
+  "total_violations": 0,
+  "violation_counts": {},
+  "severity_counts": {
+    "error": 0,
+    "warning": 0,
+    "info": 0
+  },
+  "category_counts": {},
+  "violations": []
+}
