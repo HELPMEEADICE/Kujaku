@@ -1,42 +1,10 @@
 ** Drc report for PeacockMainV2.kicad_pcb **
-** Created on 2026-11-24T18:20:37 **
+** Created on 2026-11-24T22:08:00 **
 ** Report includes: Errors, Warnings, Exclusions **
 
 ** Found 0 DRC violations **
 
-** Found 8 unconnected pads **
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(122.6356 mm, 58.2106 mm): Track [/Control/CHG_DET] on F.Cu, length 0.0354 mm
-    @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(154.0000 mm, 71.5500 mm): Pad 12 [/Control/CHG_DET] of U8 on F.Cu
-    @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(91.1750 mm, 80.3000 mm): Pad 2 [/Control/PCA9685_nOE] of R61 on F.Cu
-    @(153.2000 mm, 71.5500 mm): Pad 13 [/Control/PCA9685_nOE] of U8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(81.5750 mm, 85.0625 mm): Pad 17 [PWM_2] of U9 on F.Cu
-    @(181.8289 mm, 88.3756 mm): Pad 1 [PWM_2] of R14 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(82.2250 mm, 85.0625 mm): Pad 18 [PWM_1] of U9 on F.Cu
-    @(186.2723 mm, 107.8735 mm): Pad 1 [PWM_1] of R13 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(85.4750 mm, 79.3375 mm): Pad 6 [PWM_5] of U9 on F.Cu
-    @(140.0644 mm, 42.4829 mm): Pad 1 [PWM_5] of R17 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(110.5200 mm, 50.3040 mm): Track [PWM_11] on F.Cu, length 2.3040 mm
-    @(81.5750 mm, 79.3375 mm): Pad 12 [PWM_11] of U9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(80.9250 mm, 85.0625 mm): Pad 16 [PWM_3] of U9 on F.Cu
-    @(172.4905 mm, 70.6921 mm): Pad 1 [PWM_3] of R15 on F.Cu
+** Found 0 unconnected pads **
 
 ** Found 0 Footprint errors **
 
