@@ -18,11 +18,17 @@
 | 扩展腹地 | 双翼名义直边 Y=27.00 mm。R58.00 与该直线的理论交点为 X=±51.332251 mm。弧脚至翼底的 R3 切接圆角中心为 (±49.487372, 24.00) mm。左右平直段分别为 X=−49.487372 至 −18.00 和 +18.00 至 +49.487372 mm。Y=0 底脚切点 X=±60.926185 mm。槽顶下移后，板材面积较上一版从 9846.662 mm² 增至 10150.662 mm²，净增 304.000 mm²。 |
 | XT30 / J17 槽 | 名义槽壁 X=±15.00 mm，槽口 Y=27.00 mm，槽顶 Y=35.00 mm。四角 R3.00。实际竖直段 Y=30.00 至 32.00 mm，槽顶平直段 X=−12.00 至 +12.00 mm。翼底距电池板 Y=24.00 mm 顶边 3.00 mm，槽顶距电池板顶边 11.00 mm。 |
 | J13 电源线 | 焊盘中心 (−3.90, 48.00) 为 VBAT_IN，(+3.90, 48.00) 为 GND。直接焊 16AWG，线缆在外壳上做应力释放。 |
-| 调试 USB-C J16 | USB4105-GF-A，F 面，封装中心 (21.40, 37.45)，插入方向朝 −Y。插口与外壳、插头护套扫掠空间待实装复核。 |
+| 调试 USB-C J16 | GCT USB4145-03-0170-C，F 面，插口朝 +Z，长轴平行 X。封装中心 (−40.80, +32.40)，KiCad (69.20, 82.60)，0°。母座名义高度 7.46 mm，图纸公差 ±0.20 mm。16 个 SMT 信号及电源触点，四个 1.70 mm 穿孔接地壳脚。 |
+| BOOT SW1 | U8 左侧，中心 (+23.40, +39.00)，KiCad (133.40, 76.00)，90°。 |
+| RST SW2 | U8 上方，中心 (+40.90, +47.46)，KiCad (150.90, 67.54)，0°。 |
 | INMP441 U10 | F 面，封装中心 (+51.70, 36.25)，声孔中心 (+50.41, 36.25)。声孔 KiCad 坐标为 (160.41, 78.75)。底面拾音。厂商推荐通孔 Ø0.50–1.00 mm，封装接地环外径 Ø1.56 mm。居中的 Ø1.50 mm 孔只留下约 0.03 mm 名义接触宽，因此采用 Ø0.80 mm NPTH 和环形接地焊盘。孔壁无金属化，禁止堵孔。 |
 | Z 高度 | 电路板正面最高名义元件为 C1/C2，Panasonic EEH-ZA1E221P，罐体高度 10.2 mm。高度限值 15.0 mm。器件均置于 F 面，背面有穿孔焊接与加固铜带的装配空间。 |
 
-新板框及安装孔按 V3 DWG 的 Z=7.00–8.60 mm 主板安装层生成实体。AutoCAD 实体检查显示主板板材与前壳、后盖、A1 板体、XT30 本体、配对插头参考包络及三节电芯均无体积相交。A2 按 Y=+24.00 mm 顶边包络核算。XT30 配对插头参考包络延伸至 Y=+37.50 mm，顶面与主板底面在 Z=7.00 mm 名义相切。XT30 的装配公差及 J17 排线的插拔和弯折空间需用样件确认。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [TDK INMP441 图 14–16](https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf) · [GCT USB4105 工程图](https://gct.co/files/drawings/usb4105.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
+新板框及安装孔按 V3 DWG 的 Z=7.00–8.60 mm 主板安装层生成实体。AutoCAD 实体检查显示主板板材与前壳、后盖、A1 板体、XT30 本体、配对插头参考包络及三节电芯均无体积相交。A2 按 Y=+24.00 mm 顶边包络核算。XT30 配对插头参考包络延伸至 Y=+37.50 mm，顶面与主板底面在 Z=7.00 mm 名义相切。XT30 的装配公差及 J17 排线的插拔和弯折空间需用样件确认。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [TDK INMP441 图 14–16](https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
+
+J16 的封装占位边界距板边 3.10 mm、PCA9685 占位边界 5.10 mm、左下 H2 螺钉禁布区 29.63 mm、F.Mask / B.Mask 的 3.20 mm 开窗分别 12.74 / 19.90 mm，距最近天线禁布区 65.35 mm。BOOT 与 RST 的封装占位边界相隔 10.22 mm，J16 金属壳体到最近按键占位边界约 56.6 mm。J16 距 J13 和 J17 的占位边界分别约 31.1 mm 与 43.9 mm，插拔路径位于左翼。 [GCT USB4145 工程图](https://xonstorage.z8.web.core.windows.net/pdf/gct_usb4145030170c_apr22_xonlink.pdf)
+
+主板顶面 Z=8.60 mm，J16 插口名义 Z=16.06 mm。以 23.00 mm 顶部净空计，按母座最大高度 7.66 mm 计算，插口上方余量为 15.34 mm。AutoCAD 在 V3 装配坐标下以 14 × 8 mm 插头护套包络沿 +Z 校核，J16 本体、插头路径和两颗按键的操作路径均避开前壳。V3 后盖会遮挡三处操作通道，调试时取下后盖。实装时用最终数据线护套和线束核对插拔行程。
 
 ## 供电与通道
 
@@ -89,6 +95,7 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 ## 信号布线规则
 
 - PWM、栅极、采样、I²C、I²S、USB 及控制信号铜线为 0.20 mm，电气间距最小 0.20 mm，信号过孔钻孔 Ø0.30 mm、铜盘 Ø0.60 mm。
+- J16 的 CC1、CC2 各用独立的 5.1 kΩ 下拉（R73、R74），D6 USBLC6-2SC6 与 C23 邻近 J16。两条 USB 数据线以 0.20 mm 铜宽布线，中央桥主要并行段位于 F.Cu，标称边间距 0.234 mm。左翼和右侧局部经 B.Cu 换层，R71/R72 至 U8 的末段位于 F.Cu。按铜线中心线路径估算，J16 到 U8 的 A 面 D+ / D− 分别为 105.62 / 104.57 mm，B 面为 104.91 / 105.96 mm，两个插头方向的平面走线差均约 1.05 mm。该长度未计过孔垂直段和器件内部通道。中央连接桥的 B.Cu GND 回流保持连续，两面铺铜已重新灌注。
 - U9 封装中心位于 (−25.50, +32.80) mm，C20 位于 (−19.40, +29.50) mm。固件按下表驱动物理通道。
 - 中央连接桥的 F.Cu 布置 PCA9685_nOE、PWM_1、PWM_2、PWM_3、PWM_5 的平行横向段。PWM_11 利用桥区左段转向顶部支路。桥区 B.Cu 的 GND 覆铜有连续横向回路。右翼的换层走线使用 U8 模组本体一侧及 U10 周边的 B.Cu 通道，参考规则区分别保留模组天线馈入侧及麦克风声孔周边。ESP32-C3 的三个双层天线禁布区与前版逐项一致。正反面 GND 以 0.20 mm 间距和最小铜宽重灌，新增 Ø0.30/0.60 mm 缝合孔，GND 未连接为 0。
 - VBAT_IN 外环冗余绕线已清理。中央 U 槽右上角附近的 B.Cu VBAT_IN 共用折点从 KiCad Y=70.465 mm 移至 Y=70.365 mm，以满足 0.28 mm 板边间距。高电流母线继续采用上表铜宽、阻焊开窗和换层过孔阵列。
@@ -107,7 +114,7 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 | KiCad 10.0.8 完整 ERC | **0 错误、0 警告** |
 | KiCad 10.0.8 完整 DRC | **0 条规则违规、0 项未连接，GND 未连接为 0** |
 | 原理图和 PCB 一致性 | **0 差异** |
-| 机械配准 | R92.50 外弧、Y=27.00 mm 双翼、Y=35.00 mm 槽顶、H1–H4、J1–J12、U10 及两面 3.20 mm 阻焊开窗均已复核。 |
+| 基准复核 | 板框、H1–H4 和禁布区、J1–J12、两面 3.20 mm 阻焊开窗、天线双层规则区、24 个开尔文采样网络的铜线与过孔、PCA9685 焊盘映射均逐项比对一致。 |
 
 ### PCA9685 固件映射
 
@@ -130,7 +137,7 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 
 - 已接通 CHG_DET 两项、PCA9685_nOE 一项及 PWM_1、PWM_2、PWM_3、PWM_5、PWM_11 五项。PCA9685 固件映射沿用上表。
 - Gerber 包含双层铜、双面阻焊和丝印、顶层锡膏及闭合板框。板框包含 R92.50 外弧与四处 R3.00 槽口圆角。F.Mask 的 11 段与 B.Mask 的 1 段母线开窗宽度均为 3.20 mm。
-- Excellon 钻孔分别输出 643 个 PTH 孔和 7 个 NPTH 孔。已核对四个 Ø3.20 mm 安装孔、Ø0.80 mm 拾音孔及 J16 的两个 Ø0.65 mm 定位孔。
+- Excellon 钻孔含 670 个 PTH 特征和 7 个 NPTH 特征。已核对四个 Ø3.20 mm 安装孔、Ø0.80 mm 拾音孔，以及 J16 的四个 1.10 × 0.60 mm 镀铜槽、一个 Ø0.71 mm 定位孔和一个 1.01 × 0.71 mm 非镀铜定位槽。
 - 检查记录和归档见 [DRC 报告](PeacockMainV2-DRC.rpt)、[DRC JSON](PeacockMainV2-DRC.json)、[ERC 报告](PeacockMainV2-ERC.rpt) 及 [Gerber 与钻孔 ZIP](PeacockMainV2-Gerber.zip)。
 
 ### 电池侧 A2 验证
@@ -141,7 +148,7 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 
 ### 装壳与实测
 
-- 用最终 XT30、16AWG 线束、USB-C 插头与 GX12-2 插座复核扫掠空间、应力释放和背面 2.00 mm 限高。确认麦克风声孔畅通，测量最终线束位置下的 BLE RSSI。
+- 用最终 XT30、16AWG 线束、USB-C 插头与 GX12-2 插座复核扫掠空间、应力释放和背面 2.00 mm 限高。以 USB-C 两个插头方向实测枚举和下载，并独立操作 BOOT 与 RST。确认麦克风声孔畅通，测量最终线束位置下的 BLE RSSI。
 - 加装两面母线铜带后，在实际板厂铜厚和孔铜厚度下分级上载。测 J13、两颗高侧 MOSFET、R49 焊端、两面铜带接头和四组换层过孔的压降与温升，复核同步 PWM 和最不利装壳散热条件。20 A 载流能力以实测为准。
 - 校准 R49 及 12 路分流器的零点、增益和温漂，记录 PWM 边沿时的采样扰动，核查亮灯、爆闪和充电切换时的误触发。
 

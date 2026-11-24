@@ -18,7 +18,7 @@
 "D6","1","USBLC6-2SC6","Package_TO_SOT_SMD:SOT-23-6","STMicroelectronics","USBLC6-2SC6","",""
 "D7,D8,D9","3","PESD3V3U1UA","Diode_SMD:D_SOD-323","Nexperia","PESD3V3U1UA,115","",""
 "F1,F10,F11,F12,F2,F3,F4,F5,F6,F7,F8,F9","12","1812L150/24DR","Resistor_SMD:R_1812_4532Metric","Littelfuse","1812L150/24DR","",""
-"J16","1","USB4105-GF-A","Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal","GCT","USB4105-GF-A","https://gct.co/files/drawings/usb4105.pdf",""
+"J16","1","USB4145-03-0170-C","PeacockMainV2:USB_C_Receptacle_GCT_USB4145-03-0170-C_Vertical","GCT","USB4145-03-0170-C","https://xonstorage.z8.web.core.windows.net/pdf/gct_usb4145030170c_apr22_xonlink.pdf","F.Cu vertical +Z, 7.46 mm nominal, 16 SMT contacts, four 1.70 mm through-hole shell stakes"
 "J17","1","SM04B-SRSS-TB(LF)(SN)","Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal","JST","SM04B-SRSS-TB(LF)(SN)","",""
 "L1","1","10uH","Inductor_SMD:L_Coilcraft_XAL6060-XXX","Coilcraft","XAL6060-103MEC","",""
 "Q1,Q10,Q11,Q12,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9","12","AO3400A","Package_TO_SOT_SMD:SOT-23","Alpha & Omega","AO3400A","https://www.aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a",""
