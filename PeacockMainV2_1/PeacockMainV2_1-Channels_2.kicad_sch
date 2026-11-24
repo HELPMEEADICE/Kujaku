@@ -1,0 +1,1313 @@
+(kicad_sch (version 20250114) (generator "eeschema") (uuid "111e2f18-51e9-50f2-ac59-a4187d5baadc") (paper "A3") (title_block (title "Peacock V2.1 - Channels 4 to 6") (rev "V2.1") (company "Peacock"))
+(lib_symbols
+(symbol "Device:Fuse"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "F"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at -1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "fuse"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "*Fuse*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Fuse_0_1"
+			(rectangle
+				(start -0.762 -2.54)
+				(end 0.762 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Fuse_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "PeacockMainV2_1:AO3400A"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Q"
+			(at 5.08 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_GSD"
+			(at 5.08 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "AO3400A_0_1"
+			(polyline
+				(pts
+					(xy 0.254 1.905) (xy 0.254 -1.905)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 2.286) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0.508) (xy 0.762 -0.508)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.27) (xy 0.762 -2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 1.651 0)
+				(radius 2.794)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 2.54) (xy 2.54 1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 2.54 -1.778)
+				(radius 0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.921 0.381) (xy 3.683 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "AO3400A_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
+(text "Channels 4–6    PWM outputs and low-side current sensing" (at 22.86 20.32 0) (effects (font (size 2.2 2.2)) (justify left)) (uuid "5cc93842-4054-5e7a-8182-0ee8daf973d3"))
+(text "CH4" (at 25.4 35.56 0) (effects (font (size 1.65 1.65)) (justify left)) (uuid "5fd1a3c6-96b9-5887-b1c1-0687c4604283"))
+(symbol (lib_id "Device:Fuse") (at 40.64 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ec3e69f0-1073-5beb-bf0b-5fefa31ed8f0")
+ (property "Reference" "F4" (at 44.79 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "BSMD1812-150-24V" (at 44.79 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1812_4532Metric" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588906264324030464" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "BSMD1812-150-24V" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "BHFUSE" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C883153" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 40.64 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "ab7ea66c-c6ca-5d7d-a535-fd5ec0509672"))
+ (pin "2" (uuid "27289639-450a-5724-9b24-633c018b0a95"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "F4") (unit 1)))))
+(wire (pts (xy 40.64 54.61) (xy 40.64 49.53)) (stroke (width 0) (type default)) (uuid "2c422ddb-4d87-5239-999c-933219887933"))
+(global_label "VBAT_SW" (shape passive) (at 40.64 49.53 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "12b9e50d-46de-5bec-ad86-cfce5ba4f9b1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 40.64 49.53 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 40.64 62.23) (xy 40.64 67.31)) (stroke (width 0) (type default)) (uuid "348ddf32-1251-5ad5-ab9f-0eacf969475b"))
+(label "CH4_POS" (at 40.64 67.31 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "d3b02f40-4f9e-5202-a7ed-f2c0606343e1"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 87.63 58.42 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "544d2106-2b30-59cf-9c25-f89858912377")
+ (property "Reference" "J4" (at 91.93 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "GX12-2 / 18AWG" (at 91.93 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "PeacockMainV2_1:GX12_Leadout_1x02_P5.00mm" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "No" (at 87.63 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "6016bda6-e661-5a35-b723-b2c14f4732d9"))
+ (pin "2" (uuid "0c6dc182-66fa-59d2-b34a-b680a0279b7e"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "J4") (unit 1)))))
+(wire (pts (xy 82.55 58.42) (xy 77.47 58.42)) (stroke (width 0) (type default)) (uuid "8e423e32-c396-57b8-8859-ad0ca1cae31b"))
+(label "CH4_POS" (at 77.47 58.42 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "6b2c65fc-5a56-5ce2-8ed2-e34f7ebd0532"))
+(wire (pts (xy 82.55 60.96) (xy 77.47 60.96)) (stroke (width 0) (type default)) (uuid "4b7a41aa-b7ae-5757-8928-3c3b76121d3d"))
+(label "CH4_NEG" (at 77.47 60.96 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "3091775d-3be5-5783-aaf1-3ff26becb9c7"))
+(symbol (lib_id "PeacockMainV2_1:AO3400A") (at 76.2 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "af6d5c0d-43cf-5d74-9cad-346fae3977f3")
+ (property "Reference" "Q4" (at 72.4 83.98 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "AO3400A" (at 72.4 85.68 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723985357750272" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "AO3400A" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "Alpha Omega Semicon" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C20917" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 76.2 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "a797ce46-1063-5f77-8842-d294f28b8e59"))
+ (pin "2" (uuid "4a88296d-f56b-5329-b257-2c7f5df1f9bd"))
+ (pin "3" (uuid "1eba8f29-0bc6-530c-9856-4144de143be6"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "Q4") (unit 1)))))
+(wire (pts (xy 71.12 93.98) (xy 66.04 93.98)) (stroke (width 0) (type default)) (uuid "2ca4628d-4d34-5533-8552-51aad65c25fd"))
+(label "GATE_4" (at 66.04 93.98 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "d6bd3fc3-09f0-5cab-99f2-f9a8ef742c9b"))
+(wire (pts (xy 78.74 88.9) (xy 78.74 83.82)) (stroke (width 0) (type default)) (uuid "b8eac1c2-dcda-5c5c-9532-973edcaa70ba"))
+(label "CH4_NEG" (at 78.74 83.82 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "6a341068-3666-55cb-b3c4-163076c30414"))
+(symbol (lib_id "Device:R") (at 33.02 91.44 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d59de656-e992-56bf-b3ff-1e37f6b5f077")
+ (property "Reference" "R16" (at 37.17 90.14 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 37.17 91.84 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 33.02 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "5e7dcb05-f32b-5962-83b7-aa690a75b2f5"))
+ (pin "2" (uuid "303eb96e-903a-574e-bf89-102782d9a3e1"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R16") (unit 1)))))
+(wire (pts (xy 33.02 87.63) (xy 33.02 82.55)) (stroke (width 0) (type default)) (uuid "19b7ea07-78f5-5bf1-babc-ca49b91c4121"))
+(global_label "PWM_4" (shape passive) (at 33.02 82.55 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "4b7622d7-af3d-5d27-af9f-4a046366b632") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 33.02 82.55 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 33.02 95.25) (xy 33.02 100.33)) (stroke (width 0) (type default)) (uuid "b3e9f5d4-0ddd-5681-b592-afbf2981e9af"))
+(label "GATE_4" (at 33.02 100.33 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "5565ef0f-2286-5772-a42f-57b898069fbd"))
+(symbol (lib_id "Device:R") (at 48.26 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "95e8169d-283a-514d-9f65-3e07bb597a8e")
+ (property "Reference" "R28" (at 52.41 118.08 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "10k" (at 52.41 119.78 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF1002T5E" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C25804" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 48.26 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "407b99f8-9dde-5014-ac0d-1c85638c4ed0"))
+ (pin "2" (uuid "8c1d474d-099d-528a-9a4f-690f23f3fbf6"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R28") (unit 1)))))
+(wire (pts (xy 48.26 115.57) (xy 48.26 110.49)) (stroke (width 0) (type default)) (uuid "d84bbb9a-01b8-5efa-a249-1ab6fe39ae4d"))
+(label "GATE_4" (at 48.26 110.49 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "bc0ce08e-63b3-59c3-9532-17cbab2f6b5d"))
+(wire (pts (xy 48.26 123.19) (xy 48.26 128.27)) (stroke (width 0) (type default)) (uuid "ba5e2943-ea55-536b-ac38-0e1bfdc7330c"))
+(global_label "GND" (shape passive) (at 48.26 128.27 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "5820b296-8de2-5230-a8b4-39d99d7b6879") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 48.26 128.27 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 78.74 120.65 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f4b8741e-0d44-5eef-87c9-96f0e996a455")
+ (property "Reference" "R4" (at 82.89 119.35 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "50mR 1% 1W" (at 82.89 121.05 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/partdetail/FOJAN-FRM121WFR050TM/C7467249" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "FRM121WFR050TM" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "FOJAN" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C7467249" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 78.74 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "a426f004-abe4-5fea-9e10-289b520a9ece"))
+ (pin "2" (uuid "b3ccb014-636b-5920-ace1-b7563f48ebbb"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R4") (unit 1)))))
+(wire (pts (xy 78.74 99.06) (xy 78.74 107.95)) (stroke (width 0) (type default)) (uuid "fde93cc4-8f3a-59de-81f9-5740d99b311d"))
+(wire (pts (xy 78.74 107.95) (xy 78.74 116.84)) (stroke (width 0) (type default)) (uuid "8c3ee2ec-2b82-5342-812e-607ccf92e7b2"))
+(wire (pts (xy 78.74 107.95) (xy 91.44 107.95)) (stroke (width 0) (type default)) (uuid "e83f6250-6427-5c8e-8539-57fdf033c765"))
+(junction (at 78.74 107.95) (diameter 0) (color 0 0 0 0) (uuid "0d7c7e21-7a00-5295-ae3a-018e7f3cdfda"))
+(label "ISENSE_4" (at 91.44 107.95 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "b0b2ee2e-8961-50d0-a72f-9dc18d985363"))
+(wire (pts (xy 78.74 124.46) (xy 78.74 129.54)) (stroke (width 0) (type default)) (uuid "05480c4d-a9ff-5c0b-9b01-3c0d5e4cf04c"))
+(global_label "GND" (shape passive) (at 78.74 129.54 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "61668efe-2a2d-5f24-8da4-474b024ab282") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 78.74 129.54 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 58.42 160.02 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c669cb69-c5e0-54db-a8e9-36462071da4b")
+ (property "Reference" "R107" (at 54.92 155.32 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 54.92 157.02 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 58.42 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "d6b344c6-7cfa-56bd-80ea-8aa4fcbe3dc6"))
+ (pin "2" (uuid "cf506276-6ed4-5fff-b75f-ba63ad23f778"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R107") (unit 1)))))
+(wire (pts (xy 54.61 160.02) (xy 45.72 160.02)) (stroke (width 0) (type default)) (uuid "6dd8e551-6e87-553e-803c-452740604e21"))
+(label "ISENSE_4" (at 45.72 160.02 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "a4d083bc-257e-5e3d-bf76-bfbb17814440"))
+(symbol (lib_id "Device:C") (at 77.47 172.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "c33ac4fa-6d6e-579a-9671-a2aa9f42fe4f")
+ (property "Reference" "C34" (at 81.62 171.42 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "100nF 50V X7R" (at 81.62 173.12 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "CC0603KRX7R9BB104" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "YAGEO" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C14663" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 77.47 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "7f742e60-3d31-585d-9a8d-d6c0c438a293"))
+ (pin "2" (uuid "a04e9eb3-6a11-5c77-bcdb-2dc241e454d1"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "C34") (unit 1)))))
+(wire (pts (xy 62.23 160.02) (xy 77.47 160.02)) (stroke (width 0) (type default)) (uuid "50cf37f1-7f0d-57fa-8b44-6b373094a67a"))
+(wire (pts (xy 77.47 160.02) (xy 77.47 168.91)) (stroke (width 0) (type default)) (uuid "f753fa4c-3904-50b6-96d9-fa1c1e825826"))
+(wire (pts (xy 77.47 160.02) (xy 83.82 160.02)) (stroke (width 0) (type default)) (uuid "d171e826-5009-5548-af68-c53fc01f5c7d"))
+(junction (at 77.47 160.02) (diameter 0) (color 0 0 0 0) (uuid "316fca0f-189c-5baa-9ee7-5e7243b5ffe5"))
+(global_label "ADC_IN_4" (shape passive) (at 83.82 160.02 0) (effects (font (size 0.87 0.87)) (justify left)) (uuid "475ab1ca-2d7e-5a72-a8d7-f613f86a623e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 83.82 160.02 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 77.47 176.53) (xy 77.47 181.61)) (stroke (width 0) (type default)) (uuid "5044f5f1-db05-5c25-9da1-f3777218d1a6"))
+(global_label "GND" (shape passive) (at 77.47 181.61 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "335b2f09-9261-5086-9a1e-78816b02425c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 77.47 181.61 0) (effects (font (size 1 1)) (hide yes))))
+(text "CH5" (at 144.78 35.56 0) (effects (font (size 1.65 1.65)) (justify left)) (uuid "2ef3b804-6b89-5109-a2e2-36db4b8f78a4"))
+(symbol (lib_id "Device:Fuse") (at 160.02 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ba30aefe-8667-5e22-b11e-92b5d9b9ec08")
+ (property "Reference" "F5" (at 164.17 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "BSMD1812-150-24V" (at 164.17 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1812_4532Metric" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588906264324030464" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "BSMD1812-150-24V" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "BHFUSE" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C883153" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 160.02 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "7343bff2-cd6a-5471-b63b-ab633a4bace8"))
+ (pin "2" (uuid "d297e19e-8506-5c94-899c-4ff1c52fa11a"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "F5") (unit 1)))))
+(wire (pts (xy 160.02 54.61) (xy 160.02 49.53)) (stroke (width 0) (type default)) (uuid "988ea34c-a2e3-5129-8349-ca3ebc8050d4"))
+(global_label "VBAT_SW" (shape passive) (at 160.02 49.53 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "f9d63ca1-ab56-5d5d-b159-ae8e83ae447d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 160.02 49.53 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 160.02 62.23) (xy 160.02 67.31)) (stroke (width 0) (type default)) (uuid "b6f2425b-cb43-5461-8eb5-beaf5c215286"))
+(label "CH5_POS" (at 160.02 67.31 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "066e3783-8a87-54af-8201-2c5a4be57921"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 207.01 58.42 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "52d7f8a4-dfc1-5658-9b1b-34e63e3f79e0")
+ (property "Reference" "J5" (at 211.31 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "GX12-2 / 18AWG" (at 211.31 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "PeacockMainV2_1:GX12_Leadout_1x02_P5.00mm" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "No" (at 207.01 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "5cb8acb1-46e5-578f-a467-fa3fba16a1b8"))
+ (pin "2" (uuid "a8ef4461-5fc1-58f0-9a97-71e4109f4575"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "J5") (unit 1)))))
+(wire (pts (xy 201.93 58.42) (xy 196.85 58.42)) (stroke (width 0) (type default)) (uuid "aed09df4-46eb-513e-ba95-9af300ce4aa6"))
+(label "CH5_POS" (at 196.85 58.42 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "b945ab2c-3f06-5151-9828-031c39bff73c"))
+(wire (pts (xy 201.93 60.96) (xy 196.85 60.96)) (stroke (width 0) (type default)) (uuid "3c5ba75e-c184-5f5b-917c-1e0fa0dc42bc"))
+(label "CH5_NEG" (at 196.85 60.96 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "78957c9b-9bbc-5168-84c0-9ab833f7644b"))
+(symbol (lib_id "PeacockMainV2_1:AO3400A") (at 195.58 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a36f7421-ac8f-5c1f-9ae3-e1cd188bbf0d")
+ (property "Reference" "Q5" (at 191.78 83.98 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "AO3400A" (at 191.78 85.68 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723985357750272" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "AO3400A" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "Alpha Omega Semicon" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C20917" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 195.58 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "775f16d3-1e06-5d4a-836b-818b8a72a5ee"))
+ (pin "2" (uuid "dc03414e-e8a6-521b-b93e-0804197f8eb6"))
+ (pin "3" (uuid "83ea842b-4483-52ce-90a6-9536bd3df336"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "Q5") (unit 1)))))
+(wire (pts (xy 190.5 93.98) (xy 185.42 93.98)) (stroke (width 0) (type default)) (uuid "4a76c116-9fae-5974-a68b-5d89808e4858"))
+(label "GATE_5" (at 185.42 93.98 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "e80fbd56-efb5-5d86-966d-b47e72552348"))
+(wire (pts (xy 198.12 88.9) (xy 198.12 83.82)) (stroke (width 0) (type default)) (uuid "d1bf8192-6e37-5947-9565-c9c8d7641453"))
+(label "CH5_NEG" (at 198.12 83.82 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "2b8b8fd9-0cd8-5f6c-b989-03430cd3e21c"))
+(symbol (lib_id "Device:R") (at 152.4 91.44 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e8a3c554-e99b-5bee-991a-5a41694c9092")
+ (property "Reference" "R17" (at 156.55 90.14 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 156.55 91.84 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 152.4 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "30aadf83-f4e1-54d9-b1d9-cc7ea79e573c"))
+ (pin "2" (uuid "e39ec628-31f1-53ae-90b9-36bc1e277fea"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R17") (unit 1)))))
+(wire (pts (xy 152.4 87.63) (xy 152.4 82.55)) (stroke (width 0) (type default)) (uuid "a39a4757-195e-5d46-82e8-79746ba5c2b7"))
+(global_label "PWM_5" (shape passive) (at 152.4 82.55 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "b6a33942-1a34-5fa6-8fdf-42c6ab88e19c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 152.4 82.55 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 152.4 95.25) (xy 152.4 100.33)) (stroke (width 0) (type default)) (uuid "2cf6869e-2a37-5262-af85-02c779edf7fb"))
+(label "GATE_5" (at 152.4 100.33 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "debfedf2-0a86-57ef-9616-acead02f4209"))
+(symbol (lib_id "Device:R") (at 167.64 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "92c3aef9-70ac-5b21-8961-cad0845c4395")
+ (property "Reference" "R29" (at 171.79 118.08 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "10k" (at 171.79 119.78 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF1002T5E" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C25804" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 167.64 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "7c982c10-2a3b-5675-bea9-88f7a8c11fa5"))
+ (pin "2" (uuid "a6d47222-ab9f-581d-ab3b-3bd2ac96880f"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R29") (unit 1)))))
+(wire (pts (xy 167.64 115.57) (xy 167.64 110.49)) (stroke (width 0) (type default)) (uuid "9148eda7-f69a-550b-a6c1-3183c680014b"))
+(label "GATE_5" (at 167.64 110.49 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "9815b31d-8fb3-513a-b7c1-85c9ffe55da7"))
+(wire (pts (xy 167.64 123.19) (xy 167.64 128.27)) (stroke (width 0) (type default)) (uuid "445be104-de5a-5b8e-bea0-172e7ed74ba5"))
+(global_label "GND" (shape passive) (at 167.64 128.27 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "1ea0b4e0-414a-55d0-b6a6-3504541f66e0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 167.64 128.27 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 198.12 120.65 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "29d36c49-62e6-5c3b-aa23-789a6fe766ea")
+ (property "Reference" "R5" (at 202.27 119.35 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "50mR 1% 1W" (at 202.27 121.05 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/partdetail/FOJAN-FRM121WFR050TM/C7467249" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "FRM121WFR050TM" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "FOJAN" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C7467249" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 198.12 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "e32a16d1-5b0f-5d4a-ac54-3854cf490f35"))
+ (pin "2" (uuid "70e525d6-b907-5e45-a505-8d642ffaf8be"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R5") (unit 1)))))
+(wire (pts (xy 198.12 99.06) (xy 198.12 107.95)) (stroke (width 0) (type default)) (uuid "c6a9c461-ed68-5835-9c66-0cdd6a6a6b3c"))
+(wire (pts (xy 198.12 107.95) (xy 198.12 116.84)) (stroke (width 0) (type default)) (uuid "752e7c32-ff6b-5589-bcf7-e3ab4188616d"))
+(wire (pts (xy 198.12 107.95) (xy 210.82 107.95)) (stroke (width 0) (type default)) (uuid "d80fe469-81fc-5ace-8c54-4c1c0b5a6119"))
+(junction (at 198.12 107.95) (diameter 0) (color 0 0 0 0) (uuid "e75bbb8f-8c9a-5159-b4f8-16cd9d873d96"))
+(label "ISENSE_5" (at 210.82 107.95 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "71abb68c-3404-5831-bc74-832a5c647b82"))
+(wire (pts (xy 198.12 124.46) (xy 198.12 129.54)) (stroke (width 0) (type default)) (uuid "2aa60167-859e-5d68-903d-0f19abc6134c"))
+(global_label "GND" (shape passive) (at 198.12 129.54 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "3edb3b6b-188c-56f5-97aa-8b2b6ded6291") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 198.12 129.54 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 177.8 160.02 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3306f86e-8eae-548c-a94e-1007f637aa23")
+ (property "Reference" "R109" (at 174.3 155.32 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 174.3 157.02 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 177.8 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "2f95d160-c7d9-51b7-a53b-10a18952ca5c"))
+ (pin "2" (uuid "f10c7aeb-ef05-5107-8f85-b43dd7be9d65"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R109") (unit 1)))))
+(wire (pts (xy 173.99 160.02) (xy 165.1 160.02)) (stroke (width 0) (type default)) (uuid "ab60d72f-2f6e-52d2-a927-422287225d8e"))
+(label "ISENSE_5" (at 165.1 160.02 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "76f13a7e-d2c3-583d-9c82-8f1aefd2c012"))
+(symbol (lib_id "Device:C") (at 196.85 172.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3554d3db-e9e7-5164-86ec-6f69855a38e5")
+ (property "Reference" "C35" (at 201.0 171.42 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "100nF 50V X7R" (at 201.0 173.12 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "CC0603KRX7R9BB104" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "YAGEO" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C14663" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 196.85 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "256b6ff5-4c4e-5615-9fe8-807f00566b4f"))
+ (pin "2" (uuid "e6272194-e6cd-53a7-9940-ba6fb5cd2ee2"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "C35") (unit 1)))))
+(wire (pts (xy 181.61 160.02) (xy 196.85 160.02)) (stroke (width 0) (type default)) (uuid "22fb451f-cadc-5ba2-9b82-353ea320560e"))
+(wire (pts (xy 196.85 160.02) (xy 196.85 168.91)) (stroke (width 0) (type default)) (uuid "16c5328a-79f9-5c42-84a4-d34fb47cb4d9"))
+(wire (pts (xy 196.85 160.02) (xy 203.2 160.02)) (stroke (width 0) (type default)) (uuid "f98fdddc-0daf-5e1c-9af4-3361b479997b"))
+(junction (at 196.85 160.02) (diameter 0) (color 0 0 0 0) (uuid "c055be86-9441-5a3d-9565-03799e921f12"))
+(global_label "ADC_IN_5" (shape passive) (at 203.2 160.02 0) (effects (font (size 0.87 0.87)) (justify left)) (uuid "1326c6a6-296b-5540-9632-191f98680587") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 203.2 160.02 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 196.85 176.53) (xy 196.85 181.61)) (stroke (width 0) (type default)) (uuid "be1e44eb-1c80-5dad-9f7e-f486241651e6"))
+(global_label "GND" (shape passive) (at 196.85 181.61 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "ac5a4b31-5198-5b91-99b5-8407a3ddc52e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 196.85 181.61 0) (effects (font (size 1 1)) (hide yes))))
+(text "CH6" (at 264.16 35.56 0) (effects (font (size 1.65 1.65)) (justify left)) (uuid "1048ff48-bda7-5dae-bdcf-3069bdd9d380"))
+(symbol (lib_id "Device:Fuse") (at 279.4 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9f3fc972-7d5c-5dd6-9130-c210fbb71423")
+ (property "Reference" "F6" (at 283.55 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "BSMD1812-150-24V" (at 283.55 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1812_4532Metric" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588906264324030464" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "BSMD1812-150-24V" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "BHFUSE" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C883153" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 279.4 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "fbb9fa11-6c89-523b-aa35-a4cbcd0151fe"))
+ (pin "2" (uuid "b93b986a-4f9e-5002-81d3-87072b8892da"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "F6") (unit 1)))))
+(wire (pts (xy 279.4 54.61) (xy 279.4 49.53)) (stroke (width 0) (type default)) (uuid "2d6c1dbd-d216-56fa-9041-0108c283e21c"))
+(global_label "VBAT_SW" (shape passive) (at 279.4 49.53 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "093d5748-c983-5c8e-b348-b659ce3e8330") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 279.4 49.53 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 279.4 62.23) (xy 279.4 67.31)) (stroke (width 0) (type default)) (uuid "c4286062-0cdc-5d6a-b39f-18cede88f71b"))
+(label "CH6_POS" (at 279.4 67.31 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "80f224f5-c81b-5e11-a83e-ff2b39d7b1cf"))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 326.39 58.42 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "3836e222-a8d9-545e-b553-5d2c4029d7e4")
+ (property "Reference" "J6" (at 330.69 57.12 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "GX12-2 / 18AWG" (at 330.69 58.82 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "PeacockMainV2_1:GX12_Leadout_1x02_P5.00mm" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "No" (at 326.39 58.42 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "219e1c0d-8c12-50a2-bf9e-f5851799c805"))
+ (pin "2" (uuid "69f29640-1870-5e42-b493-bb7b32d1a3ca"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "J6") (unit 1)))))
+(wire (pts (xy 321.31 58.42) (xy 316.23 58.42)) (stroke (width 0) (type default)) (uuid "97e58082-e5a8-5ecc-9980-4acda337a881"))
+(label "CH6_POS" (at 316.23 58.42 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "9b7c0c19-6340-5465-adb4-3adfb0e3e6b7"))
+(wire (pts (xy 321.31 60.96) (xy 316.23 60.96)) (stroke (width 0) (type default)) (uuid "b08bb9d4-85cc-513c-a03d-62c0118c653a"))
+(label "CH6_NEG" (at 316.23 60.96 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "e6a49f4f-5c58-5ac9-898e-2913ec79f8b2"))
+(symbol (lib_id "PeacockMainV2_1:AO3400A") (at 314.96 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7b82c936-ff6c-54a4-aecd-2456bff0fcae")
+ (property "Reference" "Q6" (at 311.16 83.98 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "AO3400A" (at 311.16 85.68 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723985357750272" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "AO3400A" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "Alpha Omega Semicon" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C20917" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 314.96 93.98 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "25c0c506-e2e8-5a6b-b13e-4ca0cd21ee74"))
+ (pin "2" (uuid "5dfe4445-4abf-595c-9eb2-fb222bdacb11"))
+ (pin "3" (uuid "29db4337-a3cf-5669-884f-59b4042dda03"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "Q6") (unit 1)))))
+(wire (pts (xy 309.88 93.98) (xy 304.8 93.98)) (stroke (width 0) (type default)) (uuid "639b3511-06b9-5f6d-8d33-3ead5b23426e"))
+(label "GATE_6" (at 304.8 93.98 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "340100da-269c-5fe3-8373-0c87e36dbd5e"))
+(wire (pts (xy 317.5 88.9) (xy 317.5 83.82)) (stroke (width 0) (type default)) (uuid "9974c9fe-6f7f-5f04-b113-0851f25276c3"))
+(label "CH6_NEG" (at 317.5 83.82 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "4565d403-8517-5efd-ba9a-153e7858b19d"))
+(symbol (lib_id "Device:R") (at 271.78 91.44 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "aa4fab02-429b-538b-a9c7-97e0c4aceea5")
+ (property "Reference" "R18" (at 275.93 90.14 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 275.93 91.84 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 271.78 91.44 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "9d3b5976-b362-5493-ad31-573e2a2a4724"))
+ (pin "2" (uuid "1d1d85cc-d93a-5e19-b9eb-50239d582407"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R18") (unit 1)))))
+(wire (pts (xy 271.78 87.63) (xy 271.78 82.55)) (stroke (width 0) (type default)) (uuid "fff00a92-607f-51eb-b934-8c624f1721d4"))
+(global_label "PWM_6" (shape passive) (at 271.78 82.55 90) (effects (font (size 0.87 0.87)) (justify right)) (uuid "b3f667e4-a6bd-5327-972a-5d892e9a98ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 271.78 82.55 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 271.78 95.25) (xy 271.78 100.33)) (stroke (width 0) (type default)) (uuid "e3fa63d4-beaf-5e27-bcaf-84dd68ea7d75"))
+(label "GATE_6" (at 271.78 100.33 270) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "6260a3c4-a555-5d57-8a99-5ae7989ea5d2"))
+(symbol (lib_id "Device:R") (at 287.02 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "dcba5a0d-fba1-5727-beeb-0823d80b38c1")
+ (property "Reference" "R30" (at 291.17 118.08 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "10k" (at 291.17 119.78 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF1002T5E" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C25804" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 287.02 119.38 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "82bc9908-fa56-5bf2-afb1-aeab2626010b"))
+ (pin "2" (uuid "48d3e68a-3873-52b4-bd60-7231488fa76b"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R30") (unit 1)))))
+(wire (pts (xy 287.02 115.57) (xy 287.02 110.49)) (stroke (width 0) (type default)) (uuid "3c2d504e-7000-5f71-a9c6-aaa920d26bbb"))
+(label "GATE_6" (at 287.02 110.49 90) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "b3382564-96b7-5fb8-a482-04091f9d5cf7"))
+(wire (pts (xy 287.02 123.19) (xy 287.02 128.27)) (stroke (width 0) (type default)) (uuid "3218baf4-8d6e-5f43-8bea-2c1c4e874f77"))
+(global_label "GND" (shape passive) (at 287.02 128.27 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "8f08070c-646e-5065-b35b-c41043a0f534") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 287.02 128.27 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 317.5 120.65 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f824ad1b-33a9-5633-bb7e-cc22fde8036b")
+ (property "Reference" "R6" (at 321.65 119.35 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "50mR 1% 1W" (at 321.65 121.05 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/partdetail/FOJAN-FRM121WFR050TM/C7467249" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "FRM121WFR050TM" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "FOJAN" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C7467249" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 317.5 120.65 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "0924e1ac-3e5f-5dde-ab63-02c99951ba36"))
+ (pin "2" (uuid "ab6ecf25-5069-592f-9b35-3b8c8c034bea"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R6") (unit 1)))))
+(wire (pts (xy 317.5 99.06) (xy 317.5 107.95)) (stroke (width 0) (type default)) (uuid "b097331d-2bdb-5759-bd20-249fe2ceef86"))
+(wire (pts (xy 317.5 107.95) (xy 317.5 116.84)) (stroke (width 0) (type default)) (uuid "c6b3b1c5-93dc-56ad-bb8e-2c603a3afee4"))
+(wire (pts (xy 317.5 107.95) (xy 330.2 107.95)) (stroke (width 0) (type default)) (uuid "b858dbec-7af9-544e-87c8-01e3b2a6e55b"))
+(junction (at 317.5 107.95) (diameter 0) (color 0 0 0 0) (uuid "22693b34-8cae-5478-8d1a-0e0dbc06c8b1"))
+(label "ISENSE_6" (at 330.2 107.95 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "7c33089e-f168-5115-8c6e-d2d51a125856"))
+(wire (pts (xy 317.5 124.46) (xy 317.5 129.54)) (stroke (width 0) (type default)) (uuid "55e252f6-ea99-5b71-a76b-fef5ff612966"))
+(global_label "GND" (shape passive) (at 317.5 129.54 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "be810bd7-10c4-5d4e-99e3-cd4af3a2fcf5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 317.5 129.54 0) (effects (font (size 1 1)) (hide yes))))
+(symbol (lib_id "Device:R") (at 297.18 160.02 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a0df16c5-4126-5633-a1ee-a6aed605acdb")
+ (property "Reference" "R111" (at 293.68 155.32 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "33R" (at 293.68 157.02 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "0603WAF330JT5E" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C23140" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 297.18 160.02 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "d19bb31a-3bbd-5dff-bef4-0df04781fe28"))
+ (pin "2" (uuid "9895884f-8503-56b1-ac2d-341636aad59e"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "R111") (unit 1)))))
+(wire (pts (xy 293.37 160.02) (xy 284.48 160.02)) (stroke (width 0) (type default)) (uuid "0fbe42a8-4346-53c2-8377-1371a055e5d4"))
+(label "ISENSE_6" (at 284.48 160.02 180) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "53b58e95-4ca9-5a8b-9787-ed5ff0f23bcf"))
+(symbol (lib_id "Device:C") (at 316.23 172.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a5ccf434-72bb-57d3-b1ab-e26d466c1c7e")
+ (property "Reference" "C36" (at 320.38 171.42 0) (effects (font (size 0.99 0.99)) (justify left)))
+ (property "Value" "100nF 50V X7R" (at 320.38 173.12 0) (effects (font (size 0.87 0.87)) (justify left)))
+ (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "MPN" "CC0603KRX7R9BB104" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "Manufacturer" "YAGEO" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "LCSC" "C14663" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (property "SMT_Populate" "Yes" (at 316.23 172.72 0) (effects (font (size 0.87 0.87)) (hide yes)))
+ (pin "1" (uuid "23795cd3-7be8-5d69-a617-149f902b478f"))
+ (pin "2" (uuid "0b911954-7885-5628-be90-b09bcc37049d"))
+ (instances (project "PeacockMainV2_1" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/e2d70a0d-d642-5b10-a808-4d379b072ad5" (reference "C36") (unit 1)))))
+(wire (pts (xy 300.99 160.02) (xy 316.23 160.02)) (stroke (width 0) (type default)) (uuid "51473558-f050-5f30-9987-6b74a2db2210"))
+(wire (pts (xy 316.23 160.02) (xy 316.23 168.91)) (stroke (width 0) (type default)) (uuid "759f4e39-e8e0-5cbc-82f0-b68cd2a118f8"))
+(wire (pts (xy 316.23 160.02) (xy 322.58 160.02)) (stroke (width 0) (type default)) (uuid "791055d8-e868-5a18-b316-e9b3bb0743dc"))
+(junction (at 316.23 160.02) (diameter 0) (color 0 0 0 0) (uuid "ecb7e294-dd17-5281-a38f-47d1e1d7bcda"))
+(global_label "ADC_IN_6" (shape passive) (at 322.58 160.02 0) (effects (font (size 0.87 0.87)) (justify left)) (uuid "caa3405f-d6c3-54a6-a89d-ace691915e3d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 322.58 160.02 0) (effects (font (size 1 1)) (hide yes))))
+(wire (pts (xy 316.23 176.53) (xy 316.23 181.61)) (stroke (width 0) (type default)) (uuid "44fd1c93-28dd-5d53-adb5-b614453ebf88"))
+(global_label "GND" (shape passive) (at 316.23 181.61 270) (effects (font (size 0.87 0.87)) (justify left)) (uuid "bcbf827f-4003-557f-b701-e17354bea4d8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 316.23 181.61 0) (effects (font (size 1 1)) (hide yes))))
+)
