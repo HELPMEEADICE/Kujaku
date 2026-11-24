@@ -39,24 +39,36 @@ C32,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_20
 C33,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C45783,Yes,Basic,22 µF / 25 V、0805，WAKE_5V 输出电容。
 C34,1,1uF 50V,Samsung Electro Mechanics,CL10A105KB8NNNC,Capacitor_SMD:C_0603_1608Metric,B,C15849,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
 C35,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C36,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,
+C37,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,
+C38,1,1uF 50V,Samsung,CL10A105KB8NNNC,Capacitor_SMD:C_0603_1608Metric,B,C15849,Yes,Basic,
+C39,1,10uF 25V,Samsung,CL21A106KAYNNNE,Capacitor_SMD:C_0805_2012Metric,B,C15850,Yes,Basic,
+C40,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,
+C41,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,
+CELL,3,Ø18.50 × 66.50–68.00 mm 凸口 18650,待选,同型号、同批次动力电芯,可拆卸,F,,No,N/A,整组一致性及 15 A 稳态和 20 A 脉冲额定按最终电芯验收。
 D1,1,1N4148W,ST Semtech,1N4148W,Diode_SMD:D_SOD-123,B,C81598,Yes,Basic,基础库低漏电高速二极管，SOD-123，1 为阴极。
 D2,1,SMBJ15A,hongjiacheng,SMBJ15A,Diode_SMD:D_SMB,B,C19077569,Yes,Preferred Extended,15 V 单向 TVS，SMB，1 为阴极。
 D3,1,SMAJ20A,hongjiacheng,SMAJ20A,Diode_SMD:D_SMA,B,C41376408,Yes,Preferred Extended,20 V 单向 TVS，SMA，1 为阴极。热插拔峰值以带线实测为准。
 D4,1,23-22B/R7G6C-A30/2T,Everlight Elec,23-22B/R7G6C-A30/2T,PeacockBattery:LED_Everlight_23-22B_Reverse,B,C424084,Yes,Extended,"B 面反向出光，光轴居中于 (52.00, 2.00) mm。1=绿阳，2=绿阴，3=红阳，4=红阴。"
 D5,1,PESD3V3U1UA,Nexperia,"PESD3V3U1UA,115",Diode_SMD:D_SOD-323,B,C403915,Yes,Extended,SDA 对地 ESD，1 为阴极。
 D6,1,PESD3V3U1UA,Nexperia,"PESD3V3U1UA,115",Diode_SMD:D_SOD-323,B,C403915,Yes,Extended,SCL 对地 ESD，1 为阴极。
+D7,1,BAT54C,Jiangsu Changjing Electronics,BAT54C,Package_TO_SOT_SMD:SOT-23,B,C2135,Yes,Extended,XT30_SW 与 WAKE_5V 合路，共阴极。
 F1,1,20A / 65V,Littelfuse,0451020.MRL,Fuse:Fuse_Littelfuse-NANO2-451_453,B,C178980,Yes,Extended,20 A 快断保险丝，按装壳温度复核降额
 J1,1,USB4125-GF-A,Global Connector Technology,USB4125-GF-A,PeacockBattery:USB4125_HandAssembly,B,C3151650,No,Extended,B 面手焊。不下钢网。六触点双 CC，保留插口中心及 0.80 mm 外伸。
 J2,1,XT30PW-M30.G.Y,Changzhou Amass Elec,XT30PW-M30.G.Y,PeacockBattery:XT30PW-M_Edge,B,C431092,No,Extended,B 面手焊。保留 5.00 mm 脚距及原固定孔，1=P+，2=P−。
 J3,1,10k BMS sensor,通用,"10k NTC, insulated leads",Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,,No,N/A,需另装电芯贴附式 10 kΩ NTC，温度动作点需标定
 J4,1,103AT-2,SEMITEC,103AT-2,Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,,No,N/A,外置绝缘贴附 NTC，10 kΩ / 3435 K，核对接头极性与引脚底面净空。
 J5,1,SM04B-SRSS-TB(LF)(SN),JST,SM04B-SRSS-TB(LF)(SN),PeacockBattery:JST_SH_SM04B_HandAssembly,B,C160404,No,Extended,B 面手焊。不下钢网。1=CHG_5V，2=SDA，3=SCL，4=GND。
+J6,1,J_BTN,Hand assembly,Wire-to-pad,PeacockBattery:Grip_1x04_SolderPads,B,N/A,No,N/A,J_BTN，四路手焊，B 面无锡膏。红 1、黑 2、黄 3、绿 4。
 L1,1,2.2uH,APV Technologies,APH0530C-2R2M-TCD5,PeacockBattery:L_APV_APH0530C,B,C50326270,Yes,Extended,2.2 µH，±20%，DCR ≤14.5 mΩ，Isat 10.3 A 典型，最大高 3.1 mm。
 L2,1,4.7uH,YJYCOIN,YSPI0730-4R7M,PeacockBattery:L_YJYCOIN_YSPI0730,B,C351117,Yes,Extended,4.7 µH，±20%，DCR ≤40 mΩ，Isat 9 A 典型，最大高 3.0 mm。
 Q1,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
 Q2,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
 Q3,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
 Q4,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
+Q5,1,HY19P03D,HUAYI,HY19P03D,Package_TO_SOT_SMD:TO-252-2,B,C122492,Yes,Extended,XT30 正端关断，Q5/Q6 并联。
+Q6,1,HY19P03D,HUAYI,HY19P03D,Package_TO_SOT_SMD:TO-252-2,B,C122492,Yes,Extended,XT30 正端关断，Q5/Q6 并联。
+Q7,1,2N7002,Jiangsu Changjing Electronics,2N7002,Package_TO_SOT_SMD:SOT-23,B,C8545,Yes,Basic,
 R1,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
 R2,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
 R3,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
@@ -96,6 +108,10 @@ R38,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B
 R39,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,OVLO 下臂微调支路，与 R38 并联。
 R40,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,BMS TRH 微调支路，与 R41 并联。
 R41,1,30k 1%,UNI ROYAL Uniroyal Elec,0603WAF3002T5E,Resistor_SMD:R_0603_1608Metric,B,C22984,Yes,Basic,BMS TRH 微调支路，与 R40 并联。
+R42,1,10k,UNI-ROYAL,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,
+R43,1,100k,UNI-ROYAL,0603WAF1003T5E,Resistor_SMD:R_0603_1608Metric,B,C25803,Yes,Basic,
+R44,1,10k,UNI-ROYAL,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,
+R45,1,10k,UNI-ROYAL,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,
 U1,1,BM3451TNDC-T20B,BYD Semiconductor,BM3451TNDC-T20B,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,B,C2686222,Yes,Extended,国产 BYD 3S 保护。嘉立创公开目录库存显示为 0，需确认补货、预订或备料途径。
 U2,1,HUSB238_002DD,Hynetek,HUSB238_002DD,Package_DFN_QFN:WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,B,C7471904,Yes,Extended,I²C 0x08。VSET 接地，默认 5 V，主控按源 PDO 请求 15 V。
 U3,1,TPS259470ARPWR,Texas Instruments,TPS259470ARPWR,PeacockBattery:TI_RPW0010A,B,C3662799,Yes,Extended,OVLO、反向阻断、压控斜率及约 2.7 A 限流。
@@ -103,4 +119,6 @@ U4,1,BQ25798RQMR,TI,BQ25798RQMR,Package_DFN_QFN:Texas_RQM0029A_VQFN-29_4x4mm_P0.
 U5,1,AP63205WU-7,Diodes Incorporated,AP63205WU-7,Package_TO_SOT_SMD:TSOT-23-6,B,C2071056,Yes,Extended,固定 5.0 V，1.1 MHz，3.8–32 V 输入，同步 Buck，近 100% 占空比低压差模式。
 U6,1,LM66100DCKR,Texas Instruments,LM66100DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,B,C2869734,Yes,Extended,CE 接输出，隔离 CHG_5V 反灌。
 U7,1,SN74LVC2G66DCUR,Texas Instruments,SN74LVC2G66DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,B,C181970,Yes,Extended,USB 供电时接通 I²C，供电掉电隔离。
-CELL,3,Ø18.50 × 66.50–68.00 mm 凸口 18650,待选,同型号、同批次动力电芯,可拆卸,F,,No,N/A,整组一致性及 15 A 稳态和 20 A 脉冲额定按最终电芯验收。
+U8,1,TCA9534PWR,Texas Instruments,TCA9534PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,B,C783615,Yes,Extended,0x20，地址脚接 P−。
+U9,1,TPS70933DBVR,Texas Instruments,TPS70933DBVR,Package_TO_SOT_SMD:SOT-23-5,B,C89347,Yes,Extended,低功耗 3.3 V，检查 C39 偏压下有效容量。
+U10,1,SN74LVC2G66DCUR,Texas Instruments,SN74LVC2G66DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,B,C181970,Yes,Extended,掉电隔离 I²C，复用 U7 料号。

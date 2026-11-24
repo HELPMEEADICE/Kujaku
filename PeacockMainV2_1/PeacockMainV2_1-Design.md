@@ -57,7 +57,37 @@ VBAT_SW 经 100 kΩ（C25803）至 AO3400A 漏极，漏极并 100 nF 至地。�
 
 用内部 HSI 运行采样 MCU，PF4/BOOT0 保持上电默认下拉配置。内部 VREFINT 为 ADC 的可测通道，转换满量程为 VCC。读取 VREFINT 后按校准值估算 VCC，再换算各采样通道。3.3 V 时 ADC 一码约 0.806 mV，折算每路约 16.1 mA，2 A 约 124 码。为每路保存独立的零点和增益，在多个 PWM 周期内覆盖高低电平并取平均。按对应采样窗口的 VBAT_SW 与该通道电流乘积估算母线侧支路功率，包含 PPTC、开关管和分流器路径损耗。标称量化步长与最终测量误差分别记录。VREFINT 采样时间和 ADC 校准遵从普冉参考手册。 [普冉 ADC 参考手册 §14](https://www.puyasemi.com/download_path/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/MCU%20%E5%BE%AE%E5%A4%84%E7%90%86%E5%99%A8/PY32F030_Reference_Manual_V1.6.pdf)
 
-ESP32-C3 以 V2 的 GPIO4/SDA、GPIO5/SCL 访问 0x40 和 0x41。U7 总放电仍使用 0x44，U9 PCA9685 使用 0x60，A2 地址预留沿用 V2。两颗 MCU 从同一源代码分别配置地址和通道组，经各自 SWD 烧录。
+ESP32-C3 以 V2 的 GPIO4/SDA、GPIO5/SCL 访问 0x40 和 0x41。两颗 MCU 从同一源代码分别配置地址和通道组，经各自 SWD 烧录。
+
+## A2 握把和充电唤醒
+
+J17 接 A2 J5，逐针直连。针 1 为 CHG_5V，针 2 为 SDA，针 3 为 SCL，针 4 为 GND。V2.1 装配时用本地绝缘短接线连接原 J14 的两个 `MASTER_SW` 焊盘，使 Q13/Q14 在有效 `VBAT_IN` 下开通。握把电源和模式开关都接 A2 J_BTN。 [A2 设计与针序](../PeacockBattery/A2/PeacockBattery-Design.md)
+
+| 7 位地址 | 设备 | 应答条件 |
+| --- | --- | --- |
+| 0x08 | A2 HUSB238 | A2 USB 供电 |
+| **0x20** | **A2 TCA9534** | XT30 或 A2 USB 供电 |
+| 0x40 | 右侧 PY32F030 | 3.3V_SYS |
+| 0x41 | 左侧 PY32F030 | 3.3V_SYS |
+| 0x44 | GXI340U / INA226 | 3.3V_SYS |
+| 0x60 | PCA9685 | 3.3V_SYS |
+| 0x6B | A2 BQ25798 | A2 USB 供电 |
+| 0x70 | PCA9685 默认 All Call | 组呼叫启用 |
+
+0x20 与各器件地址及默认组地址无冲突。SDA 的 R62/R81、SCL 的 R63/R82 均为 5.1 kΩ 并联，每线 2.55 kΩ。取 1% 上限 2.5755 kΩ，按 Fast-mode `t_r = 0.8473 × R × C`，300 ns 对应约 137 pF。3.3 V 下每线名义下拉电流约 1.29 mA，TCA9534 的 3 mA 下拉规格有余量。每线设计预算估算为 133 pF，包含主板节点 45 pF、A2 充电支路 34 pF、A2 按键支路 24 pF、两端 ESD 4 pF、走线和线束 26 pF。首件在两端测 SDA/SCL 的 30%–70% 上升时间，400 kHz 下验收值 ≤300 ns。首次联调可从 100 kHz 开始。 [NXP I²C 规范](https://assets.nexperia.com/documents/user-manual/UM10204.pdf) · [TI TCA9534](https://www.ti.com/lit/ds/symlink/tca9534.pdf) · [TI SN74LVC2G66](https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf)
+
+### 0x20 读取与手势
+
+1. 地址应答后依次写输出寄存器 `0x01 = 0x00`、极性寄存器 `0x02 = 0x00`、方向寄存器 `0x03 = 0x01`。P0 为输入，P1–P7 为低电平输出。
+2. 用重复 START 读输入寄存器 `0x00` 一字节。`bit0 = 0` 为按下，`bit0 = 1` 为释放。每 10 ms 采样，稳定 20 ms 后确认边沿。开机检测到按住时，先等释放再接受手势。
+3. 短按释放后等待 250 ms。窗口内没有第二次有效按下时切下一光效。窗口内第二次短按释放触发一次爆闪，同时取消单击。任一次持续按住满 600 ms 时切下一档声控灵敏度，触发一次，取消待定点击。
+4. 0x20 无应答时丢弃待定手势并重新探测。恢复应答后重新初始化，等待按键释放。固件只从 0x20 读取 SW_MODE，SW_PWR 由 A2 硬件动作。
+
+### 电源时序
+
+- SW_PWR 闭合后，A2 允许放电并接通 XT30。待 5V_SYS、3.3V_SYS 和主控复位稳定后初始化 0x20。有有效 `VBAT_SW` 时才启用灯效。
+- SW_PWR 断开后，A2 硬件关断 XT30 正端。仅电池供电时主板随电源下降复位。充电同时进行时，主板从 CHG_5V 保持供电，持续监测 `VBAT_SW`。检测到失效后关闭灯效、取消待处理爆闪，继续充电管理。
+- SW_PWR 处于 OFF 时插入 A2 USB-C，J17.1 仍可拉起 5V_SYS、3.3V_SYS 和 CHG_DET。主控保持 PCA9685 OE 禁用，待 A2 应答后读取 PD 和充电状态。拔掉 USB 时按 XT30 供电情况完成切换或掉电。仅插 J16 USB 且 A2 无供电时允许 0x20 无应答。
 
 ## SWD 裸焊盘
 

@@ -16,7 +16,7 @@ D6,1,USBLC6-2SC6-ES,Package_TO_SOT_SMD:SOT-23-6,ElecSuper,USBLC6-2SC6-ES,C518024
 "H1,H2,H3,H4",4,M3 / 3.2mm,MountingHole:MountingHole_3.2mm_M3,,,,No,N/A,,NPTH enclosure hardware.
 "J1,J2,J3,J4,J5,J6,J7,J8,J9,J10,J11,J12",12,GX12-2 / 18AWG,PeacockMainV2_1:GX12_Leadout_1x02_P5.00mm,,,,No,N/A,,Hand solder wiring to bare PCB pads.
 J13,1,BATTERY 16AWG,PeacockMainV2_1:Battery_16AWG,,,,No,N/A,,Hand solder wiring to bare PCB pads.
-J14,1,MASTER,PeacockMainV2_1:Remote_Switch,,,,No,N/A,,Hand solder wiring to bare PCB pads.
+J14,1,MASTER,PeacockMainV2_1:Remote_Switch,,,,No,N/A,,For the A2 grip assembly hand solder an insulated jumper between pads 1 and 2.
 J15,1,FLASH,PeacockMainV2_1:Remote_Switch,,,,No,N/A,,Hand solder wiring to bare PCB pads.
 J16,1,USB4145-03-0170-C,PeacockMainV2_1:USB_C_Receptacle_GCT_USB4145-03-0170-C_Vertical,GCT,USB4145-03-0170-C,C5181332,No,Extended,https://xonstorage.z8.web.core.windows.net/pdf/gct_usb4145030170c_apr22_xonlink.pdf,Hand solder. Vertical mating direction +Z. Four plated shell slots.
 J17,1,A1002WR-S-4P,Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,CJT Changjiang Connectors,A1002WR-S-4P,C239522,Yes,Extended,https://pese.oss-cn-shenzhen.aliyuncs.com/pdfs/2010160407_CJT-Changjiang-Connectors-A1002WR-S-10P_C239528.pdf,"CJT SH-compatible side-entry, 1.00 mm. Verify mating to the A2 harness on first article."

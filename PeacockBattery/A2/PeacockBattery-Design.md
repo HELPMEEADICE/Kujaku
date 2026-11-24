@@ -1,6 +1,6 @@
 # 孔雀 3S 18650 四层电池板 A2
 
-2026-11-25。A2 降本版采用 B 面单面 SMT。KiCad 10.0.8 重填四层覆铜后复验，**ERC 0 错误、0 警告，DRC 0 违规、0 未连接，原理图–PCB 一致性 0 差异**。Gerber、钻孔和 CPL 共用板左下角原点，单位为 mm。
+2026-11-25。A2 握把接线更新采用 B 面单面 SMT。KiCad 10.0.8 重填四层覆铜后复验，**ERC 0 错误、0 警告，DRC 0 违规、0 未连接，原理图–PCB 一致性 0 差异**。Gerber、钻孔和 CPL 共用板左下角原点，单位为 mm。
 
 ## V3 安装基准
 
@@ -11,6 +11,7 @@
 | 板框 | 92.00 × 66.00，四角 R3.00，成品板厚 1.60 | 以 Edge.Cuts 中心线为加工基准 |
 | MH1–MH4 | (4.00, 62.00)、(88.00, 62.00)、(4.00, 4.00)、(88.00, 4.00) | Ø3.20 NPTH，四层 Ø6.00 禁走线、过孔及覆铜 |
 | J1 USB-C | 插口中心 (46.00, 0.00)，封装原点 (46.00, 2.60) | B 面 GCT USB4125-GF-A，沿 −Y 外伸 0.80 |
+| J6 / J_BTN | (35.80, 1.00)，KiCad (35.80, 65.00) | B 面四个直焊点，1.20 mm 节距，无钢网开口 |
 | D4 红绿 LED | 发光中心 (52.00, 2.00) | B 面反向贴装，向 F 面原 V3 光导出光 |
 | D4 透光窗口 | 中心 (52.00, 2.00)，1.76 × 1.86，四角 R0.50 | Edge.Cuts 内铣，非镀通 |
 | J2 XT30 | 插合面中心 (46.00, 66.00) | B 面 AMASS XT30PW-M30.G.Y |
@@ -37,28 +38,45 @@ Keystone 5209 是厚 0.30 mm、主体宽 10.00 mm 的镀镍磷青铜折弯片簧
 - 电芯底面的绝缘和支承合计上限为 **1.00 mm**，对应电芯轴高 10.25 mm 及 F 面最高点 **19.50 mm**。弹片主体名义高度 14.00 mm。总装配 Z 范围为 **−3.10 至 +19.50 mm**，其中负值包括 1.60 mm 板厚及最多 1.50 mm 下伸。V3 DWG 实体检验给出三排电芯的名义后盖垂直净距均为 **3.50 mm**。
 - 以自由触点间距 64.0–64.5 mm 作为试装基准，66.50–68.00 mm 电芯每侧名义压缩约 1.0–2.0 mm。实际预紧、凸帽接触位置、绝缘、拆装扫掠和反复插拔后的稳定性按装机样件复验。
 
+## 握把接线
+
+从整机正面观察，左侧圆形 SW_PWR 使用保持式 SPST 干接点，右侧长条 SW_MODE 使用常开瞬时 SPST 干接点。J6 标为 J_BTN，采用外径约 0.66 mm 的细线手焊，并固定线皮以释放拉力。GND 为 P−。
+
+| 针 | 信号 | 线色 | 焊盘中心 (X, Y) mm | 握把端 |
+| --- | --- | --- | --- | --- |
+| 1 | SW_PWR_A | 红 | (34.00, 1.00) | SW_PWR 端子 A |
+| 2 | SW_PWR_B | 黑 | (35.20, 1.00) | SW_PWR 端子 B |
+| 3 | SW_MODE_IN | 黄 | (36.40, 1.00) | SW_MODE 信号端 |
+| 4 | GND | 绿 | (37.60, 1.00) | SW_MODE 回路端 |
+
+- R42 为串联限流 10 kΩ，R43 为 100 kΩ 下拉，C36 为 100 nF。闭合时 SW_PWR_B 驱动 BM3451 的 DOIN 和 Q7，名义 RC 为 0.91 ms。断开时 R43 放电，名义 RC 为 10 ms。握把触点闭合时约流过 0.1 mA。电池模式下，DOIN 低电平关断 Q1/Q2 放电支路，Q3/Q4 继续由 CO 管理充电保护。 [BYD BM3451](https://www.bydmicro.com/params/field/preview/PDF_PRODUCT_202304141002.pdf)
+- BM3451 检测到充电器时，VM 可以屏蔽 DOIN。Q7 和 R44 独立控制 XT30 正端的 Q5/Q6。SW_PWR 打开后，R44 将两颗 P 沟道管的栅极拉回源极，隔开 P+ 与 J2.1 的 `XT30_SW`。USB-C 仍可充电，J5 保留 CHG_5V 唤醒。SW_PWR 闭合且电池保护允许时，J2 输出实际 3S 端电压，满充名义 12.60 V。保护 IC 继续由电芯供电，关断静态电流和 XT30 漏电由样板测量。 [BYD BM3451](https://www.bydmicro.com/params/field/preview/PDF_PRODUCT_202304141002.pdf) · [HY19P03D](https://jlcpcb.com/partdetail/HY19P03D/C122492)
+- D7 将 `XT30_SW` 和 `WAKE_5V` 合路到 U9 TPS70933，得到 `BTN_3V3`。U8 TCA9534PWR 支持 400 kHz，使用 C37 100 nF 去耦，A0/A1/A2 接 P−，硬件 7 位地址为 0x20。R45 10 kΩ 上拉和 C40 100 nF 的名义 RC 为 1 ms，P0 按下读 0。U10 将这条支路并联到 J5 原 SDA/SCL，掉电时隔离 IO 扩展器。 [TI TCA9534](https://www.ti.com/lit/ds/symlink/tca9534.pdf) · [TI TPS709](https://www.ti.com/lit/ds/symlink/tps709.pdf) · [TI SN74LVC2G66](https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf)
+- V3 修订版前壳的两道侧壁槽为 **2.0 mm 宽 × 1.5 mm 深**。J_BTN 在 DWG WCS 中的焊盘坐标为 Y = −41.00、Z = 7.00 mm，X 分别为 −12.00、−10.80、−9.60、−8.40 mm。两对线在握把顶部按不同高度汇合。名义装配模型中与 USB-C 延长线及插头的最小表面间距约 **2.32 mm**。首件用实际线皮和开关焊脚复核间隙及拉力。
+
 ## J5 连接及遥测
 
-| 针脚 | A2 信号 | 焊盘中心 (X, Y) | MainV2 J17 |
+| 针脚 | A2 信号 | 焊盘中心 (X, Y) | MainV2.1 J17 |
 | --- | --- | --- | --- |
 | 1 | CHG_5V | (55.80, 60.55) | 1，CHG_5V |
 | 2 | I2C_SDA | (56.80, 60.55) | 2，SDA |
 | 3 | I2C_SCL | (57.80, 60.55) | 3，SCL |
 | 4 | GND | (58.80, 60.55) | 4，GND |
 
-两端按针号直连。信号线各有 PESD3V3U1UA 对地 ESD，BQ25798 的 SDA/SCL 各串 33 Ω。电池板无 I²C 上拉，沿用 MainV2 的 2.2 kΩ 至 3.3V_SYS。USB 供电时 U7 SN74LVC2G66 接通电池板遥测，未插 USB 时隔离掉电设备。P− 为 USB、BQ25798、唤醒电源和跨板通信共同参考地。 [MainV2 J17 设计](../../PeacockMainV2/PeacockMainV2-Design.md) · [TI SN74LVC2G66](https://www.ti.com/lit/ds/symlink/sn74lvc2g66.pdf)
+两端按针号直连。信号线各有 PESD3V3U1UA 对地 ESD，BQ25798 的 SDA/SCL 各串 33 Ω。V2.1 每线两颗 5.1 kΩ 并联至 3.3V_SYS。A2 USB 供电时 U7 接通充电遥测，U10 独立接通按键支路。P− 为 USB、BQ25798、唤醒电源和跨板通信共同参考地。 [V2.1 J17、完整地址表及读取协议](../../PeacockMainV2_1/PeacockMainV2_1-Design.md)
 
 | 7 位 I²C 地址 | 设备 |
 | --- | --- |
 | **0x08** | **标准 HUSB238_002DD** |
-| 0x40–0x43 | MainV2 INA3221 ×4 |
+| **0x20** | **A2 TCA9534PWR 握把输入** |
+| 0x40 / 0x41 | V2.1 右侧 / 左侧 PY32F030 |
 | 0x44 | MainV2 INA226 |
 | 0x45 | 预留 |
 | 0x60 | MainV2 PCA9685 |
 | **0x6B** | **BQ25798RQMR** |
 | 0x70 | PCA9685 上电默认 All Call |
 
-HUSB238 使用 0x08，和 0x42 的 INA3221 无冲突。BQ25798 的 0x6B 唯一。主控使能 ADC 后读 0x31 IBUS、0x33 IBAT、0x35 VBUS、0x3B VBAT、0x41 TDIE。IBUS 包括充电器支路输入电流，系统总取电还含独立唤醒支路。 [HUSB238 寄存器](https://en.hynetek.com/uploadfiles/site/219/news/eb6cc420-847e-40ec-a352-a86fbeedd331.pdf) · [BQ25798 寄存器表](https://www.ti.com/lit/ds/symlink/bq25798.pdf)
+主控使能充电 ADC 后读 0x31 IBUS、0x33 IBAT、0x35 VBUS、0x3B VBAT、0x41 TDIE。IBUS 包括充电器支路输入电流，系统总取电还含独立唤醒支路。 [HUSB238 寄存器](https://en.hynetek.com/uploadfiles/site/219/news/eb6cc420-847e-40ec-a352-a86fbeedd331.pdf) · [BQ25798 寄存器表](https://www.ti.com/lit/ds/symlink/bq25798.pdf)
 
 ## PD 充电及唤醒
 
@@ -74,24 +92,24 @@ HUSB238 使用 0x08，和 0x42 的 INA3221 无冲突。BQ25798 的 0x6B 唯一�
 | --- | --- | --- |
 | F.Cu | 70 µm | 电芯串联铜皮、触点焊盘与 BMS 汇流 |
 | In1.Cu | 35 µm | P−/GND 参考地，覆铜后为单一连通平面 |
-| In2.Cu | 35 µm | P+ 主平面及独立受保护 VBUS 岛。P+ 接 XT30 正极 |
+| In2.Cu | 35 µm | P+ 主平面、受保护 VBUS 岛和独立 XT30_SW 岛 |
 | B.Cu | 70 µm | 充电与保护器件、局部回流与大电流铜皮 |
 
-叠构为 0.21 / 0.95 / 0.21 mm 的对称介质厚度。ENIG。版图中 B+ 到 P+ 仅经 F1，B−、SHUNT_HI、DRAIN_LINK 和 P− 各自独立。连续 P− 内平面不旁路分流器或保护 MOSFET。
+叠构为 0.21 / 0.95 / 0.21 mm 的对称介质厚度。ENIG。B+ 到 P+ 经 F1，P+ 到 XT30_SW 经 Q5/Q6。B−、SHUNT_HI、DRAIN_LINK 和 P− 各自独立。XT30_SW 的 B.Cu 和 In2.Cu 铜区均连续，P− 的 In1.Cu 保持连续。
 
 保留国产 BYD BM3451TNDC-T20B 与 R11 的 4 mΩ Kelvin 采样。R5 + (R40 ∥ R41) 使 TRH 等效为 6.975 kΩ。Q1–Q4 使用国产 KND3404C，40 V，RDS(on) 最大 9 mΩ @ VGS=4.5 V。四管沿用原 TO-252 焊盘、位置和大电流过孔阵列。Q1/Q2 的 SHUNT_HI、Q3/Q4 的 P− 源脚直连覆铜，F.Cu 汇流主段有效宽度分别为 **5.05 mm 和 4.60 mm**。两组各有 **16 颗 0.40/0.80 mm** 源极换层过孔。封装焊盘入口受引脚几何限制。In1.Cu 另承担 P− 回流和数字参考。15 A 稳态及 20 A 脉冲的接触压降和温升仍以实测为准。XT30PW-M 的厂商额定为 15 A，瞬时额定为 30 A。MOSFET 替换后复验关断波形、短路保护及装壳温升。 [BYD BM3451](https://www.bydmicro.com/params/field/preview/PDF_PRODUCT_202304141002.pdf) · [KIA KND3404C](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368) · [AMASS 规格](https://www.triopak.fi/files/product/Amass/XT30PW%20SPEC.pdf)
 
 ## 嘉立创贴装与采购
 
-93 个机贴位号全部位于 B 面。BT1–BT6 和 J1–J5 在全量 BOM 中标为 SMT_Populate = No，用于手工装配。J1、J5 取消钢网开口，铜焊盘和接口坐标沿用原设计。生产 SMT BOM 与 CPL 的位号完全一致，制造 ZIP 仅含 B 面钢网。 [嘉立创 KiCad 10 文件格式](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad)
+110 个机贴位号全部位于 B 面。BT1–BT6 和 J1–J6 在全量 BOM 中标为 SMT_Populate = No，用于手工装配。J1、J5、J6 无钢网开口。生产 SMT BOM 与 CPL 的位号完全一致，制造 ZIP 仅含 B 面钢网。 [嘉立创 KiCad 10 文件格式](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad)
 
 D4 为 Everlight 反向出光 LED。B 面贴装后穿过铣窗向 F 面光导发光。铣窗沿板 X/Y 分别为 1.76/1.86 mm，内角 R0.50。D4 局部板边规则覆盖铣窗和附近逃线。厂商针脚为 1 绿阳、2 绿阴、3 红阳、4 红阴。首件核对透光窗尺寸、装壳净空、光导亮度和贴片预览中的 1 脚。 [Everlight 封装图](https://en.everlight.com/wp-content/plugins/ItemRelationship/product_files/pdf/DSE-0008845-23-22B-R7G6C-A30-2T-V5.pdf) · [嘉立创工艺能力](https://jlcpcb.com/capabilities/Capabilities?type=1)
 
 | SMT 库别 | 料号数 | 贴装位号数 |
 | --- | ---: | ---: |
-| 基础库 | 23 / 39（59.0%） | 73 / 93（78.5%） |
+| 基础库 | 24 / 44（54.5%） | 84 / 110（76.4%） |
 | 优选扩展 | 2 | 2 |
-| 收费扩展 | 14 | 18 |
+| 收费扩展 | 18 | 24 |
 
 与 PeacockMainV2 当前 SMT BOM 核对，共用 **9 个基础库料号** C12891、C14663、C15849、C15850、C23140、C23186、C25803、C25804、C45783。C23140 是 33 Ω。C23345 是 22 Ω，继续用于原 BMS 栅极阻尼。C116592 是最高输入 17 V 的 TPS563201，宽输入唤醒支路采用 AP63205。 [MainV2 SMT BOM](../../PeacockMainV2/PeacockMainV2-SMT-BOM.csv) · [33 Ω 料号](https://jlcpcb.com/partdetail/0603WAF330JT5E/C23140) · [22 Ω 料号](https://jlcpcb.com/partdetail/C23345) · [AP63205 料号](https://jlcpcb.com/partdetail/AP63205WU-7/C2071056)
 
@@ -114,9 +132,13 @@ C7–C9 保持 10 nF 定时和滤波，C11 保持 4.7 nF 以维持输入斜率�
 | U4 | BQ25798RQMR | C2876593 | 扩展 |
 | U5 | AP63205WU-7 | C2071056 | 扩展 |
 | U6 | LM66100DCKR | C2869734 | 扩展 |
-| U7 | SN74LVC2G66DCUR | C181970 | 扩展 |
+| U7, U10 | SN74LVC2G66DCUR | C181970 | 扩展 |
+| D7 | BAT54C | C2135 | 扩展 |
+| Q5, Q6 | HY19P03D | C122492 | 扩展 |
+| U8 | TCA9534PWR | C783615 | 扩展 |
+| U9 | TPS70933DBVR | C89347 | 扩展 |
 
-按嘉立创国内经济型公开口径，收费扩展每个料号 20 元。以原 A2 的通用阻值按等值常备料号回填，并假设 J1/J5 原拟交给贴片厂装配，收费料号从约 28 种降到 14 种，**预计每单换料费从 560 元降到 280 元，约省 280 元（50%）**。若旧板 J1、J5 已经手焊，则同口径约省 240 元。估算只含换料费，库别、优惠及实际报价以下单页面为准。 [嘉立创换料费口径](https://m.jlc.com/portal/q1i38538.html)
+握把控制增加四种收费扩展料号。J_BTN 手焊，U10 与 U7 共用已有料号。库别、优惠及实际报价以下单页面为准。 [嘉立创换料费口径](https://m.jlc.com/portal/q1i38538.html)
 
 U1 C2686222 是原 A2 的低价国产 BYD 型号。嘉立创公开目录显示库存 0，需确认补货、预订或代料入库后才能安排完整 PCBA。U3 C3662799 有立创商城供货记录，嘉立创工厂库存和交期单独核对。库别按嘉立创目录快照和查到的官方产品页统计。 [嘉立创 BYD 目录](https://jlcpcb.com/parts/2nd/Others/New_Arrivals_3286?Manufacturer=BYD) · [嘉立创代料入库](https://jlcpcb.com/help/article/how-to-consign-parts-to-jlcpcb-from-mainland-china) · [立创商城 TPS259470ARPWR](https://www.lcsc.com/product-detail/C3662799.html)
 
@@ -128,6 +150,11 @@ U1 C2686222 是原 A2 的低价国产 BYD 型号。嘉立创公开目录显示�
 | KiCad DRC，重填后已保存 | 0 违规，0 未连接 |
 | 原理图与 PCB 一致性 | 0 差异 |
 | CAM | 四层铜、B 面钢网及 1.60 mm 层叠已核验。Excellon 保留 6 个 5.40 × 0.80 mm 镀通电芯槽和 4 个 Ø3.20 mm 非镀通安装孔。D4 窗口在 Edge.Cuts |
-| V3 机械 | 原版六个修剪焊耳及三节 68 mm 电芯已通过名义实体干涉检查。此次沿用原安装基准，首件复测 D4 光导、实际线束、供电回落及温升 |
+| V3 机械 | 修订版前壳已开设双槽。Blender 中四路信号线接至两开关和 J_BTN |
+| 首件电气 | 在电池、充电、两者并存及主板独立 USB 四种工况下，测关断静态电流、XT30 残压和漏电、BMS DO/CO 和 Q5/Q6 栅源波形、USB 插拔及 CHG_5V 唤醒 |
+| 首件载流 | 按 XT30 额定条件做 15 A 装壳温升和压降试验，校核 20 A 脉冲下的 Q5/Q6、分流器及过孔余量 |
 
 板厂按 `PeacockBattery-Fabrication.txt` 和 Edge.Cuts 中心线加工。Gerber 作业文件的包围框含板框线宽，工件尺寸为 92.00 × 66.00 mm。下单时确认 2 oz 外铜工艺可接受 0.15 mm 最小线宽与铜间距。
+
+- [Gerber 与 PTH/NPTH 钻孔](PeacockBattery-Gerber.zip) · [SMT BOM](PeacockBattery-SMT-BOM.csv) · [B 面 CPL](PeacockBattery-CPL.csv) · [全量 BOM](PeacockBattery-BOM.csv)
+- [ERC](PeacockBattery-ERC.rpt) · [DRC](PeacockBattery-DRC.rpt)
