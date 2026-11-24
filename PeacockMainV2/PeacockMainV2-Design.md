@@ -2,7 +2,7 @@
 
 独立 KiCad 10 工程，3S 锂电池输入，12 路灯管各自 PWM 和电流采样。
 
-**当前 PCB 仍有 20 项未连接，暂缓打样。** 硬件接口支持 BLE 控制、爆闪及 I²S 拾音，运行行为由固件实现。
+**当前 PCB 有 8 项未连接、0 条 DRC 违规，打样暂缓。** 硬件接口支持 BLE 控制、爆闪及 I²S 拾音，运行行为由固件实现。
 
 ## 机械基准
 
@@ -15,14 +15,14 @@
 | H3、H4 | (+32.865160, 53.631066)、(−32.865160, 53.631066) |
 | 孔与禁布 | 四孔均为 Ø3.20 mm 非金属化。V1 的四个 Ø6.00 mm 双层禁走线、过孔和铺铜多边形逐一复制。 |
 | J1–J12 | 复用 V1 焊盘中心与方向。中心半径 84.00 mm，从右向左为 7.5°、22.5° 至 172.5°，步进 15°。焊盘间距 5.00 mm，1 为正，2 为各路 MOSFET 开关负极。 |
-| 扩展腹地 | 名义直边 Y=34.00，原 R58.00 的交点 X=±46.989361。名义宽 93.978721 mm，原内弧顶点到新直边深 24.00 mm。内弧到直边的 R3 圆角中心为 (±45.431267, 31.00)，直边实际始于 X=±45.431267。内弧到 Y=0 底脚用 R3，底脚切点 X=±60.926185。 |
-| XT30 槽 | 名义 X=−15.00 至 +15.00、Y=34.00 至 44.00，宽 30.00、深 10.00。四个 R3 圆角，Y=34.00 的槽口切点 X=±18.00，竖壁 Y=37.00 至 41.00，槽顶直线 X=±12.00。与 A1 顶边 Y=24.00 的设计间隙为腹地 10.00、槽顶 20.00。 |
+| 扩展腹地 | 双翼名义直边 Y=27.00 mm。R58.00 与该直线的理论交点为 X=±51.332251 mm。弧脚至翼底的 R3 切接圆角中心为 (±49.487372, 24.00) mm。左右平直段分别为 X=−49.487372 至 −19.00 和 +19.00 至 +49.487372 mm。Y=0 底脚切点 X=±60.926185 mm。板面积净增约 446.3 mm²。 |
+| XT30 / J17 槽 | 名义槽壁 X=±16.00 mm，槽口 Y=27.00 mm，槽顶 Y=44.00 mm。四角 R3。实际竖直段 Y=30.00 至 41.00 mm，槽顶平直段 X=−13.00 至 +13.00 mm。翼底距电池板 Y=24.00 mm 顶边 3.00 mm。槽顶距电池板顶边 20.00 mm。 |
 | J13 电源线 | 焊盘中心 (−3.90, 48.00) 为 VBAT_IN，(+3.90, 48.00) 为 GND。直接焊 16AWG，线缆在外壳上做应力释放。 |
 | 调试 USB-C J16 | USB4105-GF-A，F 面，封装中心 (21.40, 37.45)，插入方向朝 −Y。插口与外壳、插头护套扫掠空间待实装复核。 |
 | INMP441 U10 | F 面，封装中心 (+51.70, 36.25)，声孔中心 (+50.41, 36.25)。声孔 KiCad 坐标为 (160.41, 78.75)。底面拾音。厂商推荐通孔 Ø0.50–1.00 mm，封装接地环外径 Ø1.56 mm。居中的 Ø1.50 mm 孔只留下约 0.03 mm 名义接触宽，因此采用 Ø0.80 mm NPTH 和环形接地焊盘。孔壁无金属化，禁止堵孔。 |
 | Z 高度 | 电路板正面最高名义元件为 C1/C2，Panasonic EEH-ZA1E221P，罐体高度 10.2 mm。高度限值 15.0 mm。器件均置于 F 面，背面有穿孔焊接与加固铜带的装配空间。 |
 
-外弧、底脚和孔位已按 KiCad 数据配准。新增腹地、插头与线束扫掠、后盖内部结构的实体装配检查尚待完成。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [TDK INMP441 图 14–16](https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf) · [GCT USB4105 工程图](https://gct.co/files/drawings/usb4105.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
+新板框及安装孔按 V3 DWG 的 Z=7.00–8.60 mm 主板安装层生成实体。主板板材与前壳、后盖、A1 板体、XT30 配对插头参考包络及三节电芯均无相交。A2 按 Y=+24.00 mm 顶边包络核算。J17 排线的实际插拔和弯折空间需用样件确认。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [TDK INMP441 图 14–16](https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf) · [GCT USB4105 工程图](https://gct.co/files/drawings/usb4105.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
 
 ## 供电与通道
 
@@ -75,7 +75,7 @@ SDA、SCL 各配一只典型 2.6 pF 的 PESD3V3U1UA，主板各用 2.2 kΩ 上�
 | 18 / 19 | 原生 USB D− / D+，各串 22 Ω，USBLC6-2SC6 ESD。 |
 | EN | 10 kΩ 上拉、1 µF、SW2 复位按钮。 |
 
-天线朝 −Y，外侧覆盖双层禁布。模组紧贴腹地边缘，射频保持区域受 PCB 原厂推荐区、底板外缘和模块引脚限制。装壳需用最终 XT30 线束位置验证 BLE RSSI。 [Espressif 硬件检查表](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html) · [Espressif PCB 天线布置](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/pcb-layout-design.html)
+U8 封装中心位于 (+39.20, +35.85) mm，天线朝 −Y，主天线及两侧规则区随模组下移 5.75 mm。F.Cu 和 B.Cu 均禁止天线区内的走线、过孔、焊盘及铺铜。装壳需用最终 XT30 线束位置验证 BLE RSSI。 [Espressif 硬件检查表](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html) · [Espressif PCB 天线布置](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/pcb-layout-design.html)
 
 ## 大电流走线与阻焊开窗
 
@@ -89,9 +89,9 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 ## 信号布线规则
 
 - PWM、栅极、采样、I²C、I²S、USB 及控制信号铜线为 0.20 mm，电气间距最小 0.20 mm，信号过孔钻孔 Ø0.30 mm、铜盘 Ø0.60 mm。
-- B.Cu 有 12 段信号走线超过 8 mm。最长单段为 `/Power/MASTER_SW` 的 24.77 mm，本轮新增的 I²C 段中最长为 `I2C_SCL` 的 14.52 mm。I²C 支路绕开电源母线及模组下方参考地保护区。
-- ESP32-C3 模组及 INMP441 本体下方设 B.Cu 规则区，阻止信号走线和过孔穿越，允许 GND 铺铜和缝合。两面 GND 铺铜的间距与最小铜皮宽度均为 0.20 mm。本轮增设 10 枚 Ø0.30 mm 钻孔、Ø0.60 mm 铜盘的地过孔，重灌后 GND 未连接项为 0。
-- VBAT_IN 外环冗余绕线已清理。高电流母线继续采用上表铜宽、阻焊开窗和换层过孔阵列。
+- U9 封装中心位于 (−25.50, +32.80) mm，C20 位于 (−19.40, +29.50) mm。固件按下表驱动物理通道。
+- ESP32-C3 天线侧本体及 INMP441 下方保留 B.Cu 接地参考规则区。U8 的本体规则区在上排焊盘侧留出 2.45 mm 换层空间。F.Cu 与 B.Cu 的 GND 铺铜按 0.20 mm 间距及最小铜宽重新灌注，GND 未连接项为 0。
+- VBAT_IN 外环冗余绕线已清理。中央 U 槽右上角附近的 B.Cu VBAT_IN 共用折点从 KiCad Y=70.465 mm 移至 Y=70.365 mm，以满足 0.28 mm 板边间距。高电流母线继续采用上表铜宽、阻焊开窗和换层过孔阵列。
 - `3.3V_SYS`、`I2C_SDA` 和 `I2C_SCL` 均已连通。INMP441 的 `/Control/MIC_VDD` 经 R78 取电，供电支路已连通。D7 移至 J15 附近，使 J15 的输入保护支路就近接入。
 
 ## 采样走线复核
@@ -104,39 +104,41 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 
 | 检查 | 当前结果 |
 | --- | --- |
-| KiCad 10.0.8 ERC | **0 错误、0 警告** |
-| KiCad 10.0.8 完整 DRC | **0 条规则违规、20 项未连接**，其中 PWM 10 项、公共控制及 I²S 10 项。 |
+| KiCad 10.0.8 完整 ERC | **0 错误、0 警告** |
+| KiCad 10.0.8 完整 DRC | **0 条规则违规、8 项未连接** |
 | 原理图和 PCB 一致性 | **0 差异** |
-| 机械配准 | 外框、H1–H4、J1–J12、天线禁布区、两面 3.20 mm 阻焊开窗及锁定的主干铜与布线前逐项对照通过。 |
+| 机械配准 | R92.50 外弧、H1–H4、J1–J12、U10 和两面 3.20 mm 阻焊开窗已与改版前逐项对比。 |
 
-PCA9685 沿用 LED0–LED11 对应 CH1–CH12 的顺序。CH4、CH9 的 PWM 已接通。其余通道的断点集中于 U9 扇出和功率铜附近的换层通道。公共控制和 I²S 断点集中于 ESP32-C3 周围的换层与引出空间。
+### PCA9685 固件映射
+
+| 物理通道 | 原理图网络 | PCA9685 输出 | U9 焊盘 |
+| --- | --- | --- | --- |
+| CH1 | `PWM_1` | LED11 | 18 |
+| CH2 | `PWM_2` | LED10 | 17 |
+| CH3 | `PWM_3` | LED9 | 16 |
+| CH4 | `PWM_4` | LED8 | 15 |
+| CH5 | `PWM_5` | LED0 | 6 |
+| CH6 | `PWM_6` | LED1 | 7 |
+| CH7 | `PWM_7` | LED2 | 8 |
+| CH8 | `PWM_8` | LED3 | 9 |
+| CH9 | `PWM_9` | LED4 | 10 |
+| CH10 | `PWM_10` | LED5 | 11 |
+| CH11 | `PWM_11` | LED6 | 12 |
+| CH12 | `PWM_12` | LED7 | 13 |
 
 ### 剩余未连接网络
 
-表中斜线分隔同一网络中彼此未连通的焊盘组。
+| 网络 | 未连接项 |
+| --- | ---: |
+| `/Control/CHG_DET` | 2 |
+| `/Control/PCA9685_nOE` | 1 |
+| `PWM_1` | 1 |
+| `PWM_2` | 1 |
+| `PWM_3` | 1 |
+| `PWM_5` | 1 |
+| `PWM_11` | 1 |
 
-| 网络 | 通道或功能 | 分属不同连通组的焊盘 |
-| --- | --- | --- |
-| `PWM_1` | CH1 | U9.6 / R13.1 |
-| `PWM_2` | CH2 | U9.7 / R14.1 |
-| `PWM_3` | CH3 | U9.8 / R15.1 |
-| `PWM_5` | CH5 | U9.10 / R17.1 |
-| `PWM_6` | CH6 | U9.11 / R18.1 |
-| `PWM_7` | CH7 | U9.12 / R19.1 |
-| `PWM_8` | CH8 | U9.13 / R20.1 |
-| `PWM_10` | CH10 | U9.16 / R22.1 |
-| `PWM_11` | CH11 | U9.17 / R23.1 |
-| `PWM_12` | CH12 | U9.18 / R24.1 |
-| `/Control/BOOT_IO2` | ESP32-C3 上电配置 | U8.5 / R64.2 |
-| `/Control/BOOT_IO9` | ESP32-C3 启动 | U8.23 / R66.2、SW1.1 |
-| `/Control/BTN_FLASH` | 爆闪输入 | U8.6、D7.1、J15.1 / R70.2、C19.1 |
-| `/Control/CHG_DET` | 充电检测，2 项 | U8.12 / R68.2 / R69.1 |
-| `/Control/MCU_EN` | ESP32-C3 使能 | U8.8 / C18.1、R67.2、SW2.1 |
-| `/Control/PCA9685_nOE` | 12 路 PWM 公共使能，2 项 | U8.13 / U9.23 / R61.2 |
-| `/Control/I2S_SCK` | INMP441 时钟 | U8.20 / U10.1 |
-| `/Control/I2S_WS` | INMP441 字选择 | U8.21 / U10.3 |
-
-未连接端点和坐标见 [KiCad DRC 报告](PeacockMainV2-DRC.rpt) 和 [DRC JSON](PeacockMainV2-DRC.json)。原理图检查记录见 [KiCad ERC 报告](PeacockMainV2-ERC.rpt)。
+端点坐标及检查记录见 [KiCad DRC 报告](PeacockMainV2-DRC.rpt)、[DRC JSON](PeacockMainV2-DRC.json) 和 [KiCad ERC 报告](PeacockMainV2-ERC.rpt)。
 
 ### 电池侧 A2 验证
 

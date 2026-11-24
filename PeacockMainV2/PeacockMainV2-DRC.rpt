@@ -1,90 +1,42 @@
 ** Drc report for PeacockMainV2.kicad_pcb **
-** Created on 2026-11-24T14:43:06 **
+** Created on 2026-11-24T18:20:37 **
 ** Report includes: Errors, Warnings, Exclusions **
 
 ** Found 0 DRC violations **
 
-** Found 20 unconnected pads **
+** Found 8 unconnected pads **
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(151.9750 mm, 63.3000 mm): Track [/Control/BOOT_IO9] on F.Cu, length 0.3629 mm
-    @(145.2000 mm, 65.8000 mm): Pad 23 [/Control/BOOT_IO9] of U8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(147.3000 mm, 58.4750 mm): Pad 2 [/Control/BOOT_IO2] of R64 on F.Cu
-    @(155.1000 mm, 71.5000 mm): Pad 5 [/Control/BOOT_IO2] of U8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(102.8735 mm, 38.7277 mm): Pad 1 [PWM_7] of R19 on F.Cu
-    @(127.3810 mm, 54.7520 mm): Track [PWM_7] on F.Cu, length 0.1669 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(155.1000 mm, 69.1000 mm): Pad 8 [/Control/MCU_EN] of U8 on F.Cu
-    @(140.2200 mm, 58.3200 mm): Track [/Control/MCU_EN] on F.Cu, length 1.1455 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(83.3756 mm, 43.1711 mm): Pad 1 [PWM_8] of R20 on F.Cu
-    @(127.8750 mm, 55.5625 mm): Pad 13 [PWM_8] of U9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(122.8571 mm, 39.4821 mm): Pad 1 [PWM_6] of R18 on F.Cu
-    @(126.5750 mm, 55.5625 mm): Pad 11 [PWM_6] of U9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(148.2150 mm, 58.1380 mm): Track [/Control/BTN_FLASH] on F.Cu, length 1.4760 mm
-    @(155.1000 mm, 70.7000 mm): Pad 6 [/Control/BTN_FLASH] of U8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
     @(122.6356 mm, 58.2106 mm): Track [/Control/CHG_DET] on F.Cu, length 0.0354 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(154.0000 mm, 65.8000 mm): Pad 12 [/Control/CHG_DET] of U8 on F.Cu
     @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(125.1250 mm, 57.5200 mm): Track [/Control/PCA9685_nOE] on F.Cu, length 0.0539 mm
-    @(123.1920 mm, 50.6220 mm): Track [/Control/PCA9685_nOE] on F.Cu, length 0.1180 mm
+    @(154.0000 mm, 71.5500 mm): Pad 12 [/Control/CHG_DET] of U8 on F.Cu
+    @(144.3250 mm, 47.4000 mm): Pad 1 [/Control/CHG_DET] of R69 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(153.2000 mm, 65.8000 mm): Track [/Control/PCA9685_nOE] on F.Cu, length 0.4219 mm
-    @(125.1750 mm, 57.5000 mm): Track [/Control/PCA9685_nOE] on F.Cu, length 0.5220 mm
+    @(91.1750 mm, 80.3000 mm): Pad 2 [/Control/PCA9685_nOE] of R61 on F.Cu
+    @(153.2000 mm, 71.5500 mm): Pad 13 [/Control/PCA9685_nOE] of U8 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(163.3710 mm, 77.1130 mm): Track [/Control/I2S_SCK] on F.Cu, length 0.0834 mm
-    @(147.6000 mm, 65.8000 mm): Track [/Control/I2S_SCK] on F.Cu, length 0.2109 mm
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(146.8000 mm, 65.8000 mm): Pad 21 [/Control/I2S_WS] of U8 on F.Cu
-    @(161.4600 mm, 77.4200 mm): Pad 3 [/Control/I2S_WS] of U10 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(123.9750 mm, 55.5625 mm): Pad 7 [PWM_2] of U9 on F.Cu
+    @(81.5750 mm, 85.0625 mm): Pad 17 [PWM_2] of U9 on F.Cu
     @(181.8289 mm, 88.3756 mm): Pad 1 [PWM_2] of R14 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(123.3250 mm, 55.5625 mm): Pad 6 [PWM_1] of U9 on F.Cu
+    @(82.2250 mm, 85.0625 mm): Pad 18 [PWM_1] of U9 on F.Cu
     @(186.2723 mm, 107.8735 mm): Pad 1 [PWM_1] of R13 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(34.4821 mm, 102.1429 mm): Pad 1 [PWM_12] of R24 on F.Cu
-    @(126.5750 mm, 49.8375 mm): Pad 18 [PWM_12] of U9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(124.6250 mm, 55.5625 mm): Pad 8 [PWM_3] of U9 on F.Cu
-    @(172.4905 mm, 70.6921 mm): Pad 1 [PWM_3] of R15 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(125.9250 mm, 55.5625 mm): Pad 10 [PWM_5] of U9 on F.Cu
+    @(85.4750 mm, 79.3375 mm): Pad 6 [PWM_5] of U9 on F.Cu
     @(140.0644 mm, 42.4829 mm): Pad 1 [PWM_5] of R17 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(51.0281 mm, 66.1065 mm): Pad 1 [PWM_10] of R22 on F.Cu
-    @(127.8750 mm, 49.8375 mm): Pad 16 [PWM_10] of U9 on F.Cu
+    @(110.5200 mm, 50.3040 mm): Track [PWM_11] on F.Cu, length 2.3040 mm
+    @(81.5750 mm, 79.3375 mm): Pad 12 [PWM_11] of U9 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(127.2250 mm, 49.8375 mm): Pad 17 [PWM_11] of U9 on F.Cu
-    @(121.1040 mm, 50.9520 mm): Track [PWM_11] on F.Cu, length 0.2036 mm
+    @(80.9250 mm, 85.0625 mm): Pad 16 [PWM_3] of U9 on F.Cu
+    @(172.4905 mm, 70.6921 mm): Pad 1 [PWM_3] of R15 on F.Cu
 
 ** Found 0 Footprint errors **
 
