@@ -7,7 +7,7 @@
 	(title_block
 		(title "Peacock | 3S 18650 PD battery board")
 		(rev "A2")
-		(date "2026-11-24")
+		(date "2026-11-25")
 		(comment 1 "Trim Keystone 5209 tabs before soldering. See assembly drawing notes.")
 	)
 	(lib_symbols
@@ -2500,7 +2500,7 @@
 				)
 			)
 		)
-		(symbol "PeacockBattery:AOD4184A"
+		(symbol "PeacockBattery:KND3404C"
 			(pin_names
 				(offset 0.82)
 			)
@@ -2515,7 +2515,7 @@
 					)
 				)
 			)
-			(property "Value" "AOD4184A"
+			(property "Value" "KND3404C"
 				(at 0 -6.35 0)
 				(effects
 					(font
@@ -2550,7 +2550,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AOD4184A_0_1"
+			(symbol "KND3404C_0_1"
 				(rectangle
 					(start -5.08 3.81)
 					(end 5.08 -3.81)
@@ -2563,7 +2563,7 @@
 					)
 				)
 			)
-			(symbol "AOD4184A_1_1"
+			(symbol "KND3404C_1_1"
 				(pin passive line
 					(at -7.62 1.27 0)
 					(length 2.54)
@@ -2620,7 +2620,7 @@
 				)
 			)
 		)
-		(symbol "PeacockBattery:APHBM2012SURKCGKC"
+		(symbol "PeacockBattery:Everlight_23-22B_RG"
 			(pin_names
 				(offset 0.82)
 			)
@@ -2635,7 +2635,7 @@
 					)
 				)
 			)
-			(property "Value" "APHBM2012SURKCGKC"
+			(property "Value" "23-22B/R7G6C-A30/2T"
 				(at 0 -6.35 0)
 				(effects
 					(font
@@ -2670,7 +2670,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "APHBM2012SURKCGKC_0_1"
+			(symbol "Everlight_23-22B_RG_0_1"
 				(rectangle
 					(start -6.35 3.81)
 					(end 6.35 -3.81)
@@ -2683,7 +2683,7 @@
 					)
 				)
 			)
-			(symbol "APHBM2012SURKCGKC_1_1"
+			(symbol "Everlight_23-22B_RG_1_1"
 				(pin passive line
 					(at -8.89 1.27 0)
 					(length 2.54)
@@ -2694,7 +2694,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 0.76 0.76)
@@ -2712,7 +2712,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 0.76 0.76)
@@ -2730,7 +2730,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 0.76 0.76)
@@ -2748,7 +2748,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 0.76 0.76)
@@ -4108,266 +4108,16 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:LMR33610ADDAR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LMR33610ADDAR"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias"
-				(at 0 -20.32 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr33610.pdf"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Simple Switcher Synchronous Buck Regulator, Vin=3.8-36V, Iout=1A, F=400kHz, Adjustable output voltage, HSOP-8"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "simple-switcher synchronous buck step-down voltage-regulator"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Texas*HSOP*1EP*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LMR33610ADDAR_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LMR33610ADDAR_1_1"
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "BOOT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
+		(symbol "PeacockBattery:AP63205WU-7" (pin_names (offset 0.5))
+		  (exclude_from_sim no) (in_bom yes) (on_board yes)
+		  (property "Reference" "U" (at 0 6.35 0) (effects (font (size 1.27 1.27))))
+		  (property "Value" "AP63205WU-7" (at 0 -6.35 0) (effects (font (size 1.27 1.27))))
+		  (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+		  (property "Datasheet" "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+		  (property "Description" "Fixed 5 V 2 A 32 V synchronous buck" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+		  (symbol "AP63205WU-7_0_1" (rectangle (start -7.62 6.35) (end 7.62 -5.08)
+		    (stroke (width 0.254) (type default)) (fill (type background))))
+		  (symbol "AP63205WU-7_1_1" (pin input line (at 10.16 -2.54 180) (length 2.54) (name "FB" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1))))) (pin input line (at -10.16 0 0) (length 2.54) (name "EN" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1))))) (pin power_in line (at -10.16 5.08 0) (length 2.54) (name "VIN" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1))))) (pin power_in line (at 0 -10.16 90) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "4" (effects (font (size 1 1))))) (pin output line (at 10.16 2.54 180) (length 2.54) (name "SW" (effects (font (size 1 1)))) (number "5" (effects (font (size 1 1))))) (pin input line (at 10.16 5.08 180) (length 2.54) (name "BST" (effects (font (size 1 1)))) (number "6" (effects (font (size 1 1))))))
 		)
 		(symbol "Power_Management:LM66100DCK"
 			(exclude_from_sim no)
@@ -5763,6 +5513,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d312ce50-1262-4dbd-8bf6-41b1524478fa")
 		(property "Reference" "BT1"
@@ -5811,6 +5562,13 @@
 		(pin "1"
 			(uuid "3656a447-2f27-4029-82ac-e9c3017afd94")
 		)
+		(property "SMT_Populate" "No"
+			(at 278.13 27.94 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -5847,6 +5605,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3ef3c625-fc60-4808-842e-e24f3ca76ac6")
 		(property "Reference" "BT2"
@@ -5895,6 +5654,13 @@
 		(pin "1"
 			(uuid "42af0264-f6d0-4f44-89d2-5c695d2825b3")
 		)
+		(property "SMT_Populate" "No"
+			(at 332.74 27.94 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -5931,6 +5697,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "64cf1201-e33e-449d-8a14-14745b405d20")
 		(property "Reference" "BT3"
@@ -5979,6 +5746,13 @@
 		(pin "1"
 			(uuid "ccc9a8ac-a41e-417f-9004-21cd1ce3bfe1")
 		)
+		(property "SMT_Populate" "No"
+			(at 278.13 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -6015,6 +5789,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2a7e90e8-b6cf-420f-92d4-c3f8e6779739")
 		(property "Reference" "BT4"
@@ -6063,6 +5838,13 @@
 		(pin "1"
 			(uuid "1b567198-5f9f-48e1-94a9-f382912eefab")
 		)
+		(property "SMT_Populate" "No"
+			(at 332.74 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -6099,6 +5881,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "24bb3f69-3140-447b-82d4-50bc215cba06")
 		(property "Reference" "BT5"
@@ -6147,6 +5930,13 @@
 		(pin "1"
 			(uuid "f5b0c6a6-1f46-4d91-a40f-aeac493c07ff")
 		)
+		(property "SMT_Populate" "No"
+			(at 278.13 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -6183,6 +5973,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "33243bd0-2eb0-47c3-8efd-99943c6fc9d4")
 		(property "Reference" "BT6"
@@ -6231,6 +6022,13 @@
 		(pin "1"
 			(uuid "75fd028b-a5a2-4b40-b8fe-b7c797cf8a7d")
 		)
+		(property "SMT_Populate" "No"
+			(at 332.74 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -6267,6 +6065,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "5cbe515c-d1b8-43ec-8333-ba2bab34986a")
 		(property "Reference" "J2"
@@ -6294,7 +6093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8771014967510482944"
 			(at 383.54 46.99 0)
 			(effects
 				(font
@@ -6312,7 +6111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "AMASS"
+		(property "Manufacturer" "Changzhou Amass Elec"
 			(at 383.54 46.99 0)
 			(effects
 				(font
@@ -6326,6 +6125,20 @@
 		)
 		(pin "2"
 			(uuid "c8994d5d-f62d-4ac2-84aa-7f2fcb6dde2a")
+		)
+		(property "SMT_Populate" "No"
+			(at 383.54 46.99 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C431092"
+			(at 383.54 46.99 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -6496,6 +6309,20 @@
 		)
 		(pin "10"
 			(uuid "11408fa3-a6f4-4379-8496-bd56c2c5efb1")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 69.85 48.26 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2686222"
+			(at 69.85 48.26 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -6940,7 +6767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 124.46 29.21 0)
 			(effects
 				(font
@@ -6954,6 +6781,34 @@
 		)
 		(pin "2"
 			(uuid "e3a7772c-737b-4dd2-82de-b8369e581974")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 124.46 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 124.46 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 124.46 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7021,7 +6876,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 184.15 32.98 0)
 			(effects
 				(font
@@ -7038,7 +6893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 184.15 29.21 0)
 			(effects
 				(font
@@ -7052,6 +6907,34 @@
 		)
 		(pin "2"
 			(uuid "aa7a933a-c256-4652-9697-47b64eff00cc")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 184.15 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 184.15 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 184.15 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 184.15 29.21 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7136,7 +7019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 124.46 40.64 0)
 			(effects
 				(font
@@ -7150,6 +7033,34 @@
 		)
 		(pin "2"
 			(uuid "c1cadca2-cc32-41a5-9844-3f91f5dc65e9")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 124.46 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 124.46 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 124.46 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7217,7 +7128,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 184.15 44.41 0)
 			(effects
 				(font
@@ -7234,7 +7145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 184.15 40.64 0)
 			(effects
 				(font
@@ -7248,6 +7159,34 @@
 		)
 		(pin "2"
 			(uuid "834d4c99-da3e-4522-a9f2-9c9f75be8f72")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 184.15 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 184.15 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 184.15 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 184.15 40.64 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7332,7 +7271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 124.46 53.34 0)
 			(effects
 				(font
@@ -7346,6 +7285,34 @@
 		)
 		(pin "2"
 			(uuid "d44ad6da-6aeb-40e1-ba50-3f175c7e15b4")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 124.46 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 124.46 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 124.46 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 124.46 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7413,7 +7380,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 184.15 57.11 0)
 			(effects
 				(font
@@ -7430,7 +7397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 184.15 53.34 0)
 			(effects
 				(font
@@ -7444,6 +7411,34 @@
 		)
 		(pin "2"
 			(uuid "7b30c6ca-1ac2-42a8-bb32-418657d072fd")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 184.15 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 184.15 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 184.15 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 184.15 53.34 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7528,7 +7523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586176324172468224"
 			(at 121.92 68.58 0)
 			(effects
 				(font
@@ -7537,7 +7532,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1N4148W-7-F"
+		(property "MPN" "1N4148W"
 			(at 121.92 68.58 0)
 			(effects
 				(font
@@ -7546,7 +7541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Diodes Inc."
+		(property "Manufacturer" "ST Semtech"
 			(at 121.92 68.58 0)
 			(effects
 				(font
@@ -7560,6 +7555,20 @@
 		)
 		(pin "2"
 			(uuid "a700300d-e41c-4a26-9814-2fa5656d93d4")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 121.92 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C81598"
+			(at 121.92 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7644,7 +7653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 176.53 68.58 0)
 			(effects
 				(font
@@ -7658,6 +7667,34 @@
 		)
 		(pin "2"
 			(uuid "5dec9c5b-4cad-4485-ab15-de01a5c9a37e")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 176.53 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 176.53 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 176.53 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 176.53 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7725,7 +7762,7 @@
 				)
 			)
 		)
-		(property "Value" "10u / 25V"
+		(property "Value" "10uF 25V"
 			(at 224.79 72.35 0)
 			(effects
 				(font
@@ -7733,7 +7770,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 224.79 68.58 0)
 			(effects
 				(font
@@ -7742,7 +7779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706853615591424"
 			(at 224.79 68.58 0)
 			(effects
 				(font
@@ -7756,6 +7793,34 @@
 		)
 		(pin "2"
 			(uuid "dbcee275-eff9-4922-94db-c9211f828ac8")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 224.79 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 224.79 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A106KAYNNNE"
+			(at 224.79 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 224.79 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7823,7 +7888,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF 50V"
 			(at 68.58 99.02 0)
 			(effects
 				(font
@@ -7840,7 +7905,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 68.58 95.25 0)
 			(effects
 				(font
@@ -7854,6 +7919,34 @@
 		)
 		(pin "2"
 			(uuid "aec17cbc-a034-4b6c-b693-5a46fa36e341")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 68.58 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 68.58 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 68.58 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 68.58 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -7921,7 +8014,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF 50V"
 			(at 116.84 99.02 0)
 			(effects
 				(font
@@ -7938,7 +8031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 116.84 95.25 0)
 			(effects
 				(font
@@ -7952,6 +8045,34 @@
 		)
 		(pin "2"
 			(uuid "7d1a4b32-8c15-487e-809d-8d25d42873a0")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 116.84 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 116.84 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 116.84 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 116.84 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8019,7 +8140,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF 50V"
 			(at 166.37 99.02 0)
 			(effects
 				(font
@@ -8036,7 +8157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8770989338718937088"
 			(at 166.37 95.25 0)
 			(effects
 				(font
@@ -8050,6 +8171,34 @@
 		)
 		(pin "2"
 			(uuid "f884ef6f-3a25-466b-89bc-5acc143fe747")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 166.37 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 166.37 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 166.37 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "FH Guangdong Fenghua Advanced Tech"
+			(at 166.37 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8117,7 +8266,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF 50V"
 			(at 214.63 99.02 0)
 			(effects
 				(font
@@ -8134,7 +8283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8770989338718937088"
 			(at 214.63 95.25 0)
 			(effects
 				(font
@@ -8148,6 +8297,34 @@
 		)
 		(pin "2"
 			(uuid "43bfc4d8-9226-4bec-97ad-1f21b7e29ba2")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 214.63 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 214.63 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 214.63 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "FH Guangdong Fenghua Advanced Tech"
+			(at 214.63 95.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8215,7 +8392,7 @@
 				)
 			)
 		)
-		(property "Value" "6.98k"
+		(property "Value" "5.1k"
 			(at 166.37 114.26 0)
 			(effects
 				(font
@@ -8232,7 +8409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544"
 			(at 166.37 110.49 0)
 			(effects
 				(font
@@ -8246,6 +8423,34 @@
 		)
 		(pin "2"
 			(uuid "cfb1c83f-8ed6-4575-8380-0f2c4c36ba65")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 166.37 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 166.37 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 166.37 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 166.37 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8286,7 +8491,7 @@
 		)
 		(uuid "e533ac6f-7f4e-459f-8efa-c209a3d1b3b0")
 	)
-	(label "B-"
+	(label "TRH_TRIM"
 		(at 175.26 110.49 0)
 		(effects
 			(font
@@ -8330,7 +8535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706175348064256"
 			(at 215.9 110.49 0)
 			(effects
 				(font
@@ -8344,6 +8549,34 @@
 		)
 		(pin "2"
 			(uuid "be50d665-12a8-400e-82ad-c1da619289a6")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 215.9 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22961"
+			(at 215.9 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2203T5E"
+			(at 215.9 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 215.9 110.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8428,7 +8661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706189568917504"
 			(at 68.58 127 0)
 			(effects
 				(font
@@ -8442,6 +8675,34 @@
 		)
 		(pin "2"
 			(uuid "1a294572-842c-4dcb-90c7-9cc073b978c6")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 68.58 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
+			(at 68.58 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 68.58 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 68.58 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8509,7 +8770,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "10nF 50V"
 			(at 118.11 130.77 0)
 			(effects
 				(font
@@ -8526,7 +8787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8770989338718937088"
 			(at 118.11 127 0)
 			(effects
 				(font
@@ -8540,6 +8801,34 @@
 		)
 		(pin "2"
 			(uuid "437762e7-da12-4608-af9b-4c7eb5a1e65a")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 118.11 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C57112"
+			(at 118.11 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B103K500NT"
+			(at 118.11 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "FH Guangdong Fenghua Advanced Tech"
+			(at 118.11 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8624,7 +8913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706084481175552"
 			(at 171.45 127 0)
 			(effects
 				(font
@@ -8638,6 +8927,34 @@
 		)
 		(pin "2"
 			(uuid "24845171-9535-4bbd-b32d-618267530205")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 171.45 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7250"
+			(at 171.45 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1005T5E"
+			(at 171.45 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 171.45 127 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8722,7 +9039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706189568917504"
 			(at 270.51 68.58 0)
 			(effects
 				(font
@@ -8736,6 +9053,34 @@
 		)
 		(pin "2"
 			(uuid "86b3f8ff-56ec-4e1c-a95f-f7cff2cc8728")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 270.51 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
+			(at 270.51 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 270.51 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 270.51 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8820,7 +9165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706084481175552"
 			(at 317.5 68.58 0)
 			(effects
 				(font
@@ -8834,6 +9179,34 @@
 		)
 		(pin "2"
 			(uuid "e8533c0d-44d5-40af-805f-68adef8b22ca")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 317.5 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7250"
+			(at 317.5 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1005T5E"
+			(at 317.5 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 317.5 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -8918,7 +9291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589810781136191488"
 			(at 369.57 68.58 0)
 			(effects
 				(font
@@ -8936,7 +9309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
+		(property "Manufacturer" "Vishay Intertech"
 			(at 369.57 68.58 0)
 			(effects
 				(font
@@ -8950,6 +9323,20 @@
 		)
 		(pin "2"
 			(uuid "2bd88b23-f3f2-4e7a-9083-24ed0f3a461b")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 369.57 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2091033"
+			(at 369.57 68.58 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9001,7 +9388,7 @@
 		(uuid "24322da4-8254-4911-adbe-a0b3e7910733")
 	)
 	(symbol
-		(lib_id "PeacockBattery:AOD4184A")
+		(lib_id "PeacockBattery:KND3404C")
 		(at 294.64 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9017,7 +9404,7 @@
 				)
 			)
 		)
-		(property "Value" "AOD4184A"
+		(property "Value" "KND3404C"
 			(at 294.64 97.75 0)
 			(effects
 				(font
@@ -9034,7 +9421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AOD4184A.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368"
 			(at 294.64 91.44 0)
 			(effects
 				(font
@@ -9043,7 +9430,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AOD4184A"
+		(property "MPN" "KND3404C"
 			(at 294.64 91.44 0)
 			(effects
 				(font
@@ -9052,7 +9439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Alpha & Omega"
+		(property "Manufacturer" "KIA Semicon Tech"
 			(at 294.64 91.44 0)
 			(effects
 				(font
@@ -9069,6 +9456,20 @@
 		)
 		(pin "3"
 			(uuid "20e05e1f-615d-417b-84d7-3898cc128bea")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 294.64 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455981"
+			(at 294.64 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9173,7 +9574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706330933874688"
 			(at 259.08 91.44 0)
 			(effects
 				(font
@@ -9187,6 +9588,34 @@
 		)
 		(pin "2"
 			(uuid "4b7689c1-ab06-4635-80b3-7738850bf7f8")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 259.08 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 259.08 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF220JT5E"
+			(at 259.08 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 259.08 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9238,7 +9667,7 @@
 		(uuid "f2231ea4-26a3-4314-bb2f-057602785f64")
 	)
 	(symbol
-		(lib_id "PeacockBattery:AOD4184A")
+		(lib_id "PeacockBattery:KND3404C")
 		(at 294.64 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9254,7 +9683,7 @@
 				)
 			)
 		)
-		(property "Value" "AOD4184A"
+		(property "Value" "KND3404C"
 			(at 294.64 115.53 0)
 			(effects
 				(font
@@ -9271,7 +9700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AOD4184A.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368"
 			(at 294.64 109.22 0)
 			(effects
 				(font
@@ -9280,7 +9709,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AOD4184A"
+		(property "MPN" "KND3404C"
 			(at 294.64 109.22 0)
 			(effects
 				(font
@@ -9289,7 +9718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Alpha & Omega"
+		(property "Manufacturer" "KIA Semicon Tech"
 			(at 294.64 109.22 0)
 			(effects
 				(font
@@ -9306,6 +9735,20 @@
 		)
 		(pin "3"
 			(uuid "bf1c501e-bd97-465f-9d3a-f0956c237883")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 294.64 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455981"
+			(at 294.64 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9410,7 +9853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706330933874688"
 			(at 259.08 109.22 0)
 			(effects
 				(font
@@ -9424,6 +9867,34 @@
 		)
 		(pin "2"
 			(uuid "bb21dd85-c5b8-4b69-91ee-5517b16c7d4f")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 259.08 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 259.08 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF220JT5E"
+			(at 259.08 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 259.08 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9475,7 +9946,7 @@
 		(uuid "abec32d4-ee1f-48f0-93a0-d1925229a954")
 	)
 	(symbol
-		(lib_id "PeacockBattery:AOD4184A")
+		(lib_id "PeacockBattery:KND3404C")
 		(at 367.03 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9491,7 +9962,7 @@
 				)
 			)
 		)
-		(property "Value" "AOD4184A"
+		(property "Value" "KND3404C"
 			(at 367.03 97.75 0)
 			(effects
 				(font
@@ -9508,7 +9979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AOD4184A.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368"
 			(at 367.03 91.44 0)
 			(effects
 				(font
@@ -9517,7 +9988,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AOD4184A"
+		(property "MPN" "KND3404C"
 			(at 367.03 91.44 0)
 			(effects
 				(font
@@ -9526,7 +9997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Alpha & Omega"
+		(property "Manufacturer" "KIA Semicon Tech"
 			(at 367.03 91.44 0)
 			(effects
 				(font
@@ -9543,6 +10014,20 @@
 		)
 		(pin "3"
 			(uuid "dacfdb90-fce3-40f8-ba68-a1b03a323a6c")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 367.03 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455981"
+			(at 367.03 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9647,7 +10132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706330933874688"
 			(at 331.47 91.44 0)
 			(effects
 				(font
@@ -9661,6 +10146,34 @@
 		)
 		(pin "2"
 			(uuid "b7ef6088-c788-4254-98b6-326a4d97d714")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 331.47 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 331.47 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF220JT5E"
+			(at 331.47 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 331.47 91.44 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9712,7 +10225,7 @@
 		(uuid "23c412b7-51b9-4368-9eb8-2988f04f84ab")
 	)
 	(symbol
-		(lib_id "PeacockBattery:AOD4184A")
+		(lib_id "PeacockBattery:KND3404C")
 		(at 367.03 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9728,7 +10241,7 @@
 				)
 			)
 		)
-		(property "Value" "AOD4184A"
+		(property "Value" "KND3404C"
 			(at 367.03 115.53 0)
 			(effects
 				(font
@@ -9745,7 +10258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/data_sheets/AOD4184A.pdf"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368"
 			(at 367.03 109.22 0)
 			(effects
 				(font
@@ -9754,7 +10267,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AOD4184A"
+		(property "MPN" "KND3404C"
 			(at 367.03 109.22 0)
 			(effects
 				(font
@@ -9763,7 +10276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Alpha & Omega"
+		(property "Manufacturer" "KIA Semicon Tech"
 			(at 367.03 109.22 0)
 			(effects
 				(font
@@ -9780,6 +10293,20 @@
 		)
 		(pin "3"
 			(uuid "424f8271-3f18-4388-a58f-df190182ce04")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 367.03 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C455981"
+			(at 367.03 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9884,7 +10411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706330933874688"
 			(at 331.47 109.22 0)
 			(effects
 				(font
@@ -9898,6 +10425,34 @@
 		)
 		(pin "2"
 			(uuid "8831691d-26b2-470c-a934-8ed4bd94703f")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 331.47 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 331.47 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF220JT5E"
+			(at 331.47 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 331.47 109.22 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -9982,7 +10537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588883631037427712"
 			(at 275.59 128.27 0)
 			(effects
 				(font
@@ -10014,6 +10569,20 @@
 		)
 		(pin "2"
 			(uuid "49725675-6513-4ca5-b7f5-e3fdd52f66fe")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 275.59 128.27 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C178980"
+			(at 275.59 128.27 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -10098,7 +10667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8756497594569117696"
 			(at 346.71 128.27 0)
 			(effects
 				(font
@@ -10116,7 +10685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Littelfuse"
+		(property "Manufacturer" "hongjiacheng"
 			(at 346.71 128.27 0)
 			(effects
 				(font
@@ -10130,6 +10699,20 @@
 		)
 		(pin "2"
 			(uuid "7f3bba15-90c6-4dd0-a8d4-b1ec096ba2ca")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 346.71 128.27 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19077569"
+			(at 346.71 128.27 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -10187,6 +10770,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f8204cbd-7dab-4559-9f1f-58ccbaeef659")
 		(property "Reference" "J3"
@@ -10237,6 +10821,13 @@
 		)
 		(pin "2"
 			(uuid "37ff0ec6-6576-4dd1-b4bb-142119fa4afa")
+		)
+		(property "SMT_Populate" "No"
+			(at 46.99 146.05 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -10294,6 +10885,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "c2ad3f39-69eb-4991-b085-24bcb81b25e7")
 		(property "Reference" "J4"
@@ -10345,6 +10937,13 @@
 		(pin "2"
 			(uuid "9ac5ecf1-2635-410f-ba88-371b0925847e")
 		)
+		(property "SMT_Populate" "No"
+			(at 228.6 245.11 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -10361,6 +10960,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "444090bf-319d-4395-a3a0-7c5303020214")
 		(property "Reference" "J1"
@@ -10379,7 +10979,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal"
+		(property "Footprint" "PeacockBattery:USB4125_HandAssembly"
 			(at 29.21 182.88 0)
 			(effects
 				(font
@@ -10406,7 +11006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "GCT"
+		(property "Manufacturer" "Global Connector Technology"
 			(at 29.21 182.88 0)
 			(effects
 				(font
@@ -10436,6 +11036,20 @@
 		(pin "SH"
 			(uuid "154b3726-437c-4596-9986-c185fcbe14af")
 		)
+		(property "SMT_Populate" "No"
+			(at 29.21 182.88 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3151650"
+			(at 29.21 182.88 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -10446,7 +11060,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PeacockBattery:APHBM2012SURKCGKC")
+		(lib_id "PeacockBattery:Everlight_23-22B_RG")
 		(at 149.86 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10462,7 +11076,7 @@
 				)
 			)
 		)
-		(property "Value" "APHBM2012SURKCGKC"
+		(property "Value" "23-22B/R7G6C-A30/2T"
 			(at 149.86 256.5 0)
 			(effects
 				(font
@@ -10470,7 +11084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PeacockBattery:LED_Kingbright_APHBM2012_4P"
+		(property "Footprint" "PeacockBattery:LED_Everlight_23-22B_Reverse"
 			(at 149.86 250.19 0)
 			(effects
 				(font
@@ -10479,7 +11093,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APHBM2012SURKCGKC.pdf"
+		(property "Datasheet" "https://en.everlight.com/wp-content/plugins/ItemRelationship/product_files/pdf/DSE-0008845-23-22B-R7G6C-A30-2T-V5.pdf"
 			(at 149.86 250.19 0)
 			(effects
 				(font
@@ -10488,7 +11102,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "APHBM2012SURKCGKC"
+		(property "MPN" "23-22B/R7G6C-A30/2T"
 			(at 149.86 250.19 0)
 			(effects
 				(font
@@ -10497,7 +11111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Kingbright"
+		(property "Manufacturer" "Everlight Elec"
 			(at 149.86 250.19 0)
 			(effects
 				(font
@@ -10505,18 +11119,32 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "0001234e-87e6-4f98-8fc2-ba267c381951")
-		)
-		(pin "4"
-			(uuid "d1108a90-8f33-4a6c-95f7-2c794c91efad")
-		)
-		(pin "2"
-			(uuid "575d4237-549c-43f2-9505-e9a7535f189a")
 		)
 		(pin "3"
+			(uuid "0001234e-87e6-4f98-8fc2-ba267c381951")
+		)
+		(pin "1"
+			(uuid "d1108a90-8f33-4a6c-95f7-2c794c91efad")
+		)
+		(pin "4"
+			(uuid "575d4237-549c-43f2-9505-e9a7535f189a")
+		)
+		(pin "2"
 			(uuid "b7a7062f-1d88-4230-a76c-7f219b18aa4e")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 149.86 250.19 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C424084"
+			(at 149.86 250.19 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -10816,6 +11444,34 @@
 		(pin "9"
 			(uuid "08512b29-2d70-44a8-bde1-3b360fac3741")
 		)
+		(property "SMT_Populate" "Yes"
+			(at 90.17 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7471904"
+			(at 90.17 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "HUSB238_002DD"
+			(at 90.17 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Hynetek"
+			(at 90.17 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -10916,6 +11572,34 @@
 		)
 		(pin "9"
 			(uuid "99be565c-f3ef-4e96-8b01-8ff7c96b19b7")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 157.48 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3662799"
+			(at 157.48 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPS259470ARPWR"
+			(at 157.48 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 157.48 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11075,6 +11759,27 @@
 		(pin "9"
 			(uuid "2cdd1d2e-af5d-496b-839f-f312ebaeafaa")
 		)
+		(property "SMT_Populate" "Yes"
+			(at 278.13 209.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2876593"
+			(at 278.13 209.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "BQ25798RQMR"
+			(at 278.13 209.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -11085,7 +11790,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:LMR33610ADDAR")
+		(lib_id "PeacockBattery:AP63205WU-7")
 		(at 420.37 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11103,7 +11808,7 @@
 				)
 			)
 		)
-		(property "Value" "LMR33610ADDAR"
+		(property "Value" "AP63205WU-7"
 			(at 420.37 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11113,7 +11818,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
 			(at 420.37 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -11124,7 +11829,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr33610.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf"
 			(at 420.37 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -11135,7 +11840,7 @@
 				)
 			)
 		)
-		(property "Description" "Simple Switcher Synchronous Buck Regulator, Vin=3.8-36V, Iout=1A, F=400kHz, Adjustable output voltage, HSOP-8"
+		(property "Description" "Fixed 5 V 2 A 32 V synchronous buck"
 			(at 420.37 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -11146,33 +11851,40 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "24059fd0-4b9f-4dcd-a773-5f50dc19e259")
+		(property "SMT_Populate" "Yes"
+			(at 420.37 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "2bffd32e-0841-4e92-9c44-525b1e6f98b3")
+		(property "LCSC" "C2071056"
+			(at 420.37 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "23488fbb-1a29-4ef7-b246-d1e5268865ab")
+		(property "MPN" "AP63205WU-7"
+			(at 420.37 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "e7ec1c1c-3b8a-44e0-aee6-2c5589b19d20")
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 420.37 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
-		(pin "5"
-			(uuid "6cf446ef-cfd0-4e88-a392-6069780870ab")
-		)
-		(pin "6"
-			(uuid "c4ef19e1-996d-463f-9e18-731fbf72447b")
-		)
-		(pin "7"
-			(uuid "1c52b5da-d064-403d-b20a-6ec2c0d999e2")
-		)
-		(pin "8"
-			(uuid "87ba1439-18bb-432d-8306-a86bd0349d50")
-		)
-		(pin "9"
-			(uuid "09565fc1-c816-4ca4-9406-98d0fac1362b")
-		)
+		(pin "1" (uuid "76dbd05b-ac70-4bd2-b968-05a6560c05de"))
+		(pin "2" (uuid "3a3b585a-48df-436a-8f6a-bb165702964d"))
+		(pin "3" (uuid "bf154346-d6a2-4011-9191-e555ad27fafc"))
+		(pin "4" (uuid "112de9e8-557b-4825-a281-868750a40475"))
+		(pin "5" (uuid "1d742ecd-b315-4b49-8fe0-d43fe582d50e"))
+		(pin "6" (uuid "749478cf-eaa6-4187-902b-5ecf90a179fa"))
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -11263,6 +11975,34 @@
 		)
 		(pin "6"
 			(uuid "6bc68afd-f749-4df5-8903-a615721663b8")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 510.54 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2869734"
+			(at 510.54 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "LM66100DCKR"
+			(at 510.54 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 510.54 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11359,6 +12099,34 @@
 		(pin "8"
 			(uuid "559903ed-581c-45f3-968b-bb824156b27e")
 		)
+		(property "SMT_Populate" "Yes"
+			(at 435.61 275.59 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C181970"
+			(at 435.61 275.59 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC2G66DCUR"
+			(at 435.61 275.59 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 435.61 275.59 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -11375,6 +12143,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "064db82f-521b-459a-96e4-f0fa4f11e488")
 		(property "Reference" "J5"
@@ -11397,7 +12166,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "PeacockBattery:JST_SH_SM04B_HandAssembly"
 			(at 533.4 279.4 0)
 			(hide yes)
 			(show_name no)
@@ -11408,7 +12177,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893837427150848"
 			(at 533.4 279.4 0)
 			(hide yes)
 			(show_name no)
@@ -11442,6 +12211,34 @@
 		(pin "4"
 			(uuid "311b990e-9df1-498b-adc5-4091b42ef302")
 		)
+		(property "SMT_Populate" "No"
+			(at 533.4 279.4 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160404"
+			(at 533.4 279.4 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "SM04B-SRSS-TB(LF)(SN)"
+			(at 533.4 279.4 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "JST"
+			(at 533.4 279.4 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
@@ -11471,7 +12268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u / 50V"
+		(property "Value" "1uF 50V"
 			(at 39.37 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11482,7 +12279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 37.795 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -11493,7 +12290,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213788459761664"
 			(at 36.83 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -11520,6 +12317,34 @@
 		)
 		(pin "2"
 			(uuid "36fd13ac-ec2e-4bdf-8411-7c6cc17515c6")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 36.83 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 36.83 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 36.83 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 36.83 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11570,7 +12395,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8786200112950898688"
 			(at 36.83 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -11597,6 +12422,34 @@
 		)
 		(pin "2"
 			(uuid "1ff9c8ae-82db-4f5e-bc2b-94a4cdb1ddac")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 36.83 237.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C41376408"
+			(at 36.83 237.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "SMAJ20A"
+			(at 36.83 237.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 36.83 237.49 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11647,7 +12500,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706378535165952"
 			(at 90.17 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -11674,6 +12527,34 @@
 		)
 		(pin "2"
 			(uuid "f56a3f2d-005d-4745-bfcf-b972c6bb580a")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 90.17 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
+			(at 90.17 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 90.17 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 90.17 214.63 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11703,7 +12584,7 @@
 				)
 			)
 		)
-		(property "Value" "23.2k 1%"
+		(property "Value" "22k 1%"
 			(at 134.62 212.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11724,7 +12605,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706378535165952"
 			(at 132.08 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -11751,6 +12632,34 @@
 		)
 		(pin "2"
 			(uuid "c9c34750-1a2a-4aeb-b893-39338a97a2a4")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 132.08 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31850"
+			(at 132.08 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2202T5E"
+			(at 132.08 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 132.08 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11801,7 +12710,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072"
 			(at 160.02 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -11828,6 +12737,34 @@
 		)
 		(pin "2"
 			(uuid "16bd2973-7e5c-4f85-a297-561d0f71ea1d")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 160.02 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 160.02 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 160.02 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 160.02 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11857,7 +12794,7 @@
 				)
 			)
 		)
-		(property "Value" "174k 1%"
+		(property "Value" "100k 1%"
 			(at 134.62 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11878,7 +12815,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706350726930432"
 			(at 132.08 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -11905,6 +12842,34 @@
 		)
 		(pin "2"
 			(uuid "1d8f5783-882f-49dc-9218-66b32b5a1ee2")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 132.08 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 132.08 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1003T5E"
+			(at 132.08 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 132.08 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -11934,7 +12899,7 @@
 				)
 			)
 		)
-		(property "Value" "10k 1%"
+		(property "Value" "5.1k 1%"
 			(at 162.56 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11955,7 +12920,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544"
 			(at 160.02 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -11982,6 +12947,34 @@
 		)
 		(pin "2"
 			(uuid "8a617cc4-e5fd-4423-bee4-fd9e83fc6044")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 160.02 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 160.02 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 160.02 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 160.02 228.6 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12011,7 +13004,7 @@
 				)
 			)
 		)
-		(property "Value" "1.24k 1%"
+		(property "Value" "1.2k"
 			(at 191.77 212.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12032,7 +13025,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706101664964608"
 			(at 189.23 212.09 0)
 			(hide yes)
 			(show_name no)
@@ -12059,6 +13052,34 @@
 		)
 		(pin "2"
 			(uuid "56df23b4-e163-489c-8515-edea43492a9b")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 189.23 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22765"
+			(at 189.23 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1201T5E"
+			(at 189.23 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 189.23 212.09 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12089,7 +13110,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n / 50V"
+		(property "Value" "4.7nF 50V"
 			(at 191.77 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12111,7 +13132,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8770989226131640320"
 			(at 189.23 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -12138,6 +13159,34 @@
 		)
 		(pin "2"
 			(uuid "c79fbdd4-e7eb-4541-8c8e-3ba4ad9d2584")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 189.23 231.14 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C53987"
+			(at 189.23 231.14 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603B472K500NT"
+			(at 189.23 231.14 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "FH Guangdong Fenghua Advanced Tech"
+			(at 189.23 231.14 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12168,7 +13217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u / 50V"
+		(property "Value" "1uF 50V"
 			(at 226.06 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12179,7 +13228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 224.485 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12190,7 +13239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213788459761664"
 			(at 223.52 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -12217,6 +13266,34 @@
 		)
 		(pin "2"
 			(uuid "bc0c8d8d-4b08-44f0-9918-5b54ffde1473")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 223.52 171.45 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 223.52 171.45 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 223.52 171.45 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 223.52 171.45 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12247,7 +13324,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u / 10V"
+		(property "Value" "4.7uF 25V"
 			(at 317.5 254.0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12269,7 +13346,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213325555400704"
 			(at 314.96 254 0)
 			(hide yes)
 			(show_name no)
@@ -12296,6 +13373,34 @@
 		)
 		(pin "2"
 			(uuid "d7f41e7e-13b3-49d0-9a27-92938e6c6ff3")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 314.96 254 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1779"
+			(at 314.96 254 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A475KAQNNNE"
+			(at 314.96 254 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 314.96 254 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12326,7 +13431,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 16V"
+		(property "Value" "100nF 50V"
 			(at 327.66 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12348,7 +13453,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 325.12 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -12375,6 +13480,34 @@
 		)
 		(pin "2"
 			(uuid "9a8e371f-c5d9-4c08-a20d-ee7fe89ed7aa")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 325.12 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 325.12 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 325.12 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 325.12 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12405,7 +13538,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 16V"
+		(property "Value" "100nF 50V"
 			(at 327.66 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12427,7 +13560,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 325.12 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -12454,6 +13587,34 @@
 		)
 		(pin "2"
 			(uuid "ad8519fe-0f31-4563-ac10-984da10809b0")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 325.12 205.74 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 325.12 205.74 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 325.12 205.74 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 325.12 205.74 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12493,7 +13654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL5030-XXX"
+		(property "Footprint" "PeacockBattery:L_APV_APH0530C"
 			(at 364.49 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12504,7 +13665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8780832249016033280"
 			(at 364.49 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12531,6 +13692,34 @@
 		)
 		(pin "2"
 			(uuid "01442948-51f0-4572-95c4-ea5943878473")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 364.49 193.04 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C50326270"
+			(at 364.49 193.04 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "APH0530C-2R2M-TCD5"
+			(at 364.49 193.04 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "APV Technologies"
+			(at 364.49 193.04 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12561,7 +13750,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 35V"
+		(property "Value" "10uF 50V"
 			(at 323.85 317.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12583,7 +13772,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707359440130048"
 			(at 321.31 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -12610,6 +13799,34 @@
 		)
 		(pin "2"
 			(uuid "09ae47f1-f75e-45ab-9de5-113770dbe9bf")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 321.31 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 321.31 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 321.31 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 321.31 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12640,7 +13857,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 35V"
+		(property "Value" "10uF 50V"
 			(at 351.79 317.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12662,7 +13879,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707359440130048"
 			(at 349.25 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -12689,6 +13906,34 @@
 		)
 		(pin "2"
 			(uuid "0b90a357-fba4-49ea-8fac-80a7b53a7a22")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 349.25 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 349.25 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 349.25 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 349.25 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12719,7 +13964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 35V"
+		(property "Value" "10uF 50V"
 			(at 379.73 317.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12741,7 +13986,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707359440130048"
 			(at 377.19 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -12768,6 +14013,34 @@
 		)
 		(pin "2"
 			(uuid "bb41bcf3-2884-41eb-be89-046df78effc5")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 377.19 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 377.19 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 377.19 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 377.19 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12798,7 +14071,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 407.67 317.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12820,7 +14093,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 405.13 317.5 0)
 			(hide yes)
 			(show_name no)
@@ -12847,6 +14120,34 @@
 		)
 		(pin "2"
 			(uuid "db38ad29-508a-4cc9-ba7d-8cacbeab05ed")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 405.13 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 405.13 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 405.13 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 405.13 317.5 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12877,7 +14178,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 323.85 349.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12899,7 +14200,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178554275246080"
 			(at 321.31 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -12926,6 +14227,34 @@
 		)
 		(pin "2"
 			(uuid "2b068927-a43c-4239-866a-887e7cd9f95b")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 321.31 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12891"
+			(at 321.31 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A226KAHNNNE"
+			(at 321.31 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 321.31 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -12956,7 +14285,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 351.79 349.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12978,7 +14307,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178554275246080"
 			(at 349.25 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -13005,6 +14334,34 @@
 		)
 		(pin "2"
 			(uuid "14de5b57-96cb-4861-911b-d9bfb8fe7946")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 349.25 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12891"
+			(at 349.25 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A226KAHNNNE"
+			(at 349.25 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 349.25 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13035,7 +14392,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 379.73 349.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13057,7 +14414,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178554275246080"
 			(at 377.19 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -13084,6 +14441,34 @@
 		)
 		(pin "2"
 			(uuid "08256898-0c7d-439b-8c4a-c0ca7a567f60")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 377.19 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12891"
+			(at 377.19 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A226KAHNNNE"
+			(at 377.19 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 377.19 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13114,7 +14499,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 407.67 349.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13136,7 +14521,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 405.13 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -13163,6 +14548,34 @@
 		)
 		(pin "2"
 			(uuid "cdda2684-c307-46e6-9510-fc4551ea7465")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 405.13 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 405.13 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 405.13 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 405.13 349.25 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13193,7 +14606,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 25V"
+		(property "Value" "10uF 50V"
 			(at 323.85 288.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13215,7 +14628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707359440130048"
 			(at 321.31 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -13242,6 +14655,34 @@
 		)
 		(pin "2"
 			(uuid "b0237091-d21a-4392-bc91-080f2e24b2e7")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 321.31 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 321.31 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 321.31 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 321.31 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13272,7 +14713,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 50V"
+		(property "Value" "100nF 50V"
 			(at 351.79 288.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13294,7 +14735,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 349.25 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -13321,6 +14762,34 @@
 		)
 		(pin "2"
 			(uuid "24334592-e85e-4340-8ff3-ccd365b09a3f")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 349.25 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 349.25 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 349.25 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 349.25 288.29 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13371,7 +14840,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706114222985216"
 			(at 364.49 251.46 0)
 			(hide yes)
 			(show_name no)
@@ -13398,6 +14867,34 @@
 		)
 		(pin "2"
 			(uuid "ade2af0e-66d8-4fd6-a6ec-ac1f0b8feab8")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 364.49 251.46 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 364.49 251.46 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1000T5E"
+			(at 364.49 251.46 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 364.49 251.46 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13427,7 +14924,7 @@
 				)
 			)
 		)
-		(property "Value" "13.7k 1%"
+		(property "Value" "10k 1%"
 			(at 237.49 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13448,7 +14945,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072"
 			(at 234.95 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -13475,6 +14972,34 @@
 		)
 		(pin "2"
 			(uuid "41b046dd-fbee-4f2b-b67c-08caee452b02")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 234.95 292.1 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 234.95 292.1 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 234.95 292.1 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 234.95 292.1 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13504,7 +15029,7 @@
 				)
 			)
 		)
-		(property "Value" "30.9k 1%"
+		(property "Value" "30k 1%"
 			(at 217.17 316.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13525,7 +15050,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706409566388224"
 			(at 214.63 316.23 0)
 			(hide yes)
 			(show_name no)
@@ -13552,6 +15077,34 @@
 		)
 		(pin "2"
 			(uuid "33567950-67c1-4dfb-a1db-ce5bfba3f49e")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 214.63 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22984"
+			(at 214.63 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF3002T5E"
+			(at 214.63 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 214.63 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13602,7 +15155,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072"
 			(at 243.84 316.23 0)
 			(hide yes)
 			(show_name no)
@@ -13629,6 +15182,34 @@
 		)
 		(pin "2"
 			(uuid "60526234-370a-4921-8e45-a6ecac5f4b35")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 243.84 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 243.84 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 243.84 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 243.84 316.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13658,7 +15239,7 @@
 				)
 			)
 		)
-		(property "Value" "5.23k 1%"
+		(property "Value" "5.1k 1%"
 			(at 226.06 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13679,7 +15260,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544"
 			(at 223.52 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -13706,6 +15287,34 @@
 		)
 		(pin "2"
 			(uuid "dcf87cd3-54cb-45e3-a5ac-81b760856ef5")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 223.52 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 223.52 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 223.52 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 223.52 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13735,7 +15344,7 @@
 				)
 			)
 		)
-		(property "Value" "30.1k 1%"
+		(property "Value" "30k 1%"
 			(at 252.73 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13756,7 +15365,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706409566388224"
 			(at 250.19 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -13783,6 +15392,34 @@
 		)
 		(pin "2"
 			(uuid "8f8e417f-f541-4ad1-93c8-65f190d100f1")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 250.19 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22984"
+			(at 250.19 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF3002T5E"
+			(at 250.19 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 250.19 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13812,7 +15449,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1k"
 			(at 113.03 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13833,7 +15470,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 110.49 267.97 0)
 			(hide yes)
 			(show_name no)
@@ -13860,6 +15497,34 @@
 		)
 		(pin "2"
 			(uuid "dbc8e00b-1241-467d-ae4d-a926e57c8738")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 110.49 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 110.49 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 110.49 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 110.49 267.97 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13889,7 +15554,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1k"
 			(at 152.4 276.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13910,7 +15575,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
 			(at 149.86 276.86 0)
 			(hide yes)
 			(show_name no)
@@ -13937,6 +15602,34 @@
 		)
 		(pin "2"
 			(uuid "6473576d-c542-462b-b315-720a7c64de79")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 149.86 276.86 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 149.86 276.86 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 149.86 276.86 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 149.86 276.86 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -13987,7 +15680,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720"
 			(at 436.88 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -14014,6 +15707,34 @@
 		)
 		(pin "2"
 			(uuid "4308846f-7783-4be7-969c-c74360837044")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 436.88 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 436.88 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 436.88 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 436.88 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14064,7 +15785,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720"
 			(at 473.71 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -14091,6 +15812,34 @@
 		)
 		(pin "2"
 			(uuid "4f8fb369-c1d5-4fcf-9807-66cbb0b789eb")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 473.71 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 473.71 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 473.71 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 473.71 229.87 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14121,7 +15870,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 50V"
+		(property "Value" "10uF 50V"
 			(at 396.24 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14143,7 +15892,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707359440130048"
 			(at 393.7 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -14170,6 +15919,34 @@
 		)
 		(pin "2"
 			(uuid "c66957ae-1cf7-4cf5-95c0-f92c7757f594")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 393.7 219.71 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 393.7 219.71 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL31A106KBHNNNE"
+			(at 393.7 219.71 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 393.7 219.71 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14200,7 +15977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220n / 50V"
+		(property "Value" "100nF 50V"
 			(at 391.16 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14222,7 +15999,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 388.62 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -14250,89 +16027,38 @@
 		(pin "2"
 			(uuid "3329083e-127d-448b-b3e3-44e736d71034")
 		)
+		(property "SMT_Populate" "Yes"
+			(at 388.62 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 388.62 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 388.62 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 388.62 184.15 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
 					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 389.89 246.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e10624e-74e6-4662-8da6-2b065fdeb658")
-		(property "Reference" "C28"
-			(at 387.35 246.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u / 16V"
-			(at 392.43 246.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 390.855 242.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 389.89 246.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 389.89 246.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e9f01d83-3e6d-479e-a22b-c1d151374057")
-		)
-		(pin "2"
-			(uuid "62f2894b-ffe8-442d-8e79-8d0a809d6738")
-		)
-		(instances
-			(project "PeacockBattery"
-				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
-					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -14358,7 +16084,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 16V"
+		(property "Value" "100nF 50V"
 			(at 459.74 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14380,7 +16106,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 457.2 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -14407,6 +16133,34 @@
 		)
 		(pin "2"
 			(uuid "91c0682d-1b2c-4fd6-9dbb-12fcb230b3cb")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 457.2 166.37 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 457.2 166.37 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 457.2 166.37 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 457.2 166.37 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14436,7 +16190,7 @@
 				)
 			)
 		)
-		(property "Value" "8.2uH"
+		(property "Value" "4.7uH"
 			(at 471.17 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14446,7 +16200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Coilcraft_XAL7030-822"
+		(property "Footprint" "PeacockBattery:L_YJYCOIN_YSPI0730"
 			(at 468.63 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -14457,7 +16211,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8788087567868534784"
 			(at 468.63 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -14485,164 +16239,38 @@
 		(pin "2"
 			(uuid "6294266c-802a-43fa-adfd-07d9d4547d48")
 		)
+		(property "SMT_Populate" "Yes"
+			(at 468.63 189.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C351117"
+			(at 468.63 189.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "YSPI0730-4R7M"
+			(at 468.63 189.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YJYCOIN"
+			(at 468.63 189.23 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
 		(instances
 			(project "PeacockBattery"
 				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 510.54 219.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b0e4a164-9650-4747-87c8-e924ad372695")
-		(property "Reference" "R32"
-			(at 508.0 219.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k 1%"
-			(at 513.08 219.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 508.762 219.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 510.54 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 510.54 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37e4b1d0-c612-4891-8362-79ff5c201eb1")
-		)
-		(pin "2"
-			(uuid "aebf4200-0e46-4d4f-a4af-3c2a7ee3b2c4")
-		)
-		(instances
-			(project "PeacockBattery"
-				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 548.64 219.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "94a43280-963a-4035-b45b-81fc1036a88a")
-		(property "Reference" "R33"
-			(at 546.1 219.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "24.9k 1%"
-			(at 551.18 219.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 546.862 219.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 548.64 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 548.64 219.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f585ff7-5f62-4a9e-af8a-7ef313db6b69")
-		)
-		(pin "2"
-			(uuid "fba3e20a-7a0b-4428-bd2f-ef67b57cebec")
-		)
-		(instances
-			(project "PeacockBattery"
-				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
-					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -14668,7 +16296,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 452.12 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14679,7 +16307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 450.545 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -14690,7 +16318,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 449.58 336.55 0)
 			(hide yes)
 			(show_name no)
@@ -14717,6 +16345,34 @@
 		)
 		(pin "2"
 			(uuid "be8938b2-9e39-45a0-8171-1cc0dc604180")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 449.58 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 449.58 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A226MAQNNNE"
+			(at 449.58 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 449.58 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14747,7 +16403,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 482.6 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14758,7 +16414,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 481.025 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -14769,7 +16425,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 480.06 336.55 0)
 			(hide yes)
 			(show_name no)
@@ -14796,6 +16452,34 @@
 		)
 		(pin "2"
 			(uuid "5446abfa-e6a5-4ed6-aac0-91035f5ac4d6")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 480.06 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 480.06 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A226MAQNNNE"
+			(at 480.06 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 480.06 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14826,7 +16510,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 513.08 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14837,7 +16521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 511.505 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -14848,7 +16532,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 510.54 336.55 0)
 			(hide yes)
 			(show_name no)
@@ -14875,6 +16559,34 @@
 		)
 		(pin "2"
 			(uuid "55631a8a-640f-4413-aadc-1c0554ee7a4d")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 510.54 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 510.54 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A226MAQNNNE"
+			(at 510.54 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 510.54 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14905,7 +16617,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 25V"
+		(property "Value" "22uF 25V"
 			(at 542.29 336.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14916,7 +16628,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 540.715 332.74 0)
 			(hide yes)
 			(show_name no)
@@ -14927,7 +16639,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 539.75 336.55 0)
 			(hide yes)
 			(show_name no)
@@ -14954,6 +16666,34 @@
 		)
 		(pin "2"
 			(uuid "98429993-4cf5-4145-bc72-f7ce19c56bb6")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 539.75 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45783"
+			(at 539.75 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A226MAQNNNE"
+			(at 539.75 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 539.75 336.55 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -14984,7 +16724,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u / 16V"
+		(property "Value" "1uF 50V"
 			(at 551.18 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15006,7 +16746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213788459761664"
 			(at 548.64 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -15033,6 +16773,34 @@
 		)
 		(pin "2"
 			(uuid "35ab97da-1dae-4fbb-8cf1-8a3262b05f61")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 548.64 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 548.64 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 548.64 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro Mechanics"
+			(at 548.64 185.42 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -15063,7 +16831,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n / 16V"
+		(property "Value" "100nF 50V"
 			(at 471.17 271.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15085,7 +16853,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8667086713681608704"
 			(at 468.63 271.78 0)
 			(hide yes)
 			(show_name no)
@@ -15112,6 +16880,34 @@
 		)
 		(pin "2"
 			(uuid "d9093086-edf9-4b59-885b-d2ec4be2b04b")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 468.63 271.78 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 468.63 271.78 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 468.63 271.78 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 468.63 271.78 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -15162,7 +16958,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8571664289360498688"
 			(at 482.6 304.8 0)
 			(hide yes)
 			(show_name no)
@@ -15189,6 +16985,34 @@
 		)
 		(pin "2"
 			(uuid "9e25ba85-c9b3-41fb-82e9-d23780b16134")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 482.6 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C403915"
+			(at 482.6 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "PESD3V3U1UA,115"
+			(at 482.6 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 482.6 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -15239,7 +17063,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8571664289360498688"
 			(at 533.4 304.8 0)
 			(hide yes)
 			(show_name no)
@@ -15266,6 +17090,34 @@
 		)
 		(pin "2"
 			(uuid "402cc900-65ef-42a4-8cb4-8825d37d228a")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 533.4 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C403915"
+			(at 533.4 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "PESD3V3U1UA,115"
+			(at 533.4 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 533.4 304.8 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
 		)
 		(instances
 			(project "PeacockBattery"
@@ -15676,7 +17528,7 @@
 		)
 		(uuid "78b2ab35-0958-41a1-a821-2c9326db9509")
 	)
-	(label "WAKE_FB"
+	(label "WAKE_5V"
 		(at 433.07 187.96 0)
 		(effects
 			(font
@@ -15685,16 +17537,6 @@
 			(justify left bottom)
 		)
 		(uuid "7f381bb8-4347-4211-93d7-cd1d3e64e914")
-	)
-	(label "WAKE_VCC"
-		(at 407.67 190.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e5f88654-a436-4f57-bc90-6fdec24e5e59")
 	)
 	(label "WAKE_BOOT"
 		(at 433.07 180.34 0)
@@ -16006,7 +17848,7 @@
 		)
 		(uuid "8b1dc509-54ff-4203-a278-a41ca9474ee3")
 	)
-	(label "P-"
+	(label "OVLO_TRIM"
 		(at 160.02 234.95 270)
 		(effects
 			(font
@@ -16026,7 +17868,7 @@
 		)
 		(uuid "555551fd-a722-46c8-ac9a-2751882333a8")
 	)
-	(label "P-"
+	(label "INPUT_ILM_TRIM"
 		(at 189.23 218.44 270)
 		(effects
 			(font
@@ -16386,7 +18228,7 @@
 		)
 		(uuid "7692b492-0221-4c28-9a3a-c7e839185be2")
 	)
-	(label "P-"
+	(label "PROG_DIV"
 		(at 234.95 298.45 270)
 		(effects
 			(font
@@ -16596,26 +18438,6 @@
 		)
 		(uuid "97c3e509-55a8-46ef-b40c-e5e678d478c1")
 	)
-	(label "WAKE_VCC"
-		(at 389.89 240.03 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0547634-c482-4f49-8733-ca388d01b018")
-	)
-	(label "P-"
-		(at 389.89 252.73 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0f00b9d1-5642-429d-abd4-cd7f4fd41abc")
-	)
 	(label "WAKE_BOOT"
 		(at 457.2 160.02 90)
 		(effects
@@ -16655,46 +18477,6 @@
 			(justify right bottom)
 		)
 		(uuid "9c18bc1a-02a7-449b-9787-a2841e35c4a5")
-	)
-	(label "WAKE_5V"
-		(at 510.54 213.36 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "06b42a3a-341f-4cee-b399-581a4d96789d")
-	)
-	(label "WAKE_FB"
-		(at 510.54 226.06 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "908c329e-7082-4f28-88ca-64b6d626b341")
-	)
-	(label "WAKE_FB"
-		(at 548.64 213.36 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd5fc098-fba5-4d83-92fa-8208c93efe9f")
-	)
-	(label "P-"
-		(at 548.64 226.06 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7a869a79-e56e-4a20-b120-5127aae34fc3")
 	)
 	(label "WAKE_5V"
 		(at 449.58 330.2 90)
@@ -17265,16 +19047,6 @@
 			(type default)
 		)
 		(uuid "cf522ad8-8239-42a1-aaf2-9171d26c13dc")
-	)
-	(wire
-		(pts
-			(xy 410.21 190.5) (xy 407.67 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49f66a59-2c9c-4007-b907-bf762452b7bd")
 	)
 	(wire
 		(pts
@@ -18178,26 +19950,6 @@
 	)
 	(wire
 		(pts
-			(xy 389.89 242.57) (xy 389.89 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61a0b150-04ee-4c2e-9424-2622b9b10966")
-	)
-	(wire
-		(pts
-			(xy 389.89 250.19) (xy 389.89 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1cbd09b-7dfb-481b-8295-151205ca4bc4")
-	)
-	(wire
-		(pts
 			(xy 457.2 162.56) (xy 457.2 160.02)
 		)
 		(stroke
@@ -18235,46 +19987,6 @@
 			(type default)
 		)
 		(uuid "68277c04-eba3-46f0-9760-b32d8fb5414e")
-	)
-	(wire
-		(pts
-			(xy 510.54 215.9) (xy 510.54 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "387c006b-ccbd-4a70-9355-d2fe3886a751")
-	)
-	(wire
-		(pts
-			(xy 510.54 223.52) (xy 510.54 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f49ef05-4cc8-4be9-9289-cf91b6f5bdf3")
-	)
-	(wire
-		(pts
-			(xy 548.64 215.9) (xy 548.64 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba5328f9-9396-45b6-a4f7-3a8f8b94d41e")
-	)
-	(wire
-		(pts
-			(xy 548.64 223.52) (xy 548.64 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51e4103b-b984-476d-9a31-e233213c921f")
 	)
 	(wire
 		(pts
@@ -18759,10 +20471,6 @@
 		(uuid "a6178317-5b9d-4af8-9cf1-d988a1bcc145")
 	)
 	(no_connect
-		(at 430.53000000000003 190.5)
-		(uuid "e76b80e5-5164-4f1b-bacc-5ff92d9caa1d")
-	)
-	(no_connect
 		(at 518.16 187.95999999999998)
 		(uuid "c4210384-8081-4fd0-a811-1fc403f21133")
 	)
@@ -18873,4 +20581,876 @@
 	(text "HUSB238: 0x08.  BQ25798: 0x6B.  MainV2 provides the 3.3 V I2C pull-ups." (at 17.78 358.14 0) (effects (font (size 1.02 1.02)) (justify left)) (uuid "82899d62-0cd1-4a65-b953-eacd64d60315"))
 	(text "3S 12.60 V, 1.0 A power-on default.  Host selects up to 2.0 A only after checking the PD contract." (at 17.78 365.76 0) (effects (font (size 1.02 1.02)) (justify left)) (uuid "b84738c6-c5ee-4ee7-bbb4-3eaa9b065e27"))
 	(text "Trim all six Keystone 5209 tabs before soldering.  Maximum projection below PCB: 1.50 mm." (at 17.78 373.38 0) (effects (font (size 1.02 1.02)) (justify left)) (uuid "34322830-a71f-4664-8072-25d0655ded7f"))
+	(symbol
+		(lib_id "Device:R")
+		(at 262.89000 292.10000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dbf5685c-d1dd-4737-aeab-635397cd2527")
+		(property "Reference" "R34"
+			(at 260.35000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 265.43000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 261.11200 292.10000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544"
+			(at 262.89000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 262.89000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51b1fb62-9c4b-4af7-b16f-47c9e6502ea4")
+		)
+		(pin "2"
+			(uuid "7f62c488-0873-45f2-a5b6-c1a6b36069bf")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 262.89000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 262.89000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 262.89000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 262.89000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 262.89 288.29) (xy 262.89 285.75)) (stroke (width 0) (type default)) (uuid "b3bc2c00-9fca-4f6e-88dd-5ecc464e2e9b"))
+	(label "PROG_DIV" (at 262.89 285.75 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21cc019e-6d80-40a4-be9a-ed14f77600d1"))
+	(wire (pts (xy 262.89 295.91) (xy 262.89 298.45)) (stroke (width 0) (type default)) (uuid "e79ec71a-a4b5-407b-bbb0-a2a1e38c673a"))
+	(label "P-" (at 262.89 298.45 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7257e678-e4fc-4cda-bdc5-070d72814bdf"))
+	(symbol
+		(lib_id "Device:R")
+		(at 281.94000 292.10000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd2c4024-51f4-44ec-87ee-78f3b7cc4701")
+		(property "Reference" "R35"
+			(at 279.40000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 284.48000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 280.16200 292.10000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072"
+			(at 281.94000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 281.94000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5deb721d-46a1-4c61-bf83-91720bedf627")
+		)
+		(pin "2"
+			(uuid "9c8f6578-afcf-4f07-932b-b0b1001a2958")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 281.94000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 281.94000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1002T5E"
+			(at 281.94000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 281.94000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 281.94 288.29) (xy 281.94 285.75)) (stroke (width 0) (type default)) (uuid "076efbf3-32fd-4af8-a7cb-ce4bdeac7d0e"))
+	(label "PROG_DIV" (at 281.94 285.75 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7dae57f8-c7a3-4eed-9b07-9f17d9edbecf"))
+	(wire (pts (xy 281.94 295.91) (xy 281.94 298.45)) (stroke (width 0) (type default)) (uuid "899bae1f-f724-4938-aacf-e5a6145e3fc0"))
+	(label "PROG_SER" (at 281.94 298.45 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cf2c3e04-332b-41ae-9ad0-1f49de521cff"))
+	(symbol
+		(lib_id "Device:R")
+		(at 300.99000 292.10000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adce7dbc-4ab3-4dcd-b88f-76429a064851")
+		(property "Reference" "R36"
+			(at 298.45000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 303.53000 292.10000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 299.21200 292.10000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544"
+			(at 300.99000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99000 292.10000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38e0b5ae-0a47-4b9c-96f4-c00e2e625b10")
+		)
+		(pin "2"
+			(uuid "3c493f35-bb9d-46f5-bb5d-38a3892f5cf0")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 300.99000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 300.99000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF5101T5E"
+			(at 300.99000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 300.99000 292.10000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 300.99 288.29) (xy 300.99 285.75)) (stroke (width 0) (type default)) (uuid "89615675-28cd-4553-9ccb-004a18a0bef2"))
+	(label "PROG_SER" (at 300.99 285.75 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "eac2f24b-96f7-436e-9af9-69e88c04c750"))
+	(wire (pts (xy 300.99 295.91) (xy 300.99 298.45)) (stroke (width 0) (type default)) (uuid "b1a8967d-e01a-4ead-ae58-7fc3ade38478"))
+	(label "P-" (at 300.99 298.45 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "8eb5cda5-195b-4aac-b6c0-77c3d2626ab1"))
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09000 212.09000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa466ec0-f741-4342-a8f3-a11747245bc0")
+		(property "Reference" "R37"
+			(at 209.55000 212.09000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 214.63000 212.09000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 210.31200 212.09000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720"
+			(at 212.09000 212.09000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 212.09000 212.09000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bd7e3a6-7a7a-4941-9e71-b8f5a904d413")
+		)
+		(pin "2"
+			(uuid "4495b505-3f65-4b03-9de0-5ecd6acf987d")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 212.09000 212.09000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23140"
+			(at 212.09000 212.09000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF330JT5E"
+			(at 212.09000 212.09000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 212.09000 212.09000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 212.09 208.28) (xy 212.09 205.74)) (stroke (width 0) (type default)) (uuid "41c1f8b3-cf52-44df-8a4a-7aea4dfe1ddb"))
+	(label "INPUT_ILM_TRIM" (at 212.09 205.74 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "07c1544b-34a3-4bd4-918a-64919b5280f1"))
+	(wire (pts (xy 212.09 215.90) (xy 212.09 218.44)) (stroke (width 0) (type default)) (uuid "9adedf5a-e8bc-47e4-a903-8dc69b3cd1b0"))
+	(label "P-" (at 212.09 218.44 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "63a2a810-e924-4590-b8cd-5fd2fbf1cb89"))
+	(symbol
+		(lib_id "Device:R")
+		(at 215.90000 228.60000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5c07391-961f-453c-b748-db7f20ffdbd8")
+		(property "Reference" "R38"
+			(at 213.36000 228.60000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 218.44000 228.60000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 214.12200 228.60000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 215.90000 228.60000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 215.90000 228.60000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c569e701-894e-48f6-b5f0-00fcbf0963c4")
+		)
+		(pin "2"
+			(uuid "19132889-ac78-4aea-80c4-29a254fc8e3c")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 215.90000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 215.90000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF1001T5E"
+			(at 215.90000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 215.90000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 215.9 224.79) (xy 215.9 222.25)) (stroke (width 0) (type default)) (uuid "7556b61b-fe48-4704-86dc-4a5dbd2242d6"))
+	(label "OVLO_TRIM" (at 215.9 222.25 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4342f5d1-a691-49d2-9e58-bada282bceab"))
+	(wire (pts (xy 215.9 232.41) (xy 215.9 234.95)) (stroke (width 0) (type default)) (uuid "858f1f9a-77f6-4025-ad22-3b2950786f2b"))
+	(label "P-" (at 215.9 234.95 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9f2afaa1-13eb-4991-bd4e-a937f61710c4"))
+	(symbol
+		(lib_id "Device:R")
+		(at 241.30000 228.60000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fbd71d94-7c4b-4a3c-9025-fd9ead49b56e")
+		(property "Reference" "R39"
+			(at 238.76000 228.60000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k"
+			(at 243.84000 228.60000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 239.52200 228.60000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706189568917504"
+			(at 241.30000 228.60000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 241.30000 228.60000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f02f4fd9-c60a-4017-8682-e6132f29075a")
+		)
+		(pin "2"
+			(uuid "0eab7457-93f0-4b35-81de-c61c5256e5c8")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 241.30000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
+			(at 241.30000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 241.30000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 241.30000 228.60000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 241.3 224.79) (xy 241.3 222.25)) (stroke (width 0) (type default)) (uuid "d58eef2f-c4ed-4c20-bef9-4488d28ad0a9"))
+	(label "OVLO_TRIM" (at 241.3 222.25 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "55a8f0de-3f02-4fad-92a9-8b7b6c733d48"))
+	(wire (pts (xy 241.3 232.41) (xy 241.3 234.95)) (stroke (width 0) (type default)) (uuid "10ca7c99-1c1c-4990-9037-4c954f0a7dbe"))
+	(label "P-" (at 241.3 234.95 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b9022ea7-dcd8-47ab-abfc-74431072d9a3"))
+	(symbol
+		(lib_id "Device:R")
+		(at 187.96000 110.49000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46fe88e6-9df0-4984-ad1b-439e3e944bd6")
+		(property "Reference" "R40"
+			(at 185.42000 110.49000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2k"
+			(at 190.50000 110.49000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 186.18200 110.49000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706189568917504"
+			(at 187.96000 110.49000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 187.96000 110.49000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc99f1ee-a593-4556-8b80-b03b172e5ed6")
+		)
+		(pin "2"
+			(uuid "05c07b53-f9b6-4e81-83cc-a4a355029852")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 187.96000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
+			(at 187.96000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF2001T5E"
+			(at 187.96000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 187.96000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 187.96 106.68) (xy 187.96 104.14)) (stroke (width 0) (type default)) (uuid "f89c1dbc-95f2-455b-93c2-86c7274e54f8"))
+	(label "TRH_TRIM" (at 187.96 104.14 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "acf96247-56d0-496b-bc47-1f5588bad058"))
+	(wire (pts (xy 187.96 114.30) (xy 187.96 116.84)) (stroke (width 0) (type default)) (uuid "af4b054d-09a2-473c-bde1-c923ac3d339a"))
+	(label "B-" (at 187.96 116.84 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "1ee68396-3356-47b5-a0ee-cbda85b043cb"))
+	(symbol
+		(lib_id "Device:R")
+		(at 198.12000 110.49000 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6993c5fe-e31a-409e-abbc-8054cde9a677")
+		(property "Reference" "R41"
+			(at 195.58000 110.49000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30k 1%"
+			(at 200.66000 110.49000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 196.34200 110.49000 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706409566388224"
+			(at 198.12000 110.49000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 198.12000 110.49000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b14da0ed-66b0-497b-96f4-d0738569d52c")
+		)
+		(pin "2"
+			(uuid "153bdb29-4de8-4988-910f-8a3e41356744")
+		)
+		(property "SMT_Populate" "Yes"
+			(at 198.12000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22984"
+			(at 198.12000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603WAF3002T5E"
+			(at 198.12000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI ROYAL Uniroyal Elec"
+			(at 198.12000 110.49000 0)
+			(effects
+				(font (size 1.016 1.016))
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PeacockBattery"
+				(path "/02d49df5-dfba-410f-a4ad-3bf3b1f42a52"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 198.12 106.68) (xy 198.12 104.14)) (stroke (width 0) (type default)) (uuid "e128e4a5-65a1-4e52-9cd3-ba7460704295"))
+	(label "TRH_TRIM" (at 198.12 104.14 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a827f386-8a3c-4ded-965a-9c63c0ea7edf"))
+	(wire (pts (xy 198.12 114.30) (xy 198.12 116.84)) (stroke (width 0) (type default)) (uuid "19c7f262-ec16-4a24-975e-d4d5b1823a02"))
+	(label "B-" (at 198.12 116.84 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4a6623cf-1c2b-4a53-980c-ebc70df36fc1"))
 )

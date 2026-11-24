@@ -1,0 +1,11 @@
+(version 1)
+# Local routing clearance around the milled optical window and the D4 escape.
+(rule "D4 window pads and USB shield"
+    (constraint edge_clearance (min 0.24mm))
+    (condition "(A.enclosedByArea('D4 window and fanout') && (A.memberOfFootprint('D4') || A.memberOfFootprint('J1'))) || (B.enclosedByArea('D4 window and fanout') && (B.memberOfFootprint('D4') || B.memberOfFootprint('J1')))"))
+(rule "D4 status escape to routed edges"
+    (constraint edge_clearance (min 0.25mm))
+    (condition "(A.NetName == '/CHG_STAT' && A.enclosedByArea('D4 window and fanout')) || (B.NetName == '/CHG_STAT' && B.enclosedByArea('D4 window and fanout'))"))
+(rule "D4 ground escape to routed edges"
+    (constraint edge_clearance (min 0.35mm))
+    (condition "(A.Type == 'Track' && A.NetName == '/P-' && A.enclosedByArea('D4 window and fanout')) || (B.Type == 'Track' && B.NetName == '/P-' && B.enclosedByArea('D4 window and fanout'))"))

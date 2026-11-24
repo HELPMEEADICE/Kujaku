@@ -1,101 +1,106 @@
-位号,数量,规格,厂商,订购型号或规格,KiCad 封装,安装面,装配说明
-BT1,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-BT2,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-BT3,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-BT4,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-BT5,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-BT6,1,5209 trimmed,Keystone,5209,PeacockBattery:Keystone_5209_Trimmed,F,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
-C1,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C2,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C3,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C4,1,10u / 25V,通用,10u / 25V,Capacitor_SMD:C_1206_3216Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C5,1,100n,通用,100n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C6,1,100n,通用,100n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C7,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C8,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C9,1,10n,通用,10n,Capacitor_SMD:C_0603_1608Metric,B,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
-C10,1,1u / 50V,通用,1u / 50V,Capacitor_SMD:C_0805_2012Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C11,1,4.7n / 50V,通用,4.7n / 50V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C12,1,1u / 50V,通用,1u / 50V,Capacitor_SMD:C_0805_2012Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C13,1,4.7u / 10V,通用,4.7u / 10V,Capacitor_SMD:C_0805_2012Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C14,1,100n / 16V,通用,100n / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C15,1,100n / 16V,通用,100n / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C16,1,10u / 35V,通用,10u / 35V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C17,1,10u / 35V,通用,10u / 35V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C18,1,10u / 35V,通用,10u / 35V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C19,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C20,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C21,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C22,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C23,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C24,1,10u / 25V,通用,10u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C25,1,100n / 50V,通用,100n / 50V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C26,1,10u / 50V,通用,10u / 50V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C27,1,220n / 50V,通用,220n / 50V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C28,1,1u / 16V,通用,1u / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C29,1,100n / 16V,通用,100n / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C30,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C31,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C32,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C33,1,22u / 25V,通用,22u / 25V,Capacitor_SMD:C_1206_3216Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C34,1,1u / 16V,通用,1u / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-C35,1,100n / 16V,通用,100n / 16V,Capacitor_SMD:C_0603_1608Metric,B,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
-D1,1,1N4148W,Diodes Inc.,1N4148W-7-F,Diode_SMD:D_SOD-123,B,SOD-123，1 为阴极
-D2,1,SMBJ15A,Littelfuse,SMBJ15A,Diode_SMD:D_SMB,B,SMB，单向 TVS，1 为阴极
-D3,1,SMAJ20A,Littelfuse,SMAJ20A,Diode_SMD:D_SMA,B,USB_VBUS TVS，1 为阴极。带线热插拔时实测保护前后峰值。
-D4,1,APHBM2012SURKCGKC,Kingbright,APHBM2012SURKCGKC,PeacockBattery:LED_Kingbright_APHBM2012_4P,F,"红绿双色，电芯侧发光中心 (52.00, 2.00) mm。绿通道表示保护后输入供电。"
-D5,1,PESD3V3U1UA,Nexperia,PESD3V3U1UA,Diode_SMD:D_SOD-323,B,SDA 对地 ESD，1 为阴极。
-D6,1,PESD3V3U1UA,Nexperia,PESD3V3U1UA,Diode_SMD:D_SOD-323,B,SCL 对地 ESD，1 为阴极。
-F1,1,20A / 65V,Littelfuse,0451020.MRL,Fuse:Fuse_Littelfuse-NANO2-451_453,B,20 A 快断保险丝，按装壳温度复核降额
-J1,1,USB4125-GF-A,GCT,USB4125-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal,B,六触点含双 CC，VBUS/GND，无 D+、D−。保持 V3 插口中心及 0.80 mm 外伸。
-J2,1,XT30PW-M30.G.Y,AMASS,XT30PW-M30.G.Y,PeacockBattery:XT30PW-M_Edge,B,"卧式公头，插合面中心 (46.00, 66.00) mm。5.00 mm 脚距，1=P+，2=P−。"
-J3,1,10k BMS sensor,通用,"10k NTC, insulated leads",Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,需另装电芯贴附式 10 kΩ NTC，温度动作点需标定
-J4,1,103AT-2,SEMITEC,103AT-2,Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,外置绝缘贴附 NTC，10 kΩ / 3435 K，核对接头极性与引脚底面净空。
-J5,1,SM04B-SRSS-TB(LF)(SN),JST,SM04B-SRSS-TB(LF)(SN),Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,B,B 面卧插，1 CHG_5V、2 SDA、3 SCL、4 GND。线束 1:1，电源与地用 28 AWG。
-L1,1,2.2uH,Coilcraft,XAL5030-222MEC,Inductor_SMD:L_Coilcraft_XAL5030-XXX,B,2.2 µH，Isat 9.2 A 典型，最大高 3.1 mm。
-L2,1,8.2uH,Coilcraft,XAL7030-822MEC,Inductor_SMD:L_Coilcraft_XAL7030-822,B,8.2 µH，最大高 3.1 mm。
-Q1,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (41.00, 46.60) mm。1=G，2=D，3=S。"
-Q2,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (41.00, 37.20) mm。1=G，2=D，3=S。"
-Q3,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (51.00, 46.60) mm。1=G，2=D，3=S。"
-Q4,1,AOD4184A,Alpha & Omega,AOD4184A,Package_TO_SOT_SMD:TO-252-2,B,"本地封装原点 (51.00, 37.20) mm。1=G，2=D，3=S。"
-R1,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R2,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R3,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R4,1,1k,通用,1k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R5,1,6.98k,通用,6.98k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R6,1,220k,通用,220k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R7,1,2k,通用,2k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R8,1,10M,通用,10M,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R9,1,2k,通用,2k,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R10,1,10M,通用,10M,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R11,1,4m / 3W / 1%,Vishay,WSLP25124L000FEA,PeacockBattery:WSLP2512_4m,B,4 mΩ，3 W，1%，专用焊盘。两端从电阻端铜区采样。
-R12,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R13,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R14,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R15,1,22R,通用,22R,Resistor_SMD:R_0603_1608Metric,B,0603，1% 厚膜
-R16,1,22k 1%,通用,22k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R17,1,23.2k 1%,通用,23.2k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R18,1,10k 1%,通用,10k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R19,1,174k 1%,通用,174k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R20,1,10k 1%,通用,10k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R21,1,1.24k 1%,通用,1.24k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R22,1,100R 1%,通用,100R 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R23,1,13.7k 1%,通用,13.7k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R24,1,30.9k 1%,通用,30.9 kΩ ±1%,Resistor_SMD:R_0603_1608Metric,B,WAKE_5V 至 ILIM_HIZ。
-R25,1,10k 1%,通用,10 kΩ ±1%,Resistor_SMD:R_0603_1608Metric,B,ILIM_HIZ 对 P−，与 R24 限制未协商时的充电支路输入电流。
-R26,1,5.23k 1%,通用,5.23k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R27,1,30.1k 1%,通用,30.1k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R28,1,1.5k,通用,1.5k,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R29,1,1.5k,通用,1.5k,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R30,1,33R,通用,33 Ω ±1%,Resistor_SMD:R_0603_1608Metric,B,BQ25798 SDA 串阻。A2 无总线上拉。
-R31,1,33R,通用,33 Ω ±1%,Resistor_SMD:R_0603_1608Metric,B,BQ25798 SCL 串阻。A2 无总线上拉。
-R32,1,100k 1%,通用,100k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-R33,1,24.9k 1%,通用,24.9k 1%,Resistor_SMD:R_0603_1608Metric,B,厚膜 ±1%。
-U1,1,BM3451TNDC-T20B,BYD Semiconductor,BM3451TNDC-T20B,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,B,TSSOP-20，3S，单节 4.25 V 过充及 2.8 V 过放。TNDC-T20B 无均衡
-U2,1,HUSB238_002DD,Hynetek,HUSB238_002DD,Package_DFN_QFN:WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,B,I²C 0x08。VSET 接地，默认 5 V，主控按源 PDO 请求 15 V。
-U3,1,TPS259470ARPWR,TI,TPS259470ARPWR,PeacockBattery:TI_RPW0010A,B,OVLO、反向阻断、压控斜率及约 2.7 A 限流。
-U4,1,BQ25798RQMR,TI,BQ25798RQMR,Package_DFN_QFN:Texas_RQM0029A_VQFN-29_4x4mm_P0.4mm,B,I²C 0x6B。3S / 12.60 V / 1.0 A POR，2.0 A 由 MainV2 固件设定。
-U5,1,LMR33610ADDAR,TI,LMR33610ADDAR,Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm_ThermalVias,B,400 kHz / 5.0 V / ≥600 mA 唤醒电源。
-U6,1,LM66100DCKR,TI,LM66100DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,B,CE 接输出，隔离 CHG_5V 反灌。
-U7,1,SN74LVC2G66DCUR,TI,SN74LVC2G66DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,B,USB 供电时接通 I²C，供电掉电隔离。
-CELL,3,Ø18.50 × 66.50–68.00 mm 凸口 18650,待选,同型号、同批次动力电芯,可拆卸,F,整组一致性及 15 A 稳态和 20 A 脉冲额定按最终电芯验收。
+﻿位号,数量,规格,厂商,订购型号或规格,KiCad 封装,安装面,LCSC,SMT_Populate,JLCPCB 库别,装配说明
+BT1,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+BT2,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+BT3,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+BT4,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+BT5,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+BT6,1,5209 trimmed,Keystone,TBD,PeacockBattery:Keystone_5209_Trimmed,F,,No,N/A,焊接前修剪原装长焊耳，装入镀通槽并完全坐靠后从 PCB 底面量取突出 ≤1.50 mm。名义肩下 2.80 ±0.10 mm。去毛刺并复核插入与焊脚。
+C1,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
+C2,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
+C3,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
+C4,1,10uF 25V,Samsung Electro Mechanics,CL21A106KAYNNNE,Capacitor_SMD:C_0805_2012Metric,B,C15850,Yes,Basic,BMS VCC 储能，10 µF / 25 V，0805。
+C5,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
+C6,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,X7R，±10%，未标耐压者用 ≥50 V，复核直流偏压
+C7,1,10nF 50V,FH Guangdong Fenghua Advanced Tech,0603B103K500NT,Capacitor_SMD:C_0603_1608Metric,B,C57112,Yes,Basic,过流定时，保持 10 nF / 50 V。
+C8,1,10nF 50V,FH Guangdong Fenghua Advanced Tech,0603B103K500NT,Capacitor_SMD:C_0603_1608Metric,B,C57112,Yes,Basic,过流定时，保持 10 nF / 50 V。
+C9,1,10nF 50V,FH Guangdong Fenghua Advanced Tech,0603B103K500NT,Capacitor_SMD:C_0603_1608Metric,B,C57112,Yes,Basic,分流检测滤波，保持 10 nF / 50 V。
+C10,1,1uF 50V,Samsung Electro Mechanics,CL10A105KB8NNNC,Capacitor_SMD:C_0603_1608Metric,B,C15849,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C11,1,4.7nF 50V,FH Guangdong Fenghua Advanced Tech,0603B472K500NT,Capacitor_SMD:C_0603_1608Metric,B,C53987,Yes,Basic,电子保险丝 dV/dt 电容，保持 4.7 nF。
+C12,1,1uF 50V,Samsung Electro Mechanics,CL10A105KB8NNNC,Capacitor_SMD:C_0603_1608Metric,B,C15849,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C13,1,4.7uF 25V,Samsung Electro Mechanics,CL21A475KAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C1779,Yes,Basic,REGN 去耦，4.7 µF / 25 V。
+C14,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C15,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C16,1,10uF 50V,Samsung Electro Mechanics,CL31A106KBHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C13585,Yes,Basic,10 µF / 50 V、1206，保留受偏压下的容量余量。
+C17,1,10uF 50V,Samsung Electro Mechanics,CL31A106KBHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C13585,Yes,Basic,10 µF / 50 V、1206，保留受偏压下的容量余量。
+C18,1,10uF 50V,Samsung Electro Mechanics,CL31A106KBHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C13585,Yes,Basic,10 µF / 50 V、1206，保留受偏压下的容量余量。
+C19,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C20,1,22uF 25V,Samsung Electro Mechanics,CL31A226KAHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C12891,Yes,Basic,22 µF / 25 V、1206，保留充电 SYS 在偏压下的容量余量。
+C21,1,22uF 25V,Samsung Electro Mechanics,CL31A226KAHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C12891,Yes,Basic,22 µF / 25 V、1206，保留充电 SYS 在偏压下的容量余量。
+C22,1,22uF 25V,Samsung Electro Mechanics,CL31A226KAHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C12891,Yes,Basic,22 µF / 25 V、1206，保留充电 SYS 在偏压下的容量余量。
+C23,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C24,1,10uF 50V,Samsung Electro Mechanics,CL31A106KBHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C13585,Yes,Basic,10 µF / 50 V、1206，保留受偏压下的容量余量。
+C25,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C26,1,10uF 50V,Samsung Electro Mechanics,CL31A106KBHNNNE,Capacitor_SMD:C_1206_3216Metric,B,C13585,Yes,Basic,AP63205 输入储能，50 V 器件，临近 VIN。
+C27,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,AP63205 VIN 与 GND 的近端高频旁路。
+C29,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C30,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C45783,Yes,Basic,22 µF / 25 V、0805，WAKE_5V 输出电容。
+C31,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C45783,Yes,Basic,22 µF / 25 V、0805，WAKE_5V 输出电容。
+C32,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C45783,Yes,Basic,22 µF / 25 V、0805，WAKE_5V 输出电容。
+C33,1,22uF 25V,Samsung Electro Mechanics,CL21A226MAQNNNE,Capacitor_SMD:C_0805_2012Metric,B,C45783,Yes,Basic,22 µF / 25 V、0805，WAKE_5V 输出电容。
+C34,1,1uF 50V,Samsung Electro Mechanics,CL10A105KB8NNNC,Capacitor_SMD:C_0603_1608Metric,B,C15849,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+C35,1,100nF 50V,YAGEO,CC0603KRX7R9BB104,Capacitor_SMD:C_0603_1608Metric,B,C14663,Yes,Basic,陶瓷 X7R 或 X5R。按偏压下有效容量、纹波电流和公差选型。
+D1,1,1N4148W,ST Semtech,1N4148W,Diode_SMD:D_SOD-123,B,C81598,Yes,Basic,基础库低漏电高速二极管，SOD-123，1 为阴极。
+D2,1,SMBJ15A,hongjiacheng,SMBJ15A,Diode_SMD:D_SMB,B,C19077569,Yes,Preferred Extended,15 V 单向 TVS，SMB，1 为阴极。
+D3,1,SMAJ20A,hongjiacheng,SMAJ20A,Diode_SMD:D_SMA,B,C41376408,Yes,Preferred Extended,20 V 单向 TVS，SMA，1 为阴极。热插拔峰值以带线实测为准。
+D4,1,23-22B/R7G6C-A30/2T,Everlight Elec,23-22B/R7G6C-A30/2T,PeacockBattery:LED_Everlight_23-22B_Reverse,B,C424084,Yes,Extended,"B 面反向出光，光轴居中于 (52.00, 2.00) mm。1=绿阳，2=绿阴，3=红阳，4=红阴。"
+D5,1,PESD3V3U1UA,Nexperia,"PESD3V3U1UA,115",Diode_SMD:D_SOD-323,B,C403915,Yes,Extended,SDA 对地 ESD，1 为阴极。
+D6,1,PESD3V3U1UA,Nexperia,"PESD3V3U1UA,115",Diode_SMD:D_SOD-323,B,C403915,Yes,Extended,SCL 对地 ESD，1 为阴极。
+F1,1,20A / 65V,Littelfuse,0451020.MRL,Fuse:Fuse_Littelfuse-NANO2-451_453,B,C178980,Yes,Extended,20 A 快断保险丝，按装壳温度复核降额
+J1,1,USB4125-GF-A,Global Connector Technology,USB4125-GF-A,PeacockBattery:USB4125_HandAssembly,B,C3151650,No,Extended,B 面手焊。不下钢网。六触点双 CC，保留插口中心及 0.80 mm 外伸。
+J2,1,XT30PW-M30.G.Y,Changzhou Amass Elec,XT30PW-M30.G.Y,PeacockBattery:XT30PW-M_Edge,B,C431092,No,Extended,B 面手焊。保留 5.00 mm 脚距及原固定孔，1=P+，2=P−。
+J3,1,10k BMS sensor,通用,"10k NTC, insulated leads",Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,,No,N/A,需另装电芯贴附式 10 kΩ NTC，温度动作点需标定
+J4,1,103AT-2,SEMITEC,103AT-2,Connector_Wire:SolderWire-0.15sqmm_1x02_P4mm_D0.5mm_OD1.5mm,B,,No,N/A,外置绝缘贴附 NTC，10 kΩ / 3435 K，核对接头极性与引脚底面净空。
+J5,1,SM04B-SRSS-TB(LF)(SN),JST,SM04B-SRSS-TB(LF)(SN),PeacockBattery:JST_SH_SM04B_HandAssembly,B,C160404,No,Extended,B 面手焊。不下钢网。1=CHG_5V，2=SDA，3=SCL，4=GND。
+L1,1,2.2uH,APV Technologies,APH0530C-2R2M-TCD5,PeacockBattery:L_APV_APH0530C,B,C50326270,Yes,Extended,2.2 µH，±20%，DCR ≤14.5 mΩ，Isat 10.3 A 典型，最大高 3.1 mm。
+L2,1,4.7uH,YJYCOIN,YSPI0730-4R7M,PeacockBattery:L_YJYCOIN_YSPI0730,B,C351117,Yes,Extended,4.7 µH，±20%，DCR ≤40 mΩ，Isat 9 A 典型，最大高 3.0 mm。
+Q1,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
+Q2,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
+Q3,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
+Q4,1,KND3404C,KIA Semicon Tech,KND3404C,Package_TO_SOT_SMD:TO-252-2,B,C455981,Yes,Extended,40 V，RDS(on) ≤9 mΩ@4.5 V，TO-252，原位置，1=G，2=D，3=S。
+R1,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
+R2,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
+R3,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
+R4,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,0603，1% 厚膜
+R5,1,5.1k,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,Resistor_SMD:R_0603_1608Metric,B,C23186,Yes,Basic,与 R40∥R41 串联，BMS TRH 等效 6.975 kΩ。
+R6,1,220k,UNI ROYAL Uniroyal Elec,0603WAF2203T5E,Resistor_SMD:R_0603_1608Metric,B,C22961,Yes,Basic,0603，1% 厚膜
+R7,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,0603，1% 厚膜
+R8,1,10M,UNI ROYAL Uniroyal Elec,0603WAF1005T5E,Resistor_SMD:R_0603_1608Metric,B,C7250,Yes,Basic,0603，1% 厚膜
+R9,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,0603，1% 厚膜
+R10,1,10M,UNI ROYAL Uniroyal Elec,0603WAF1005T5E,Resistor_SMD:R_0603_1608Metric,B,C7250,Yes,Basic,0603，1% 厚膜
+R11,1,4m / 3W / 1%,Vishay Intertech,WSLP25124L000FEA,PeacockBattery:WSLP2512_4m,B,C2091033,Yes,Extended,4 mΩ，3 W，1%，专用焊盘。两端从电阻端铜区采样。
+R12,1,22R,UNI ROYAL Uniroyal Elec,0603WAF220JT5E,Resistor_SMD:R_0603_1608Metric,B,C23345,Yes,Basic,0603，1% 厚膜
+R13,1,22R,UNI ROYAL Uniroyal Elec,0603WAF220JT5E,Resistor_SMD:R_0603_1608Metric,B,C23345,Yes,Basic,0603，1% 厚膜
+R14,1,22R,UNI ROYAL Uniroyal Elec,0603WAF220JT5E,Resistor_SMD:R_0603_1608Metric,B,C23345,Yes,Basic,0603，1% 厚膜
+R15,1,22R,UNI ROYAL Uniroyal Elec,0603WAF220JT5E,Resistor_SMD:R_0603_1608Metric,B,C23345,Yes,Basic,0603，1% 厚膜
+R16,1,22k 1%,UNI ROYAL Uniroyal Elec,0603WAF2202T5E,Resistor_SMD:R_0603_1608Metric,B,C31850,Yes,Basic,厚膜 ±1%。
+R17,1,22k 1%,UNI ROYAL Uniroyal Elec,0603WAF2202T5E,Resistor_SMD:R_0603_1608Metric,B,C31850,Yes,Basic,厚膜 ±1%。
+R18,1,10k 1%,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,厚膜 ±1%。
+R19,1,100k 1%,UNI ROYAL Uniroyal Elec,0603WAF1003T5E,Resistor_SMD:R_0603_1608Metric,B,C25803,Yes,Basic,OVLO 上臂。下臂由 R20、R38、R39 构成。
+R20,1,5.1k 1%,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,Resistor_SMD:R_0603_1608Metric,B,C23186,Yes,Basic,与 R38∥R39 串联，OVLO 下臂等效 5.767 kΩ。
+R21,1,1.2k,UNI ROYAL Uniroyal Elec,0603WAF1201T5E,Resistor_SMD:R_0603_1608Metric,B,C22765,Yes,Basic,与 R37 串联，输入电子保险丝 ILM 等效 1.233 kΩ。
+R22,1,100R 1%,UNI ROYAL Uniroyal Elec,0603WAF1000T5E,Resistor_SMD:R_0603_1608Metric,B,C22775,Yes,Basic,厚膜 ±1%。
+R23,1,10k 1%,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,与 R34∥(R35+R36) 串联，BQ PROG 等效 13.813 kΩ。
+R24,1,30k 1%,UNI ROYAL Uniroyal Elec,0603WAF3002T5E,Resistor_SMD:R_0603_1608Metric,B,C22984,Yes,Basic,WAKE_5V 至 ILIM_HIZ。与 R25 保持 3:1 保守输入限流分压。
+R25,1,10k 1%,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,ILIM_HIZ 至 P−，与 R24 设未协商电源的输入限流。
+R26,1,5.1k 1%,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,Resistor_SMD:R_0603_1608Metric,B,C23186,Yes,Basic,JEITA 上臂，工作温度窗口用实际 NTC 复核。
+R27,1,30k 1%,UNI ROYAL Uniroyal Elec,0603WAF3002T5E,Resistor_SMD:R_0603_1608Metric,B,C22984,Yes,Basic,JEITA 下臂，与 103AT-2 并联。
+R28,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,厚膜 ±1%。
+R29,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,厚膜 ±1%。
+R30,1,33R,UNI ROYAL Uniroyal Elec,0603WAF330JT5E,Resistor_SMD:R_0603_1608Metric,B,C23140,Yes,Basic,BQ25798 SDA 串阻。A2 无总线上拉。
+R31,1,33R,UNI ROYAL Uniroyal Elec,0603WAF330JT5E,Resistor_SMD:R_0603_1608Metric,B,C23140,Yes,Basic,BQ25798 SCL 串阻。A2 无总线上拉。
+R34,1,5.1k,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,Resistor_SMD:R_0603_1608Metric,B,C23186,Yes,Basic,BQ PROG 并联支路。
+R35,1,10k 1%,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,Resistor_SMD:R_0603_1608Metric,B,C25804,Yes,Basic,BQ PROG 串联支路第一颗。
+R36,1,5.1k,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,Resistor_SMD:R_0603_1608Metric,B,C23186,Yes,Basic,BQ PROG 串联支路第二颗。
+R37,1,33R,UNI ROYAL Uniroyal Elec,0603WAF330JT5E,Resistor_SMD:R_0603_1608Metric,B,C23140,Yes,Basic,电子保险丝 ILM 串联微调电阻。
+R38,1,1k,UNI ROYAL Uniroyal Elec,0603WAF1001T5E,Resistor_SMD:R_0603_1608Metric,B,C21190,Yes,Basic,OVLO 下臂微调支路，与 R39 并联。
+R39,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,OVLO 下臂微调支路，与 R38 并联。
+R40,1,2k,UNI ROYAL Uniroyal Elec,0603WAF2001T5E,Resistor_SMD:R_0603_1608Metric,B,C22975,Yes,Basic,BMS TRH 微调支路，与 R41 并联。
+R41,1,30k 1%,UNI ROYAL Uniroyal Elec,0603WAF3002T5E,Resistor_SMD:R_0603_1608Metric,B,C22984,Yes,Basic,BMS TRH 微调支路，与 R40 并联。
+U1,1,BM3451TNDC-T20B,BYD Semiconductor,BM3451TNDC-T20B,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,B,C2686222,Yes,Extended,国产 BYD 3S 保护。嘉立创公开目录库存显示为 0，需确认补货、预订或备料途径。
+U2,1,HUSB238_002DD,Hynetek,HUSB238_002DD,Package_DFN_QFN:WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm,B,C7471904,Yes,Extended,I²C 0x08。VSET 接地，默认 5 V，主控按源 PDO 请求 15 V。
+U3,1,TPS259470ARPWR,Texas Instruments,TPS259470ARPWR,PeacockBattery:TI_RPW0010A,B,C3662799,Yes,Extended,OVLO、反向阻断、压控斜率及约 2.7 A 限流。
+U4,1,BQ25798RQMR,TI,BQ25798RQMR,Package_DFN_QFN:Texas_RQM0029A_VQFN-29_4x4mm_P0.4mm,B,C2876593,Yes,Extended,I²C 0x6B。3S / 750 kHz / 12.60 V / 1.0 A POR，2.0 A 由主板固件设置。
+U5,1,AP63205WU-7,Diodes Incorporated,AP63205WU-7,Package_TO_SOT_SMD:TSOT-23-6,B,C2071056,Yes,Extended,固定 5.0 V，1.1 MHz，3.8–32 V 输入，同步 Buck，近 100% 占空比低压差模式。
+U6,1,LM66100DCKR,Texas Instruments,LM66100DCKR,Package_TO_SOT_SMD:SOT-363_SC-70-6,B,C2869734,Yes,Extended,CE 接输出，隔离 CHG_5V 反灌。
+U7,1,SN74LVC2G66DCUR,Texas Instruments,SN74LVC2G66DCUR,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,B,C181970,Yes,Extended,USB 供电时接通 I²C，供电掉电隔离。
+CELL,3,Ø18.50 × 66.50–68.00 mm 凸口 18650,待选,同型号、同批次动力电芯,可拆卸,F,,No,N/A,整组一致性及 15 A 稳态和 20 A 脉冲额定按最终电芯验收。

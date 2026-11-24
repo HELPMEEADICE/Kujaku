@@ -1,6 +1,6 @@
 # 孔雀 3S 18650 四层电池板 A2
 
-2026-11-24。A2 采用改制 Keystone 5209、HUSB238 和 BQ25798。KiCad 10.0.8 复验结果为 **ERC 0 错误、0 警告，DRC 0 违规、0 未连接，原理图–PCB 一致性 0 差异**。制造包内包含四层铜、板框、阻焊、丝印、钢网及分别输出的镀通和非镀通钻孔。
+2026-11-25。A2 降本版采用 B 面单面 SMT。KiCad 10.0.8 重填四层覆铜后复验，**ERC 0 错误、0 警告，DRC 0 违规、0 未连接，原理图–PCB 一致性 0 差异**。Gerber、钻孔和 CPL 共用板左下角原点，单位为 mm。
 
 ## V3 安装基准
 
@@ -11,7 +11,8 @@
 | 板框 | 92.00 × 66.00，四角 R3.00，成品板厚 1.60 | 以 Edge.Cuts 中心线为加工基准 |
 | MH1–MH4 | (4.00, 62.00)、(88.00, 62.00)、(4.00, 4.00)、(88.00, 4.00) | Ø3.20 NPTH，四层 Ø6.00 禁走线、过孔及覆铜 |
 | J1 USB-C | 插口中心 (46.00, 0.00)，封装原点 (46.00, 2.60) | B 面 GCT USB4125-GF-A，沿 −Y 外伸 0.80 |
-| D4 红绿 LED | 发光中心 (52.00, 2.00) | F 面，与 V3 光导对齐 |
+| D4 红绿 LED | 发光中心 (52.00, 2.00) | B 面反向贴装，向 F 面原 V3 光导出光 |
+| D4 透光窗口 | 中心 (52.00, 2.00)，1.76 × 1.86，四角 R0.50 | Edge.Cuts 内铣，非镀通 |
 | J2 XT30 | 插合面中心 (46.00, 66.00) | B 面 AMASS XT30PW-M30.G.Y |
 | J2 孔位 | 1 (43.50, 52.90)，2 (48.50, 52.90)，固定孔 (40.50, 62.90)、(51.50, 62.90) | 1=P+，2=P−。封装原点为孔 1 |
 | Q1 / Q2 | (41.00, 46.60) / (41.00, 37.20) | B 面，0° |
@@ -62,9 +63,10 @@ HUSB238 使用 0x08，和 0x42 的 INA3221 无冲突。BQ25798 的 0x6B 唯一�
 ## PD 充电及唤醒
 
 - **PD 输入。** J1 的双 CC 接 HUSB238。VSET 接地，默认 5 V。MainV2 启动后从 HUSB238 读源 PDO，优先请求满足功率预算的 15 V，并检查合同电压、电流和就绪状态。TPS259470ARPWR 提供限流、过压关断、输入反向阻断和受控浪涌。六触点 J1 无 D+/D−，不做 BC1.2 数据线识别。 [HUSB238 评估板](https://en.hynetek.com/2421.html) · [TI TPS25947](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
-- **BQ25798。** PROG=13.7 kΩ，对应 3S、750 kHz、12.60 V 截止和 **1.0 A 上电默认充电电流**。使用 2.2 µH 屏蔽电感 XAL5030-222MEC，Isat 典型 9.2 A。功率 SW 线在芯片近端展开，通向电感的主段宽 0.70 mm。J4 接 SEMITEC 103AT-2 与温度分压，保留 JEITA 监测。A2 无 3S 电芯均衡。 [BQ25798 手册](https://www.ti.com/lit/ds/symlink/bq25798.pdf) · [Coilcraft XAL5030](https://www.coilcraft.com/en-us/products/power/high-voltage-inductors/xal/xal50xx/?skuId=4036)
-- **充电配置。** R24/R25 在未协商时把 ILIM_HIZ 设在约 1.15–1.22 V，给充电支路约 0.19–0.28 A 输入预算。VINDPM 保持有效。6 触点接口下，主控在读到有效 PD 合同前使用保守输入限流。确认 **15 V / ≥2.25 A** 合同后，MainV2 应先设置与合同及唤醒负载匹配的 IINDPM 和 VINDPM，再放开外部限流钳位并写充电电流 **2.0 A**。回落 5 V、掉线或 PD 合同失效时恢复保守设置，并管理写入后启动的看门狗。主板固件的这些动作需联调。
-- **CHG_5V。** LMR33610ADDAR 从受保护 VBUS 降压，额定 1 A，反馈 100 kΩ / 24.9 kΩ，电感 8.2 µH。LM66100DCKR 的 CE 接输出作反灌阻断。15–20 V 入端输出名义约 5.0 V。5.0 V 入端、600 mA 时按 Buck 典型压差及串联阻抗设计 J5 处约 4.7 V 的带载唤醒。用实际线缆和主板验证启动峰值以及 5V_SYS、3.3V_SYS 和 CHG_DET。D4 绿灯表示唤醒源有效，红灯由充电状态 STAT 驱动。 [LMR33610 手册](https://www.ti.com/lit/ds/symlink/lmr33610.pdf) · [LM66100 手册](https://www.ti.com/lit/ds/symlink/lm66100.pdf)
+- **BQ25798。** R23 + [R34 ∥ (R35 + R36)] = 13.813 kΩ，1% 组合在 TI 推荐的 13.7 kΩ ±2% 范围内，对应 3S、750 kHz、12.60 V 截止和 **1.0 A 上电默认充电电流**。使用国产 2.2 µH 屏蔽电感 APH0530C-2R2M-TCD5，Isat 典型 10.3 A、DCR ≤14.5 mΩ、最大高 3.1 mm。功率 SW 线在芯片近端展开，通向电感的主段宽 0.70 mm。J4 接 SEMITEC 103AT-2 与温度分压，保留 JEITA 监测。A2 无 3S 电芯均衡。 [BQ25798 手册](https://www.ti.com/lit/ds/symlink/bq25798.pdf) · [APV APH0530C-TCD5](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8780832249016033280)
+- **充电配置。** R24/R25 为 30 kΩ / 10 kΩ。WAKE_5V 为 4.7–5.0 V 时，ILIM_HIZ 名义为 1.175–1.25 V。普通 5 V 的总输入电流和启动过程由实测确认。VINDPM 保持有效。6 触点接口下，主控在读到有效 PD 合同前使用保守输入限流。确认 **15 V / ≥2.25 A** 合同后，MainV2 应先设置与合同及唤醒负载匹配的 IINDPM 和 VINDPM，再放开外部限流钳位并写充电电流 **2.0 A**。回落 5 V、掉线或 PD 合同失效时恢复保守设置，并管理写入后启动的看门狗。主板固件的这些动作需联调。
+- **CHG_5V。** U5 AP63205WU-7 从受保护 VBUS 降压，输入范围 3.8–32 V，固定 5.0 V，1.1 MHz。L2 为国产 4.7 µH 屏蔽电感，Isat 典型 9 A。LM66100DCKR 保持反灌阻断。5 V 入端工作在近 100% 占空比的低压差模式。用实际线缆和主板复测 600 mA 带载唤醒、上电峰值及 5V_SYS、3.3V_SYS、CHG_DET。D4 绿灯指示唤醒源有效，红灯由 STAT 驱动。 [Diodes AP63205](https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf) · [YJYCOIN YSPI0730](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8788087567868534784) · [TI LM66100](https://www.ti.com/lit/ds/symlink/lm66100.pdf)
+- 电子保险丝 UVLO 为 22 kΩ / 10 kΩ，典型上升阈值约 3.84 V。OVLO 为 100 kΩ / [5.1 kΩ + (1 kΩ ∥ 2 kΩ)]，典型上升阈值约 22.01 V。R21 + R37 将 ILM 等效设为 1.233 kΩ。 [TI TPS25947](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
 
 ## 四层叠构与 15–20 A 载流
 
@@ -77,7 +79,46 @@ HUSB238 使用 0x08，和 0x42 的 INA3221 无冲突。BQ25798 的 0x6B 唯一�
 
 叠构为 0.21 / 0.95 / 0.21 mm 的对称介质厚度。ENIG。版图中 B+ 到 P+ 仅经 F1，B−、SHUNT_HI、DRAIN_LINK 和 P− 各自独立。连续 P− 内平面不旁路分流器或保护 MOSFET。
 
-保留 BM3451TNDC-T20B、AOD4184A 四管和 R11 的 4 mΩ Kelvin 采样。Q1/Q2 的 SHUNT_HI、Q3/Q4 的 P− 源脚直连覆铜，F.Cu 汇流主段有效宽度分别为 **5.05 mm 和 4.60 mm**。两组各有 **16 颗 0.40/0.80 mm** 源极换层过孔。封装焊盘入口受引脚几何限制。In1.Cu 另承担 P− 回流和数字参考。15 A 稳态及 20 A 脉冲的接触压降和温升仍以实测为准。XT30PW-M 的厂商额定为 15 A，瞬时额定为 30 A。 [AMASS 规格](https://www.triopak.fi/files/product/Amass/XT30PW%20SPEC.pdf)
+保留国产 BYD BM3451TNDC-T20B 与 R11 的 4 mΩ Kelvin 采样。R5 + (R40 ∥ R41) 使 TRH 等效为 6.975 kΩ。Q1–Q4 使用国产 KND3404C，40 V，RDS(on) 最大 9 mΩ @ VGS=4.5 V。四管沿用原 TO-252 焊盘、位置和大电流过孔阵列。Q1/Q2 的 SHUNT_HI、Q3/Q4 的 P− 源脚直连覆铜，F.Cu 汇流主段有效宽度分别为 **5.05 mm 和 4.60 mm**。两组各有 **16 颗 0.40/0.80 mm** 源极换层过孔。封装焊盘入口受引脚几何限制。In1.Cu 另承担 P− 回流和数字参考。15 A 稳态及 20 A 脉冲的接触压降和温升仍以实测为准。XT30PW-M 的厂商额定为 15 A，瞬时额定为 30 A。MOSFET 替换后复验关断波形、短路保护及装壳温升。 [BYD BM3451](https://www.bydmicro.com/params/field/preview/PDF_PRODUCT_202304141002.pdf) · [KIA KND3404C](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911542414266368) · [AMASS 规格](https://www.triopak.fi/files/product/Amass/XT30PW%20SPEC.pdf)
+
+## 嘉立创贴装与采购
+
+93 个机贴位号全部位于 B 面。BT1–BT6 和 J1–J5 在全量 BOM 中标为 SMT_Populate = No，用于手工装配。J1、J5 取消钢网开口，铜焊盘和接口坐标沿用原设计。生产 SMT BOM 与 CPL 的位号完全一致，制造 ZIP 仅含 B 面钢网。 [嘉立创 KiCad 10 文件格式](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad)
+
+D4 为 Everlight 反向出光 LED。B 面贴装后穿过铣窗向 F 面光导发光。铣窗沿板 X/Y 分别为 1.76/1.86 mm，内角 R0.50。D4 局部板边规则覆盖铣窗和附近逃线。厂商针脚为 1 绿阳、2 绿阴、3 红阳、4 红阴。首件核对透光窗尺寸、装壳净空、光导亮度和贴片预览中的 1 脚。 [Everlight 封装图](https://en.everlight.com/wp-content/plugins/ItemRelationship/product_files/pdf/DSE-0008845-23-22B-R7G6C-A30-2T-V5.pdf) · [嘉立创工艺能力](https://jlcpcb.com/capabilities/Capabilities?type=1)
+
+| SMT 库别 | 料号数 | 贴装位号数 |
+| --- | ---: | ---: |
+| 基础库 | 23 / 39（59.0%） | 73 / 93（78.5%） |
+| 优选扩展 | 2 | 2 |
+| 收费扩展 | 14 | 18 |
+
+与 PeacockMainV2 当前 SMT BOM 核对，共用 **9 个基础库料号** C12891、C14663、C15849、C15850、C23140、C23186、C25803、C25804、C45783。C23140 是 33 Ω。C23345 是 22 Ω，继续用于原 BMS 栅极阻尼。C116592 是最高输入 17 V 的 TPS563201，宽输入唤醒支路采用 AP63205。 [MainV2 SMT BOM](../../PeacockMainV2/PeacockMainV2-SMT-BOM.csv) · [33 Ω 料号](https://jlcpcb.com/partdetail/0603WAF330JT5E/C23140) · [22 Ω 料号](https://jlcpcb.com/partdetail/C23345) · [AP63205 料号](https://jlcpcb.com/partdetail/AP63205WU-7/C2071056)
+
+C7–C9 保持 10 nF 定时和滤波，C11 保持 4.7 nF 以维持输入斜率，C13 保持 4.7 µF REGN 去耦。C16–C18、C24、C26 采用 10 µF / 50 V、1206，C20–C22 采用 22 µF / 25 V、1206，以保留耐压及偏压容量余量。D1 采用基础库低漏电 1N4148W。D2/D3 的浪涌钳位和 D5/D6 的 I²C ESD 保护继续使用 TVS。R8/R10 的 10 MΩ 和 R11 的 4 mΩ 各自保留既定电路功能。 [TI BQ25798](https://www.ti.com/lit/ds/symlink/bq25798.pdf) · [TI TPS25947](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
+
+| 位号 | 订购型号 | LCSC | 库别 |
+| --- | --- | --- | --- |
+| D2 | SMBJ15A | C19077569 | 优选扩展 |
+| D3 | SMAJ20A | C41376408 | 优选扩展 |
+| D4 | 23-22B/R7G6C-A30/2T | C424084 | 扩展 |
+| D5, D6 | PESD3V3U1UA,115 | C403915 | 扩展 |
+| F1 | 0451020.MRL | C178980 | 扩展 |
+| L1 | APH0530C-2R2M-TCD5 | C50326270 | 扩展 |
+| L2 | YSPI0730-4R7M | C351117 | 扩展 |
+| Q1, Q2, Q3, Q4 | KND3404C | C455981 | 扩展 |
+| R11 | WSLP25124L000FEA | C2091033 | 扩展 |
+| U1 | BM3451TNDC-T20B | C2686222 | 扩展 |
+| U2 | HUSB238_002DD | C7471904 | 扩展 |
+| U3 | TPS259470ARPWR | C3662799 | 扩展 |
+| U4 | BQ25798RQMR | C2876593 | 扩展 |
+| U5 | AP63205WU-7 | C2071056 | 扩展 |
+| U6 | LM66100DCKR | C2869734 | 扩展 |
+| U7 | SN74LVC2G66DCUR | C181970 | 扩展 |
+
+按嘉立创国内经济型公开口径，收费扩展每个料号 20 元。以原 A2 的通用阻值按等值常备料号回填，并假设 J1/J5 原拟交给贴片厂装配，收费料号从约 28 种降到 14 种，**预计每单换料费从 560 元降到 280 元，约省 280 元（50%）**。若旧板 J1、J5 已经手焊，则同口径约省 240 元。估算只含换料费，库别、优惠及实际报价以下单页面为准。 [嘉立创换料费口径](https://m.jlc.com/portal/q1i38538.html)
+
+U1 C2686222 是原 A2 的低价国产 BYD 型号。嘉立创公开目录显示库存 0，需确认补货、预订或代料入库后才能安排完整 PCBA。U3 C3662799 有立创商城供货记录，嘉立创工厂库存和交期单独核对。库别按嘉立创目录快照和查到的官方产品页统计。 [嘉立创 BYD 目录](https://jlcpcb.com/parts/2nd/Others/New_Arrivals_3286?Manufacturer=BYD) · [嘉立创代料入库](https://jlcpcb.com/help/article/how-to-consign-parts-to-jlcpcb-from-mainland-china) · [立创商城 TPS259470ARPWR](https://www.lcsc.com/product-detail/C3662799.html)
 
 ## 核验及打样
 
@@ -86,7 +127,7 @@ HUSB238 使用 0x08，和 0x42 的 INA3221 无冲突。BQ25798 的 0x6B 唯一�
 | KiCad ERC | 0 错误，0 警告 |
 | KiCad DRC，重填后已保存 | 0 违规，0 未连接 |
 | 原理图与 PCB 一致性 | 0 差异 |
-| CAM | 四层铜及 1.60 mm 层叠已核验。Excellon 核验 6 个 5.40 × 0.80 mm 镀通槽和 4 个 Ø3.20 mm 非镀通安装孔 |
-| V3 名义装配 | 六个修剪焊耳及三节 68 mm 电芯的实体无干涉。实物接触行程、装壳线束、温升及供电回落列入样机复验 |
+| CAM | 四层铜、B 面钢网及 1.60 mm 层叠已核验。Excellon 保留 6 个 5.40 × 0.80 mm 镀通电芯槽和 4 个 Ø3.20 mm 非镀通安装孔。D4 窗口在 Edge.Cuts |
+| V3 机械 | 原版六个修剪焊耳及三节 68 mm 电芯已通过名义实体干涉检查。此次沿用原安装基准，首件复测 D4 光导、实际线束、供电回落及温升 |
 
 板厂按 `PeacockBattery-Fabrication.txt` 和 Edge.Cuts 中心线加工。Gerber 作业文件的包围框含板框线宽，工件尺寸为 92.00 × 66.00 mm。下单时确认 2 oz 外铜工艺可接受 0.15 mm 最小线宽与铜间距。

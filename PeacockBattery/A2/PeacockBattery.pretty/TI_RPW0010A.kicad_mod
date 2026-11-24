@@ -3,6 +3,7 @@
   (generator "kicad-mcp")
   (generator_version "9.0")
   (layer "F.Cu")
+  (attr smd)
   (descr "TI TPS25947 RPW0010A Example Board Layout 4225183/A")
 
   (property "Reference" "REF**" (at 0 -1.27 0)
