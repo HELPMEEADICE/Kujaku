@@ -4,14 +4,14 @@ Reference,Qty,Value,Footprint,Manufacturer,MPN,LCSC,SMT_Populate,JLCPCB Library,
 C5,1,22uF 25V X5R,Capacitor_SMD:C_1206_3216Metric,Samsung Electro Mechanics,CL31A226KAHNNNE,C12891,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178554275246080,
 "C8,C9,C12",3,22uF 25V X5R,Capacitor_SMD:C_0805_2012Metric,Samsung Electro Mechanics,CL21A226MAQNNNE,C45783,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144,
 C10,1,100pF 50V C0G,Capacitor_SMD:C_0603_1608Metric,Samsung Electro Mechanics,CL10C101JB8NNNC,C14858,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707092674142208,
-"C11,C16,C22",3,10uF 25V X5R,Capacitor_SMD:C_0805_2012Metric,Samsung Electro Mechanics,CL21A106KAYNNNE,C15850,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706853615591424,
+"C11,C16",2,10uF 25V X5R,Capacitor_SMD:C_0805_2012Metric,Samsung Electro Mechanics,CL21A106KAYNNNE,C15850,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706853615591424,
 "C15,C17,C21,C25,C33,C37",6,100nF 50V X7R,Capacitor_SMD:C_0402_1005Metric,Samsung Electro Mechanics,CL05B104KB54PNC,C307331,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8554627388281098240,
-"C18,C23,C24",3,1uF 50V X5R,Capacitor_SMD:C_0603_1608Metric,Samsung Electro Mechanics,CL10A105KB8NNNC,C15849,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213788459761664,
+"C18,C22,C23,C24",4,1uF 50V X5R,Capacitor_SMD:C_0603_1608Metric,Samsung Electro Mechanics,CL10A105KB8NNNC,C15849,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8556213788459761664,
 D1,1,SMBJ15A,Diode_SMD:D_SMB,hongjiacheng,SMBJ15A,C19077569,Yes,Preferred,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8756497594569117696,
 D2,1,BZT52C12,Diode_SMD:D_SOD-123,hongjiacheng,BZT52C12,C19077410,Yes,Preferred,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8755881799597862912,
 "D3,D4,D5",3,SS34,Diode_SMD:D_SMA,MDD Microdiode Semiconductor,SS34,C8678,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586172667489079296,
-D6,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,STMicroelectronics,USBLC6-2SC6,C7519,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579714554416455680,
-"D7,D8,D9",3,PESD3V3U1UA,Diode_SMD:D_SOD-323,Nexperia,"PESD3V3U1UA,115",C403915,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8571664289360498688,
+D6,1,USBLC6-2SC6-ES,Package_TO_SOT_SMD:SOT-23-6,ElecSuper,USBLC6-2SC6-ES,C5180249,Yes,Extended,https://atta.szlcsc.com/upload/public/pdf/source/20250407/0D83F2EDAE29466592232821585C4EDC.pdf,
+"D7,D8,D9",3,H3V3SD3B,Diode_SMD:D_SOD-323,R+O hongjiacheng,H3V3SD3B,C20615802,Yes,Preferred,https://item.szlcsc.com/21979977.html,Economic preferred extended per catalogue snapshot.
 "F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12",12,BSMD1812-150-24V,Resistor_SMD:R_1812_4532Metric,BHFUSE,BSMD1812-150-24V,C883153,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588906264324030464,
 "H1,H2,H3,H4",4,M3 / 3.2mm,MountingHole:MountingHole_3.2mm_M3,,,,No,N/A,,NPTH enclosure hardware.
 "J1,J2,J3,J4,J5,J6,J7,J8,J9,J10,J11,J12",12,GX12-2 / 18AWG,PeacockMainV2:GX12_Leadout_1x02_P5.00mm,,,,No,N/A,,Hand solder wiring to bare PCB pads.
@@ -19,28 +19,29 @@ J13,1,BATTERY 16AWG,PeacockMainV2:Battery_16AWG,,,,No,N/A,,Hand solder wiring to
 J14,1,MASTER,PeacockMainV2:Remote_Switch,,,,No,N/A,,Hand solder wiring to bare PCB pads.
 J15,1,FLASH,PeacockMainV2:Remote_Switch,,,,No,N/A,,Hand solder wiring to bare PCB pads.
 J16,1,USB4145-03-0170-C,PeacockMainV2:USB_C_Receptacle_GCT_USB4145-03-0170-C_Vertical,GCT,USB4145-03-0170-C,C5181332,No,Extended,https://xonstorage.z8.web.core.windows.net/pdf/gct_usb4145030170c_apr22_xonlink.pdf,Hand solder. Vertical mating direction +Z. Four plated shell slots.
-J17,1,SM04B-SRSS-TB(LF)(SN),Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,JST,SM04B-SRSS-TB(LF)(SN),C160404,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893837427150848,
+J17,1,A1002WR-S-4P,Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal,CJT Changjiang Connectors,A1002WR-S-4P,C239522,Yes,Extended,https://pese.oss-cn-shenzhen.aliyuncs.com/pdfs/2010160407_CJT-Changjiang-Connectors-A1002WR-S-10P_C239528.pdf,"CJT SH-compatible side-entry, 1.00 mm. Verify mating to the A2 harness on first article."
 L1,1,10uH,Inductor_SMD:L_Coilcraft_XAL6060-XXX,YJYCOIN,YSPIT0660A-100M,C18199451,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8602909107863240704,
 "Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12",12,AO3400A,Package_TO_SOT_SMD:SOT-23,Alpha Omega Semicon,AO3400A,C20917,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550723985357750272,
 "Q13,Q14",2,HY19P03D,Package_TO_SOT_SMD:TO-252-2,HUAYI,HY19P03D,C122492,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586180101197611008,
 "R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12",12,20mR 1% 1W,Resistor_SMD:R_1206_3216Metric,FOJAN,FRM121WFR020TM,C7420010,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8763504934044487680,
 "R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R53,R54,R72,R75,R76",17,33R,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF330JT5E,C23140,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720,
-"R25,R26,R27,R28,R29,R30,R31,R32,R33,R34,R35,R36,R58,R61,R64,R65,R66,R67,R68,R69,R70",21,10k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,C25804,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072,
+"R25,R26,R27,R28,R29,R30,R31,R32,R33,R34,R35,R36,R61,R64,R65,R66,R67,R68,R69,R70",20,10k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF1002T5E,C25804,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072,
 R49,1,2mR 1% 3W,Resistor_SMD:R_2512_6332Metric,Milliohm,HoLLR2512-3W-2mR-1%,C2994640,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589785307295223808,
 "R50,R52,R56,R77",4,100k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF1003T5E,C25803,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706350726930432,
 "R51,R62,R63,R81,R82",5,5.1k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,C23186,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544,
 R55,1,510k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF5103T5E,C23192,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706282724544512,
-R57,1,75k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF7502T5E,C23242,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706316903792640,
+R57,1,75k,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF7502T5E,C23242,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706316903792640,"Existing Basic 75 kOhm upper feedback resistor, 1%."
+R58,1,14.3k 0.1%,Resistor_SMD:R_0603_1608Metric,YAGEO,RT0603BRE0714K3L,C705810,Yes,Extended,https://item.szlcsc.com/742330.html,"Precision 14.3 kOhm lower feedback resistor, 0.1%."
 "R59,R111,R113,R117",4,10R 1%,Resistor_SMD:R_0402_1005Metric,UNI ROYAL Uniroyal Elec,0402WGF100JTCE,C25077,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705954880966656,
 "R60,R78,R101,R102,R103,R104,R105,R106,R107,R108,R109,R110,R112,R114,R115,R116,R118,R119,R120,R121,R122,R123,R124",23,10R 1%,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF100JT5E,C22859,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706149802991616,
 R71,1,33R,Resistor_SMD:R_0402_1005Metric,UNI ROYAL Uniroyal Elec,0402WGF330JTCE,C25105,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706024418607104,
 "R73,R74",2,5.1k 1%,Resistor_SMD:R_0603_1608Metric,UNI ROYAL Uniroyal Elec,0603WAF5101T5E,C23186,Yes,Basic,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706277024620544,
 SW1,1,SW_BOOT,Button_Switch_SMD:SW_SPST_TL3342,SHOU HAN,TS5216A 160gf,C2681484,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8756418510270943232,
 SW2,1,SW_RST,Button_Switch_SMD:SW_SPST_TL3342,SHOU HAN,TS5216A 160gf,C2681484,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8756418510270943232,
-U1,1,TPS54302DDCR,Package_TO_SOT_SMD:SOT-23-6,Texas Instruments,TPS54302DDCR,C311983,Yes,Extended,https://www.ti.com/cn/lit/gpn/tps54302,
+U1,1,SCT2331TVBR,Package_TO_SOT_SMD:SOT-23-6,Silicon Content Technology,SCT2331TVBR,C509068,Yes,Extended,https://www.silicontent.com/uploads/20241212/058bf96053e3cb5bc517a2b41b79897a.pdf,"32 V, 3 A FPWM buck. Pinout and feedback network updated. Prototype load validation pending."
 U2,1,ME6211C33M5G-N,Package_TO_SOT_SMD:SOT-23-5,MICRONE Nanjing Micro One Elec,ME6211C33M5G-N,C82942,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8790677068269010944,
 "U3,U4,U5,U6",4,INA3221AIRGVR,Package_DFN_QFN:Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm,Texas Instruments,INA3221AIRGVR,C181255,Yes,Extended,https://www.ti.com/cn/lit/gpn/ina3221,
-U7,1,INA226AIDGSR,Package_SO:TSSOP-10_3x3mm_P0.5mm,Texas Instruments,INA226AIDGSR,C49851,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178928092590080,
-U8,1,ESP32-C3-MINI-1-H4X,PeacockMainV2:ESP32-C3-MINI-1,Espressif Systems,ESP32-C3-MINI-1-H4X,C41349510,Yes,Extended,https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560807295526731776,
+U7,1,GXI340U,PeacockMainV2:MSOP-10_3x3mm_P0.50mm_HandAssembly,Beijing Galaxy-CAS Technology,GXI340U,,No,N/A,https://gxcas.com/uploads/files/202509/GXI340_%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.2_20250919144325.pdf,"Hand solder after manufacturer pinout, address and register check. No verified LCSC code. Bare pads, no paste."
+U8,1,ESP32-C3-MINI-1-N4,PeacockMainV2:ESP32-C3-MINI-1,Espressif Systems,ESP32-C3-MINI-1-N4,C2838502,Yes,Extended,https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf,Standard PCBA only. X-ray required. JLC SMT stock was 0 at review.
 U9,1,PCA9685PW,Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm,NXP Semicon,"PCA9685PW,118",C2678753,Yes,Extended,https://www.nxp.com.cn/docs/en/data-sheet/PCA9685.pdf,
-U10,1,INMP441,PeacockMainV2:INMP441_4.72x3.76,TDK InvenSense,INMP441,C5438445,Yes,Extended,https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf,Bottom-port microphone. Keep acoustic hole clear. Confirm availability in order.
+U10,1,MSM261S3526Z0CM,PeacockMainV2:MSM261S3526Z0CM_3.50x2.65,MEMSensing,MSM261S3526Z0CM,C966933,Yes,Extended,https://atta.szlcsc.com/upload/public/pdf/source/20210104/C966933_3269232C81BB891E12095FC7E88FC637.pdf,Bottom port. Standard PCBA only. JLC SMT stock was 0 at review. Keep 0.80 mm NPTH free of solder and flux.

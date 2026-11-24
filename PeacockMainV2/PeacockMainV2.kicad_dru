@@ -1,4 +1,4 @@
 (version 1)
-(rule "Protect the ESP32 and INMP441 bottom ground reference"
-  (condition "A.NetName != 'GND' && (A.intersectsArea('ESP32-C3 bottom ground plane') || A.intersectsArea('INMP441 bottom ground plane'))")
+(rule "Protect the ESP32 and microphone bottom ground reference"
+  (condition "A.NetName != 'GND' && (A.intersectsArea('ESP32-C3 bottom ground plane') || A.intersectsArea('Microphone bottom ground plane'))")
   (constraint disallow track via))

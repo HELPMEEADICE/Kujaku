@@ -21,10 +21,10 @@
 | 调试 USB-C J16 | GCT USB4145-03-0170-C，F 面，插口朝 +Z，长轴平行 X。封装中心 (−40.80, +32.40)，KiCad (69.20, 82.60)，0°。母座名义高度 7.46 mm，图纸公差 ±0.20 mm。16 个 SMT 信号及电源触点，四个 1.70 mm 穿孔接地壳脚。 |
 | BOOT SW1 | U8 左侧，中心 (+23.40, +39.00)，KiCad (133.40, 76.00)，90°。 |
 | RST SW2 | U8 上方，中心 (+40.90, +47.46)，KiCad (150.90, 67.54)，0°。 |
-| INMP441 U10 | F 面，封装中心 (+51.70, 36.25)，声孔中心 (+50.41, 36.25)。声孔 KiCad 坐标为 (160.41, 78.75)。底面拾音。厂商推荐通孔 Ø0.50–1.00 mm，封装接地环外径 Ø1.56 mm。居中的 Ø1.50 mm 孔只留下约 0.03 mm 名义接触宽，因此采用 Ø0.80 mm NPTH 和环形接地焊盘。孔壁无金属化，禁止堵孔。 |
+| MSM261S3526Z0CM U10 | 顶贴底面拾音。封装中心 (+51.12, +36.25) mm，KiCad 旋转 −90°。Ø0.80 mm NPTH 圆心 (+50.41, +36.25) mm，KiCad (160.41, 78.75) mm。 |
 | Z 高度 | 电路板正面最高名义元件为 C1/C2，Panasonic EEH-ZA1E221P，罐体高度 10.2 mm。高度限值 15.0 mm。器件均置于 F 面，背面有穿孔焊接与加固铜带的装配空间。 |
 
-新板框及安装孔按 V3 DWG 的 Z=7.00–8.60 mm 主板安装层生成实体。AutoCAD 实体检查显示主板板材与前壳、后盖、A1 板体、XT30 本体、配对插头参考包络及三节电芯均无体积相交。A2 按 Y=+24.00 mm 顶边包络核算。XT30 配对插头参考包络延伸至 Y=+37.50 mm，顶面与主板底面在 Z=7.00 mm 名义相切。XT30 的装配公差及 J17 排线的插拔和弯折空间需用样件确认。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [TDK INMP441 图 14–16](https://product.tdk.cn/system/files/dam/doc/product/sw_piezo/mic/mems-mic/data_sheet/inmp441.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
+新板框及安装孔按 V3 DWG 的 Z=7.00–8.60 mm 主板安装层生成实体。AutoCAD 实体检查显示主板板材与前壳、后盖、A1 板体、XT30 本体、配对插头参考包络及三节电芯均无体积相交。A2 按 Y=+24.00 mm 顶边包络核算。XT30 配对插头参考包络延伸至 Y=+37.50 mm，顶面与主板底面在 Z=7.00 mm 名义相切。XT30 的装配公差及 J17 排线的插拔和弯折空间需用样件确认。 [ESP32 模组图纸](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf) · [敏芯封装与钢网图](https://atta.szlcsc.com/upload/public/pdf/source/20210104/C966933_3269232C81BB891E12095FC7E88FC637.pdf) · [Panasonic EEH-ZA](https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/polymer-hybrid-aluminum-electrolytic-capacitor/series/79)
 
 J16 的封装占位边界距板边 3.10 mm、PCA9685 占位边界 5.10 mm、左下 H2 螺钉禁布区 29.63 mm、F.Mask / B.Mask 的 3.20 mm 开窗分别 12.74 / 19.90 mm，距最近天线禁布区 65.35 mm。BOOT 与 RST 的封装占位边界相隔 10.22 mm，J16 金属壳体到最近按键占位边界约 56.6 mm。J16 距 J13 和 J17 的占位边界分别约 31.1 mm 与 43.9 mm，插拔路径位于左翼。 [GCT USB4145 工程图](https://xonstorage.z8.web.core.windows.net/pdf/gct_usb4145030170c_apr22_xonlink.pdf)
 
@@ -33,13 +33,15 @@ J16 的封装占位边界距板边 3.10 mm、PCA9685 占位边界 5.10 mm、左�
 ## 供电与通道
 
 - J13 的正输入由 SMBJ15A 和 2×220 µF/25 V、100 nF 去耦。两颗华羿 HY19P03D（C122492）在原 TO-252 焊盘并联作高侧开关。栅极 100 kΩ 上拉关断、12 V 齐纳钳位，经 5.1 kΩ 接 MASTER 开关，每管串 33 Ω。两管均流、总电流 20 A、VGS = −10 V 时，按 6 mΩ/管估算合计耗散约 1.2 W（25 °C）。四颗 AO3401A 在相同条件下合计约 4.7 W，每管约 5 A，超过其 4 A 标称。A1 与 V2 始终共地。
-- R49 位于开关后、分支前。INA226 监测全板放电，校准需包含导线安装后零点与温漂。2 mΩ 在 20 A 下压降 40 mV、耗散 0.80 W，R49 为 2512 / 3 W / 1% 合金分流器，需测焊端温度。对 INA226、各 INA3221 采用每端 10 Ω 串阻与 100 nF 差模输入滤波。PCB 采样应从分流器焊盘内侧独立引出，远离功率电流入口。
-- TPS54302DDCR（C311983）取自 VBAT_SW，采用 10 µH / 5 A（20 °C 温升）的 YSPIT0660A-100M。其端子与原 XAL6060 落脚位置对齐。板上焊盘 1.43 × 5.50 mm，中心距 4.04 mm。替代件推荐焊盘 1.55 × 5.60 mm，中心距 4.05 mm。R55/R56 的 510 kΩ / 100 kΩ 用于 Buck 欠压启动。三路 5 V 合路统一使用 SS34（C8678，SMA，3 A / 40 V）。ME6211C33M5G-N（C82942）由 5V_SYS 供电，VIN = 4.3 V 时数据手册列明最大输出 500 mA，持续输出按装壳温升降额。
-- Buck 反馈采用基础库 75 kΩ 和 10 kΩ，按 TI 典型 0.596 V 反馈基准得到 5.066 V。C10 为基础库 100 pF C0G，反馈上臂 × C10 仍为 7.5 µs，与原 100 kΩ × 75 pF 相同。75 kΩ 可在原位调至 5 V，并保留短反馈回路。 [TI TPS54302](https://www.ti.com/lit/ds/symlink/tps54302.pdf)
+- R49 位于开关后、分支前。U7 GXI340U 监测总放电，保留 A1=3.3 V、A0=GND 的 0x44 设计接法、每端 10 Ω 和 100 nF 差模滤波。2 mΩ 在 20 A 下压降 40 mV、耗散 0.80 W，R49 为 2512 / 3 W / 1% 合金分流器。打样后校准安装零点与温漂，并检查焊端温度。
+- U1 为芯洲 SCT2331TVBR（C509068），3.8–32 V 输入、3 A 同步降压、400 kHz、轻载 FPWM，TSOT-23-6L。1–6 脚依次为 FB、EN、VIN、GND、SW、BST。PCB 原落脚焊盘旋转 180°，重布 VIN 和 BST，保留主功率路径与 R55/R56 的 510 kΩ / 100 kΩ 欠压启动分压。三路 5 V 经 SS34 合路，ME6211C33M5G-N 的持续输出按装壳温升降额。
+- U1 采用 0.800 V FB 基准，R57 沿用 0603 基础库 75 kΩ ±1%（C23242），R58 采用 0603 14.3 kΩ ±0.1%（C705810）。按 VOUT = VFB × (1 + R57/R58)，名义值为 **4.9958 V**。0.792–0.808 V 基准与电阻初始容差组合的静态计算范围为 **4.9002–5.0924 V**，下限余量很小。两只 ±1% 电阻会使容差叠加超出目标，故下臂采用精密料。
+- C7 保留 100 nF / 50 V X7R 自举电容，接在 BST 与 SW 之间。L1 保留 YSPIT0660A-100M，10 µH ±20%，饱和电流最小 6.8 A，20 °C 温升额定 5.0 A。按 12.6 V 输入、5 V 输出、L=8 µH、f=360 kHz，在 3 A 计算工况下电感纹波约 1.05 A 峰峰值，电感峰值约 3.52 A。3 A 为选型校核工况，整板连续供电能力由实际负载、散热和 PCB 铜宽验证。
+- C10 为 100 pF C0G，R57 × C10 为 7.5 µs。C8/C9 各 22 µF，合计标称 44 µF，按直流偏压降额评估。芯洲的 24 V / 3 A 示例使用 3 × 22 µF，本板用于 3S 电池输入及控制电源负载。样板验收在 `5V_BUCK`（合路二极管前）测空载、实际工作负载、启动、纹波和负载阶跃，验收稳态范围为 4.90–5.10 V。当前只有数据手册计算和 PCB 检查，尚无实测。
 - 通道正端为 `VBAT_SW → PPTC → 20 mΩ 分流器 → GX12-2 正端`，负端经 AO3400A 开关接地。PPTC 用 BSMD1812-150-24V（24 V，25 °C 保持 1.50 A，动作 3.00 A），热态保持电流低于标称。R1–R12 统一为 1206 / 20 mΩ / 1% / 1 W 合金分流器。AO3400A 在 2.5 V 栅压时 RDS(on) 厂商上限为 48 mΩ。每通道栅极串 33 Ω，独立 10 kΩ 下拉。
 - 上电时 PCA9685 的 OE 由 10 kΩ 拉高，MODE2 默认让被禁止的 LED 输出为低。固件保持 OE 高，先清零 PWM 并设定 OUTNE=00、OUTDRV=1，再开放灯效。默认 All Call 0x70，初始化时可关闭。灯管功率由总开关切断，外部 5 V 可继续供控制电路使用。电池处于关闭与充电场景时，固件应保持 OE 禁止。
 
-[华羿 HY19P03D](https://jlcpcb.com/partdetail/HY19P03D/C122492) · [TI TPS54302](https://www.ti.com/lit/ds/symlink/tps54302.pdf) · [微盟 ME6211](https://datasheet.lcsc.com/datasheet/pdf/d15331d096a848ac81a26b001a32d4e3.pdf?productCode=C82942) · [益嘉源规格书](https://xonstorage.z8.web.core.windows.net/pdf/yjycoin_yspit0660a2r2m_apr22_xonlink.pdf) · [AOS AO3400A](https://www.aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a)
+[华羿 HY19P03D](https://jlcpcb.com/partdetail/HY19P03D/C122492) · [芯洲 SCT2331 数据手册](https://www.silicontent.com/uploads/20241212/058bf96053e3cb5bc517a2b41b79897a.pdf) · [微盟 ME6211](https://datasheet.lcsc.com/datasheet/pdf/d15331d096a848ac81a26b001a32d4e3.pdf?productCode=C82942) · [益嘉源规格书](https://xonstorage.z8.web.core.windows.net/pdf/yjycoin_yspit0660a2r2m_apr22_xonlink.pdf) · [AOS AO3400A](https://www.aosmd.com/products/mosfets/low-voltage-mosfets-12v-30v/ao3400a)
 
 ### I²C 地址与电池侧接口
 
@@ -49,13 +51,13 @@ J16 的封装占位边界距板边 3.10 mm、PCA9685 占位边界 5.10 mm、左�
 | 0x41 | U4 INA3221，CH4–6 | A0=3.3V |
 | 0x42 | U5 INA3221，CH7–9 | A0=SDA |
 | 0x43 | U6 INA3221，CH10–12 | A0=SCL |
-| 0x44 | U7 INA226，总放电 | A1=3.3V、A0=GND |
+| 0x44 | U7 GXI340U，总放电 | A1=3.3V、A0=GND |
 | 0x45 | 电池侧保留 | — |
 | 0x60 | U9 PCA9685，12 路 PWM | A5=1，A4–A0=0 |
 | 0x6B | 电池侧保留 | — |
 | 0x70 | PCA9685 上电默认 All Call | 由固件管理 |
 
-主板 J17 位于 (+10.90, 48.10)，为 JST-SH 1.00 mm 卧式 4-Pin 连接器。下表使用主板 PCB 焊盘编号。
+主板 J17 位于 (+10.90, 48.10)，采用长江连接器 A1002WR-S-4P（C239522），SH 1.00 mm 卧式 4 针。信号焊盘 0.60 × 1.55 mm，固定焊盘 1.20 × 1.80 mm，插入方向与 A2 J5 的 JST-SH 配套排线一致。图纸比对已完成，首件需检查卡扣、插拔与端到端针序。下表使用主板 PCB 焊盘编号。 [CJT A1002 图纸](https://pese.oss-cn-shenzhen.aliyuncs.com/pdfs/2010160407_CJT-Changjiang-Connectors-A1002WR-S-10P_C239528.pdf)
 
 | J17 针脚 | 接口信号 | 主板网络 | 功能 |
 | --- | --- | --- | --- |
@@ -64,9 +66,13 @@ J16 的封装占位边界距板边 3.10 mm、PCA9685 占位边界 5.10 mm、左�
 | 3 | SCL | `/Control/A1_SCL` | 跨板 I²C 开漏时钟，经 33 Ω 串阻接主板 `I2C_SCL`。 |
 | 4 | GND | `GND` | 跨板信号和 CHG_5V 的公共参考地。 |
 
-SDA、SCL 各配一只典型 2.6 pF 的 PESD3V3U1UA。R62/R81、R63/R82 各用两颗 5.1 kΩ 并联，等效 2.55 kΩ。按 Fast-mode 的 300 ns 上升时间和 1% 电阻上限计算，主板上拉对应约 137 pF 总线电容预算。连 A2 和线束后以实测上升时间验收。 [NXP I²C 规范 §7.1](https://assets.nexperia.com/documents/user-manual/UM10204.pdf)A1 现有 IP2326 方案无 I²C，A1 原理图也无配对连接器或 CHG_5V 输出。XT30 承担电池放电供电，A2 须实现 J17 对接、电池侧遥测和充电唤醒。
+SDA、SCL 和 BTN_FLASH 各用一只宏嘉诚 H3V3SD3B（C20615802），3.3 V、典型 1 pF、双向 SOD-323。R62/R81、R63/R82 各用两颗 5.1 kΩ 并联，等效 2.55 kΩ。按 Fast-mode 的 300 ns 上升时间和 1% 电阻上限计算，主板上拉对应约 137 pF 总线电容预算。连 A2 和线束后以实测上升时间验收。 [NXP I²C 规范 §7.1](https://assets.nexperia.com/documents/user-manual/UM10204.pdf)
 
-[INA3221 地址表](https://www.ti.com/lit/ds/symlink/ina3221.pdf) · [INA226 地址表](https://www.ti.com/lit/ds/symlink/ina226.pdf) · [NXP PCA9685](https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf) · [A1 设计](../PeacockBattery/PeacockBattery-Design.md)
+A1 现有 IP2326 方案无 I²C，A1 原理图也无配对连接器或 CHG_5V 输出。XT30 承担电池放电供电，A2 须实现 J17 对接、电池侧遥测和充电唤醒。
+
+[INA3221 地址表](https://www.ti.com/lit/ds/symlink/ina3221.pdf) · [银河芯 GXI340 产品资料](https://gxcas.com/uploads/files/202509/GXI340_%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.2_20250919144325.pdf) · [NXP PCA9685](https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf) · [A1 设计](../PeacockBattery/PeacockBattery-Design.md)
+
+U7 使用原 0.50 mm 间距、3 × 3 mm 的 10 脚焊盘铜形与开尔文线路，顶层钢网取消开口。银河芯公开资料确认 MSOP-10、40 V 总线量程和 16 个地址。公开版省略了端子顺序和寄存器表，装入 GXI340U 前须取得完整厂商资料，核对引脚、0x44 地址译码、寄存器与校准常数。未找到可确认的 LCSC 料号，BOM 使用 MPN 并标为手焊。
 
 ### ESP32-C3 固定引脚
 
@@ -77,14 +83,20 @@ SDA、SCL 各配一只典型 2.6 pF 的 PESD3V3U1UA。R62/R81、R63/R82 各用�
 | 2 / 8 | 各 10 kΩ 上拉至 3.3V_SYS。 |
 | 3 | BTN_FLASH，低有效，10 kΩ 上拉、100 nF 和 ESD。 |
 | 4 / 5 | SDA / SCL，400 kHz。 |
-| 6 / 7 / 10 | I²S SCK / WS / SD。INMP441 为左声道，SD 有 100 kΩ 下拉。 |
+| 6 / 7 / 10 | I²S SCK / WS / SD。U10 左声道，R77 对 SD 作 100 kΩ 下拉。 |
 | 9 | BOOT，10 kΩ 上拉、SW1 拉低。 |
-| 18 / 19 | 原生 USB D− / D+，各串 33 Ω，USBLC6-2SC6 ESD。 |
+| 18 / 19 | 原生 USB D− / D+，各串 33 Ω，USBLC6-2SC6-ES ESD。 |
 | EN | 10 kΩ 上拉、1 µF、SW2 复位按钮。 |
 
 U8 封装中心位于 (+39.20, +35.85) mm，天线朝 −Y，主天线及两侧规则区随模组下移 5.75 mm。F.Cu 和 B.Cu 均禁止天线区内的走线、过孔、焊盘及铺铜。装壳需用最终 XT30 线束位置验证 BLE RSSI。 [Espressif 硬件检查表](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html) · [Espressif PCB 天线布置](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/pcb-layout-design.html)
 
-SW1 与 SW2 采用首韩 TS5216A 160gf，中心与安装面角度沿用原 PCB。ESP32-C3-MINI-1-H4X 采用相同 16.6 × 13.2 mm 带板载天线封装、芯片修订号 v1.1 和 4 MB Flash。 [首韩按键规格](https://jlcpcb.com/partdetail/SHOUHAN-TS5216A160gf/C2681484) · [Espressif 模组规格](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf)
+SW1 与 SW2 采用首韩 TS5216A 160gf，中心与安装面角度沿用原 PCB。ESP32-C3-MINI-1-N4（C2838502）采用 16.6 × 13.2 mm 带板载天线封装、4 MB Flash、−40 至 +85 °C。乐鑫列为 NRND，芯片修订号为 v0.4。 [首韩按键规格](https://jlcpcb.com/partdetail/SHOUHAN-TS5216A160gf/C2681484) · [Espressif 模组规格](https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.pdf)
+
+### U10 底面拾音
+
+敏芯 MSM261S3526Z0CM（C966933）为 **3.50 × 2.65 × 0.98 mm** 六焊盘 LGA。按 DS-051 的 PCB 顶视图落脚，1 为 VDD，2 为 SCK 与 GPIO6 相连，3 为 GND 密封环，4 为 L/R 接地选左声道，5 为 WS 与 GPIO7 相连，6 为 SD 与 GPIO10 相连。供电由 R78 的 10 Ω 隔离，C21 的 100 nF 移至 U10 旁，C22 采用已有基础库 1 µF。 [敏芯 DS-051](https://atta.szlcsc.com/upload/public/pdf/source/20210104/C966933_3269232C81BB891E12095FC7E88FC637.pdf)
+
+芯片声口偏离封装中心 0.71 mm，旋转后与原 Ø0.80 mm NPTH 同心。3 脚保留完整的 F.Cu 接地环，外径 Ø1.625 mm，内径 Ø1.20 mm，为孔边提供 0.20 mm 名义退让。钢网采用四段环形开口，五个矩形焊盘的钢网开口为 0.480 × 0.4176 mm。Ø0.80 mm PCB 孔按原机壳要求保留，敏芯推荐的标称板孔为 Ø0.50 mm。首件核对钢网、焊料与密封垫接触，确认声孔畅通。 [敏芯 DS-051 第 6、8 页](https://atta.szlcsc.com/upload/public/pdf/source/20210104/C966933_3269232C81BB891E12095FC7E88FC637.pdf)
 
 ## 大电流走线与阻焊开窗
 
@@ -98,11 +110,11 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 ## 信号布线规则
 
 - PWM、栅极、采样、I²C、I²S、USB 及控制信号铜线为 0.20 mm，电气间距最小 0.20 mm，信号过孔钻孔 Ø0.30 mm、铜盘 Ø0.60 mm。
-- J16 的 CC1、CC2 各用独立的 5.1 kΩ 下拉（R73、R74），D6 USBLC6-2SC6 与 C23 邻近 J16。USB 数据线的中央桥主要并行段位于 F.Cu，左翼和右侧局部经 B.Cu 换层。中央连接桥的 B.Cu GND 回流保持连续，两面铺铜已重新灌注。
+- J16 的 CC1、CC2 各用独立的 5.1 kΩ 下拉（R73、R74），D6 静芯 USBLC6-2SC6-ES 与 C23 邻近 J16。1/6 为 D+，3/4 为 D−，2 接地，5 接 USB_5V。USB 数据线的中央桥主要并行段位于 F.Cu，左翼和右侧局部经 B.Cu 换层。中央连接桥的 B.Cu GND 回流保持连续，两面铺铜已重新灌注。
 - U9 封装中心位于 (−25.50, +32.80) mm，C20 位于 (−19.40, +29.50) mm。固件按下表驱动物理通道。
 - 中央连接桥的 F.Cu 布置 PCA9685_nOE、PWM_1、PWM_2、PWM_3、PWM_5 的平行横向段。PWM_11 利用桥区左段转向顶部支路。桥区 B.Cu 的 GND 覆铜有连续横向回路。右翼的换层走线使用 U8 模组本体一侧及 U10 周边的 B.Cu 通道，参考规则区分别保留模组天线馈入侧及麦克风声孔周边。ESP32-C3 的三个双层天线禁布区与前版逐项一致。正反面 GND 以 0.20 mm 间距和最小铜宽重灌，新增 Ø0.30/0.60 mm 缝合孔，GND 未连接为 0。
 - VBAT_IN 外环冗余绕线已清理。中央 U 槽右上角附近的 B.Cu VBAT_IN 共用折点从 KiCad Y=70.465 mm 移至 Y=70.365 mm，以满足 0.28 mm 板边间距。高电流母线继续采用上表铜宽、阻焊开窗和换层过孔阵列。
-- R69 移至 (+12.40, +59.60) mm，靠近 R68。R67 移至 (+28.60, +38.10) mm，为右翼出口留出通道。`3.3V_SYS`、`I2C_SDA`、`I2C_SCL`和 I²S 时钟均已复核连通。INMP441 的 `/Control/MIC_VDD` 经 10 Ω 的 R78 取电，供电支路已复核连通。D7 移至 J15 附近，使 J15 的输入保护支路就近接入。
+- R69 移至 (+12.40, +59.60) mm，靠近 R68。R67 移至 (+28.60, +38.10) mm，为右翼出口留出通道。`3.3V_SYS`、`I2C_SDA`、`I2C_SCL`和 I²S 时钟均已复核连通。MSM261S3526Z0CM 的 `/Control/MIC_VDD` 经 10 Ω 的 R78 取电，供电支路和拾音孔附近的两面接地回路已复核连通。D7 移至 J15 附近，使 J15 的输入保护支路就近接入。
 
 ## 采样走线复核
 
@@ -140,7 +152,7 @@ J13 输入正、J13 输入地、Q14 输入正、R49 后的 VBAT_SW 各布置一�
 
 - 已接通 CHG_DET 两项、PCA9685_nOE 一项及 PWM_1、PWM_2、PWM_3、PWM_5、PWM_11 五项。PCA9685 固件映射沿用上表。
 - Gerber 包含双层铜、双面阻焊和丝印、顶层锡膏及闭合板框。板框包含 R92.50 外弧与四处 R3.00 槽口圆角。F.Mask 的 11 段与 B.Mask 的 1 段母线开窗宽度均为 3.20 mm。
-- Excellon 钻孔含 671 个 PTH 特征和 7 个 NPTH 特征。已核对四个 Ø3.20 mm 安装孔、Ø0.80 mm 拾音孔，以及 J16 的四个 1.10 × 0.60 mm 镀铜槽、一个 Ø0.71 mm 定位孔和一个 1.01 × 0.71 mm 非镀铜定位槽。
+- Excellon 含 670 个 PTH 特征及 7 个 NPTH 特征。四个 Ø3.20 mm 安装孔、Ø0.80 mm 拾音孔、J16 四个 1.10 × 0.60 mm 镀铜槽、Ø0.71 mm 非镀铜定位孔与 1.01 × 0.71 mm 非镀铜定位槽均已核对。
 - 检查记录和归档见 [DRC 报告](PeacockMainV2-DRC.rpt)、[DRC JSON](PeacockMainV2-DRC.json)、[ERC 报告](PeacockMainV2-ERC.rpt) 及 [Gerber 与钻孔 ZIP](PeacockMainV2-Gerber.zip)。
 
 ### 电池侧 A2 验证
@@ -163,35 +175,45 @@ Espressif 模组封装和 STEP 来自 Espressif KiCad 库，工程附带许可�
 
 ## 嘉立创贴装物料
 
-2026-11-25 核对目录。BOM 覆盖 201 个封装位置，其中 179 个交由顶面 SMT 装配。J16、C1/C2 和 J1–J15 标记为 `SMT_Populate = No`。J16、C1/C2 的顶层钢网开口已去掉。C1/C2 按 Panasonic EEH-ZA1E221P 手焊采购，LCSC 编号留空。四个安装孔同样排除于贴片清单。
+2026-11-25 核对目录。全量 BOM 覆盖 201 个位置，178 个由顶面 SMT 装配。U7、J16、C1/C2 和 J1–J15 为手焊，H1–H4 为安装孔。U7、J16、C1/C2 的 F.Paste 无开口。U7 与 C1/C2 采购使用 BOM 上的厂商型号。
 
-| 装配类别 | 料号数 | 每板用量 | SMT 数量占比 |
-| --- | ---: | ---: | ---: |
-| 基础库 | 18 | 132 | 73.7% |
-| 优选扩展 | 2 | 2 | 1.1% |
-| 普通扩展 | 16 | 45 | 25.1% |
+| 库别 | 料号数 | 每板贴装量 |
+| --- | ---: | ---: |
+| 基础库 | 18 | 131 |
+| 优选扩展 | 3 | 5 |
+| 普通扩展 | 15 | 42 |
 
-普通电阻有 9 个 SMT 料号。陶瓷电容有 7 个 SMT 料号。为保留净距和局部走线，以下位置使用基础库的 0402 料号。C15、C17、C21、C25、C33、C37、R59、R71、R111、R113、R117。C5 使用 1206 基础库 22 µF 以兼顾降压输入的偏压降额。10 Ω 采样输入滤波串阻沿用原电气值。任务单中的 C23345 实为 22 Ω，0603 的 33 Ω 使用 C23140。C116592 是 TPS563201，TPS54302DDCR 采用 C311983。 [C23345](https://www.lcsc.com/product-detail/C23345.html) · [C311983](https://jlcpcb.com/partdetail/TexasInstruments-TPS54302DDCR/C311983)
+| 位号 | 原料号 | 本版料号 | JLC 参考单价变化（USD / 颗） |
+| --- | --- | --- | ---: |
+| D6 | C7519 | [C5180249](https://jlcpcb.com/partdetail/ElecSuper-USBLC62SC6/C5180249) | 0.1538 → 0.0623 |
+| D7–D9 | C403915 | [C20615802](https://jlcpcb.com/partdetail/hongjiacheng-H3V3SD3B/C20615802) | 0.2046 → 0.0435 |
+| J17 | C160404 | [C239522](https://www.lcsc.com/product-detail/C239522.html) | 0.2149 → 0.2133 |
+| U1 | C311983 | [C509068](https://www.lcsc.com/product-detail/C509068.html) | 0.2498 → 0.6863 |
+| R58 | C25804 | [C705810](https://item.szlcsc.com/742330.html) | 0.0017 → 0.0308 |
+| U7 | C49851 | GXI340U，手焊 | 原贴装参考 0.6683，手焊件取决于采购渠道 |
+| U8 | C41349510 | [C2838502](https://jlcpcb.com/partdetail/EspressifSystems-ESP32_C3_MINI_1N4/C2838502) | 3.1168 → 3.0529 |
+| U10 | C5438445 | [C966933](https://jlcpcb.com/partdetail/Mems-MSM261S3526Z0CM/C966933) | 新件目录参考 1.4167 |
+
+D6、D7–D9、J17、U8 的目录参考单价合计约降 0.64 美元/板。U1 与 R58 合计增加约 0.47 美元/板。同口径差额约省 0.17 美元/板，尚未计 U7、U10、C22、采购阶梯和最低订购量。U8 和 U10 查询时嘉立创 SMT 库存均为 0，目录均列标准型。U8 在立创商城有库存，U10 需确认可预订或可来料。标准型订单可装数量及 X-ray 等费用以嘉立创报价为准。 [U8 立创目录](https://www.lcsc.com/product-detail/C2838502.html) · [嘉立创来料规则](https://jlcpcb.com/help/article/consignment-part-terms-conditions)
+
+经济型目录口径下，D7–D9 将一个收费料号改为优选，U7 手焊减一个收费料号，R58 增一个收费料号，普通扩展从 16 种降至 15 种。按每种 3.07 美元，估算为 49.12 → 46.05 美元/单。当前整板含标准型专供件，按标准型公开费率 1.53 美元/料号，本版和前版均为 36 个 SMT 料号，换料费口径均为 55.08 美元/单。上述金额只计换料费。 [优选目录快照](https://lrks.github.io/jlcpcb-economic-parts/active.html) · [嘉立创价格规则](https://jlcpcb.com/help/article/pcb-assembly-price)
 
 | 普通扩展库料号 | 器件 | 位号 |
 | --- | --- | --- |
-| [C7519](https://jlcpcb.com/partdetail/part/C7519) | USBLC6-2SC6 | D6 |
-| [C403915](https://jlcpcb.com/partdetail/part/C403915) | PESD3V3U1UA,115 | D7、D8、D9 |
+| [C5180249](https://jlcpcb.com/partdetail/part/C5180249) | USBLC6-2SC6-ES | D6 |
 | [C883153](https://jlcpcb.com/partdetail/part/C883153) | BSMD1812-150-24V | F1–F12 |
-| [C160404](https://jlcpcb.com/partdetail/part/C160404) | SM04B-SRSS-TB(LF)(SN) | J17 |
+| [C239522](https://jlcpcb.com/partdetail/part/C239522) | A1002WR-S-4P | J17 |
 | [C18199451](https://jlcpcb.com/partdetail/part/C18199451) | YSPIT0660A-100M | L1 |
 | [C122492](https://jlcpcb.com/partdetail/part/C122492) | HY19P03D | Q13、Q14 |
 | [C7420010](https://jlcpcb.com/partdetail/part/C7420010) | FRM121WFR020TM | R1–R12 |
 | [C2994640](https://jlcpcb.com/partdetail/part/C2994640) | HoLLR2512-3W-2mR-1% | R49 |
+| [C705810](https://jlcpcb.com/partdetail/part/C705810) | RT0603BRE0714K3L | R58 |
 | [C2681484](https://jlcpcb.com/partdetail/part/C2681484) | TS5216A 160gf | SW1、SW2 |
-| [C311983](https://jlcpcb.com/partdetail/part/C311983) | TPS54302DDCR | U1 |
+| [C509068](https://jlcpcb.com/partdetail/part/C509068) | SCT2331TVBR | U1 |
 | [C82942](https://jlcpcb.com/partdetail/part/C82942) | ME6211C33M5G-N | U2 |
 | [C181255](https://jlcpcb.com/partdetail/part/C181255) | INA3221AIRGVR | U3、U4、U5、U6 |
-| [C49851](https://jlcpcb.com/partdetail/part/C49851) | INA226AIDGSR | U7 |
-| [C41349510](https://jlcpcb.com/partdetail/part/C41349510) | ESP32-C3-MINI-1-H4X | U8 |
+| [C2838502](https://jlcpcb.com/partdetail/part/C2838502) | ESP32-C3-MINI-1-N4 | U8 |
 | [C2678753](https://jlcpcb.com/partdetail/part/C2678753) | PCA9685PW,118 | U9 |
-| [C5438445](https://jlcpcb.com/partdetail/part/C5438445) | INMP441 | U10 |
+| [C966933](https://jlcpcb.com/partdetail/part/C966933) | MSM261S3526Z0CM | U10 |
 
-经济型 SMT 下 D1 C19077569 与 D2 C19077410 为免换料费的优选扩展。以同一手焊范围重建旧 BOM，估计原方案有 23–27 个普通扩展料号。区间上界计入旧 BOM 未指定厂商料号的 C5、C8/C9、C11、C12 四种电容。按官网每种 3.07 美元估算，换料费从 70.61–82.89 美元降至 49.12 美元，下降 30.4%–40.7%。旧 BOM 无订单报价，未计器件单价、最低采购量、预订费与其他工费。 [嘉立创价格规则](https://jlcpcb.com/help/article/pcb-assembly-price)
-
-[全量 BOM](PeacockMainV2-BOM.csv) 含手焊标记和 LCSC 信息。[SMT BOM](PeacockMainV2-SMT-BOM.csv) 与 [CPL](PeacockMainV2-CPL.csv) 的位号完全一致。Gerber、钻孔、CPL 共用 KiCad 辅助原点 (110, 115) mm。CPL 使用毫米和逆时针旋转，标准 SOT-23 和 TSSOP 按 Fabrication Toolkit 的规则转换。U10 的目录编号已核对，实时可装数量由嘉立创下单页确认。首次装配以嘉立创预览核对有极性器件、J17、模组和底部拾音麦克风的方向。 [嘉立创 KiCad 导出规范](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad)
+[全量 BOM](PeacockMainV2-BOM.csv)、[SMT BOM](PeacockMainV2-SMT-BOM.csv)、[CPL](PeacockMainV2-CPL.csv) 和 [Gerber ZIP](PeacockMainV2-Gerber.zip) 已按本版生成。SMT BOM 与 CPL 的 178 个顶面位号一致。Gerber、Excellon、CPL 共用辅助原点 (110, 115) mm，CPL 以封装中心导出并应用既有 KiCad 旋转约定。首件上单预览核对 U1、U8、U10、J17 与有极性器件的朝向。 [嘉立创 KiCad 导出规范](https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad)

@@ -457,7 +457,7 @@
 			)
 		)
 		(embedded_fonts no)
-	) (symbol "Sensor_Energy:INA226"
+	) (symbol "PeacockMainV2:GXI340U"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -473,7 +473,7 @@
 				)
 			)
 		)
-		(property "Value" "INA226"
+		(property "Value" "GXI340U"
 			(at 3.81 11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -483,7 +483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+		(property "Footprint" "PeacockMainV2:MSOP-10_3x3mm_P0.50mm_HandAssembly"
 			(at 20.32 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -494,7 +494,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+		(property "Datasheet" "https://gxcas.com/uploads/files/202509/GXI340_%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.2_20250919144325.pdf"
 			(at 8.89 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -505,7 +505,7 @@
 				)
 			)
 		)
-		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+		(property "Description" "40 V I2C current, voltage and power monitor, MSOP-10"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -538,7 +538,7 @@
 				)
 			)
 		)
-		(symbol "INA226_0_1"
+		(symbol "GXI340U_0_1"
 			(rectangle
 				(start 7.62 10.16)
 				(end -7.62 -10.16)
@@ -551,7 +551,7 @@
 				)
 			)
 		)
-		(symbol "INA226_1_1"
+		(symbol "GXI340U_1_1"
 			(pin input line
 				(at 10.16 7.62 180)
 				(length 2.54)
@@ -734,7 +734,7 @@
 			)
 		)
 		(embedded_fonts no)
-	) (symbol "Regulator_Switching:TPS54302"
+	) (symbol "PeacockMainV2:SCT2331TVBR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -751,7 +751,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPS54302"
+		(property "Value" "SCT2331TVBR"
 			(at 0 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -774,7 +774,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
+		(property "Datasheet" "https://www.silicontent.com/uploads/20241212/058bf96053e3cb5bc517a2b41b79897a.pdf"
 			(at -7.62 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -785,7 +785,7 @@
 				)
 			)
 		)
-		(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+		(property "Description" "3.8–32 V input, 3 A, 400 kHz synchronous buck converter, TSOT-23-6"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -818,7 +818,7 @@
 				)
 			)
 		)
-		(symbol "TPS54302_0_1"
+		(symbol "SCT2331TVBR_0_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
@@ -831,7 +831,7 @@
 				)
 			)
 		)
-		(symbol "TPS54302_1_1"
+		(symbol "SCT2331TVBR_1_1"
 			(pin power_in line
 				(at 0 -7.62 90)
 				(length 2.54)
@@ -842,7 +842,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -860,7 +860,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -896,7 +896,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -914,7 +914,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2324,7 +2324,7 @@
 		)
 		(embedded_fonts no)
 	))
-    (text "Power" (at 17.78 14 0) (effects (font (size 3 3)) (justify left)) (uuid "02a6ad16-ebe2-5684-8670-8e9508dee842")) (text "3S battery / high-side master / total Kelvin sense" (at 17.78 24 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "cebe0dbe-6529-5c92-9bae-d3d0ba463563")) (text "TPS54302 5 V / three-input Schottky OR / AP2112K 3.3 V" (at 17.78 133 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "aad84630-0154-5b3c-8279-6cb54c3dc262"))
+    (text "Power" (at 17.78 14 0) (effects (font (size 3 3)) (justify left)) (uuid "02a6ad16-ebe2-5684-8670-8e9508dee842")) (text "3S battery / high-side master / total Kelvin sense" (at 17.78 24 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "cebe0dbe-6529-5c92-9bae-d3d0ba463563")) (text "SCT2331 5 V / three-input Schottky OR / ME6211 3.3 V" (at 17.78 133 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "aad84630-0154-5b3c-8279-6cb54c3dc262"))
     (symbol (lib_id "Connector_Generic:Conn_01x02") (at 38.1 53.34 0) (unit 1)
         (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no) (uuid "87f62893-6c21-5cc8-8e33-e8b4ef0f45f6")
         (property "Reference" "J13" (at 42.4 52.04 0) (effects (font (size 1 1)) (justify left))) (property "Value" "BATTERY 16AWG" (at 42.4 53.69 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:Battery_16AWG" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d0e4d201-1d55-57ab-879a-6f7f18dd5094")) (pin "2" (uuid "65084584-0fc9-50d8-8389-9d276a061c2f")) (property "LCSC" "" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "No" (at 38.1 53.34 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "J13") (unit 1)))))
@@ -2353,9 +2353,9 @@
 (wire (pts (xy 196.85 48.26) (xy 196.85 44.45)) (stroke (width 0) (type default)) (uuid "937d62e2-8f0e-5913-b937-9db63bf06838"))
 (label "VBAT_SW_RAW" (at 196.85 44.45 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "87dccc41-da95-58cc-8437-aa83c1f80fd0"))
 (wire (pts (xy 196.85 58.42) (xy 196.85 62.23)) (stroke (width 0) (type default)) (uuid "4bff72fb-5212-59dc-af10-25934b0645b0"))
-(label "VBAT_IN" (at 196.85 62.23 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c4958e98-0949-5e7f-a0d8-a0851a750880")) (symbol (lib_id "Sensor_Energy:INA226") (at 320.04 66.04 0) (unit 1)
+(label "VBAT_IN" (at 196.85 62.23 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "c4958e98-0949-5e7f-a0d8-a0851a750880")) (symbol (lib_id "PeacockMainV2:GXI340U") (at 320.04 66.04 0) (unit 1)
         (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "318728b9-58aa-588c-b419-3ff8d6222f0f")
-        (property "Reference" "U7" (at 314.04 53.34 0) (effects (font (size 1 1)) (justify left))) (property "Value" "INA226AIDGSR" (at 314.04 55.32 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178928092590080" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "INA226AIDGSR" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Texas Instruments" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "7f16bbe7-2ffe-541e-afc8-23996801632d")) (pin "2" (uuid "caf7b9fa-9121-5edf-8b75-70362c8ce4bb")) (pin "3" (uuid "b4f83c8c-211f-562a-bffb-b817274375ff")) (pin "4" (uuid "59f23f61-b100-519d-af94-56c2ae108420")) (pin "5" (uuid "e802c4ea-7d86-5f80-9fd0-4d65a69e158d")) (pin "6" (uuid "8f802c00-4ed4-5064-b912-074173686249")) (pin "7" (uuid "56fa3cf8-23bf-506a-8803-951e7476d09a")) (pin "8" (uuid "7701bb5c-4c83-5cfd-a3a2-4c2f07003dda")) (pin "9" (uuid "be46f92d-06ef-5994-b327-9914c9046e97")) (pin "10" (uuid "550a4871-6a80-5ad0-8b04-49804474c19c")) (property "LCSC" "C49851" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "Yes" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U7") (unit 1)))))
+        (property "Reference" "U7" (at 314.04 53.34 0) (effects (font (size 1 1)) (justify left))) (property "Value" "GXI340U" (at 314.04 55.32 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "PeacockMainV2:MSOP-10_3x3mm_P0.50mm_HandAssembly" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://gxcas.com/uploads/files/202509/GXI340_%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C_V1.2_20250919144325.pdf" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "GXI340U" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Beijing Galaxy-CAS Technology" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "7f16bbe7-2ffe-541e-afc8-23996801632d")) (pin "2" (uuid "caf7b9fa-9121-5edf-8b75-70362c8ce4bb")) (pin "3" (uuid "b4f83c8c-211f-562a-bffb-b817274375ff")) (pin "4" (uuid "59f23f61-b100-519d-af94-56c2ae108420")) (pin "5" (uuid "e802c4ea-7d86-5f80-9fd0-4d65a69e158d")) (pin "6" (uuid "8f802c00-4ed4-5064-b912-074173686249")) (pin "7" (uuid "56fa3cf8-23bf-506a-8803-951e7476d09a")) (pin "8" (uuid "7701bb5c-4c83-5cfd-a3a2-4c2f07003dda")) (pin "9" (uuid "be46f92d-06ef-5994-b327-9914c9046e97")) (pin "10" (uuid "550a4871-6a80-5ad0-8b04-49804474c19c")) (property "LCSC" "" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "No" (at 320.04 66.04 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U7") (unit 1)))))
         (wire (pts (xy 330.2 58.42) (xy 334.01 58.42)) (stroke (width 0) (type default)) (uuid "012129b7-0227-5ac0-8c9a-ce5584d7904c"))
 (global_label "3.3V_SYS" (shape passive) (at 334.01 58.42 180) (effects (font (size 0.9 0.9)) (justify left)) (uuid "e24e7132-e3fc-5ba0-8fd8-81841ccaaa10") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 334.01 58.42 0) (effects (font (size 0.9 0.9)) (hide yes))))
 (wire (pts (xy 330.2 60.96) (xy 334.01 60.96)) (stroke (width 0) (type default)) (uuid "09033016-936f-5459-8c3a-340fe4953a6d"))
@@ -2374,9 +2374,9 @@
 (wire (pts (xy 309.88 71.12) (xy 306.07 71.12)) (stroke (width 0) (type default)) (uuid "51c0e87b-96c4-5fde-b3c0-0eade6ddde79"))
 (label "TOTAL_SENSE_N" (at 306.07 71.12 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "25bdcd34-43c5-5f12-9b09-3dc2cce982b6"))
 (wire (pts (xy 309.88 68.58) (xy 306.07 68.58)) (stroke (width 0) (type default)) (uuid "df1af1aa-370b-58ca-a6d6-54a2ddc07ac9"))
-(label "TOTAL_SENSE_P" (at 306.07 68.58 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "77e2ff82-7965-548a-b8f1-1a5d895dc294")) (symbol (lib_id "Regulator_Switching:TPS54302") (at 96.52 176.53 0) (unit 1)
+(label "TOTAL_SENSE_P" (at 306.07 68.58 180) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "77e2ff82-7965-548a-b8f1-1a5d895dc294")) (symbol (lib_id "PeacockMainV2:SCT2331TVBR") (at 96.52 176.53 0) (unit 1)
         (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3bc1f56b-3f7e-5214-b9cd-67d6fa9a655b")
-        (property "Reference" "U1" (at 90.52 168.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "TPS54302DDCR" (at 90.52 170.89 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.ti.com/cn/lit/gpn/tps54302" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "TPS54302DDCR" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Texas Instruments" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "5aefe0d8-a10d-5e13-a25f-63a6b8a85bd7")) (pin "2" (uuid "d9f5aa9b-655f-5954-988f-6adfe445c4f1")) (pin "3" (uuid "f5ab73ec-65b4-5d2c-b57a-5248471ad244")) (pin "4" (uuid "c06426e0-ba4d-5e24-b5bb-738794816e83")) (pin "5" (uuid "c918beb1-7aee-52f7-b9c8-ffc36fbe700e")) (pin "6" (uuid "3bf8a615-ea04-572a-83ed-9922091aa714")) (property "LCSC" "C311983" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "Yes" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U1") (unit 1)))))
+        (property "Reference" "U1" (at 90.52 168.91 0) (effects (font (size 1 1)) (justify left))) (property "Value" "SCT2331TVBR" (at 90.52 170.89 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://www.silicontent.com/uploads/20241212/058bf96053e3cb5bc517a2b41b79897a.pdf" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "SCT2331TVBR" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "Silicon Content Technology" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (pin "4" (uuid "5aefe0d8-a10d-5e13-a25f-63a6b8a85bd7")) (pin "5" (uuid "d9f5aa9b-655f-5954-988f-6adfe445c4f1")) (pin "3" (uuid "f5ab73ec-65b4-5d2c-b57a-5248471ad244")) (pin "1" (uuid "c06426e0-ba4d-5e24-b5bb-738794816e83")) (pin "2" (uuid "c918beb1-7aee-52f7-b9c8-ffc36fbe700e")) (pin "6" (uuid "3bf8a615-ea04-572a-83ed-9922091aa714")) (property "LCSC" "C509068" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "Yes" (at 96.52 176.53 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "U1") (unit 1)))))
         (wire (pts (xy 96.52 184.15) (xy 96.52 187.96)) (stroke (width 0) (type default)) (uuid "3386853c-ccd6-5fa6-92a9-020dcfb0e996"))
 (global_label "GND" (shape passive) (at 96.52 187.96 90) (effects (font (size 0.9 0.9)) (justify right)) (uuid "75885b69-964e-58e6-8419-f9b9b33d5797") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 96.52 187.96 0) (effects (font (size 0.9 0.9)) (hide yes))))
 (wire (pts (xy 106.68 176.53) (xy 110.49 176.53)) (stroke (width 0) (type default)) (uuid "e14f49cb-b808-54d5-8c2c-7d0a9ef99211"))
@@ -2607,7 +2607,7 @@
 (wire (pts (xy 290.83 210.82) (xy 290.83 214.63)) (stroke (width 0) (type default)) (uuid "33b75b79-aa42-5cd7-9bc2-a75a983d587a"))
 (label "BUCK_FB" (at 290.83 214.63 270) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "970cef2e-d4d0-5fd9-a6a0-6a478a38ecfc")) (symbol (lib_id "Device:R") (at 327.66 207.01 0) (unit 1)
         (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "61994b65-ebf0-593e-b1d6-a414e375163f")
-        (property "Reference" "R58" (at 331.96 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "10k" (at 331.96 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706381320323072" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "0603WAF1002T5E" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "UNI ROYAL Uniroyal Elec" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d34884d9-fc29-548d-9369-4948581e5bae")) (pin "2" (uuid "c17b4b34-4783-5d3e-9ff4-1d9514035eda")) (property "LCSC" "C25804" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "Yes" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R58") (unit 1)))))
+        (property "Reference" "R58" (at 331.96 205.71 0) (effects (font (size 1 1)) (justify left))) (property "Value" "14.3k 0.1%" (at 331.96 207.36 0) (effects (font (size 0.9 0.9)) (justify left))) (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Datasheet" "https://item.szlcsc.com/742330.html" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "MPN" "RT0603BRE0714K3L" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "Manufacturer" "YAGEO" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (pin "1" (uuid "d34884d9-fc29-548d-9369-4948581e5bae")) (pin "2" (uuid "c17b4b34-4783-5d3e-9ff4-1d9514035eda")) (property "LCSC" "C705810" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (property "SMT_Populate" "Yes" (at 327.66 207.01 0) (effects (font (size 1 1)) (hide yes))) (instances (project "PeacockMainV2" (path "/a6e702a8-2714-5d5b-929a-2f7b3dbe9ae2/6a3a9a84-75ac-519f-97fc-4b3f264d7733" (reference "R58") (unit 1)))))
         (wire (pts (xy 327.66 203.2) (xy 327.66 199.39)) (stroke (width 0) (type default)) (uuid "5d3b54d6-f69f-54a2-abe8-6a5382f719f8"))
 (label "BUCK_FB" (at 327.66 199.39 90) (effects (font (size 0.88 0.88)) (justify left bottom)) (uuid "ac4acb60-9adc-5876-843d-5f6290598d70"))
 (wire (pts (xy 327.66 210.82) (xy 327.66 214.63)) (stroke (width 0) (type default)) (uuid "1feb80e9-4055-5abc-8ab5-a0cf8acc5e33"))
