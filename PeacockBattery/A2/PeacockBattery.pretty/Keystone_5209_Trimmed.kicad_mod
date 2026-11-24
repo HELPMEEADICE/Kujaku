@@ -1,0 +1,50 @@
+(footprint "Keystone_5209_Trimmed"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Keystone 5209 trimmed terminal; maximum 1.50 mm below PCB after seating")
+
+  (property "Reference" "REF**" (at 2 -5.7 0)
+    (layer "F.SilkS")
+    (uuid "76a0c0a8-7772-42da-ac16-e120464da684")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "Keystone_5209_Trimmed" (at 2 6 0)
+    (layer "F.Fab")
+    (uuid "f60cb5c1-176f-4e39-8650-1ff00d3cd04e")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "2ab51bd4-ac25-4b33-bbe9-67b43e015e70")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -1.65 -5.25)
+    (end 4.4 5.25)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "ae49e820-c5e1-492f-b568-c622449db173")
+  )
+
+  (fp_rect
+    (start -0.15 -5)
+    (end 4 5)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "1563206a-3040-458b-9a4c-0ddc63e5c4e0")
+  )
+
+  (pad "1" thru_hole oval
+    (at 0 0)
+    (size 2.8 7.4)
+    (drill oval 0.8 5.4)
+    (layers "*.Cu" "*.Mask")
+    (uuid "338fc02e-9125-4d79-a2fa-ecf4b5340780")
+  )
+
+)
