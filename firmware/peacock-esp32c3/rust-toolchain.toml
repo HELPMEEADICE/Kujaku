@@ -1,0 +1,5 @@
+[toolchain]
+channel = "1.100.0"
+targets = ["riscv32imc-unknown-none-elf"]
+components = ["rustfmt"]
+profile = "minimal"

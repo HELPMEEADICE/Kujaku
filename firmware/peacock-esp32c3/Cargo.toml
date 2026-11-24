@@ -1,0 +1,32 @@
+[package]
+name = "peacock-esp32c3"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+bt-hci = "=0.3.2"
+embassy-executor = "=0.7.0"
+embassy-futures = "0.1.2"
+embassy-sync = "=0.7.2"
+embassy-time = "=0.4.0"
+esp-alloc = "=0.8.0"
+esp-backtrace = { version = "=0.17.0", features = ["esp32c3", "panic-handler", "println"] }
+esp-bootloader-esp-idf = { version = "=0.2.0", features = ["esp32c3"] }
+esp-hal = { version = "=1.0.0-rc.0", features = ["esp32c3", "unstable"] }
+esp-hal-embassy = { version = "=0.9.1", features = ["esp32c3"] }
+esp-println = { version = "=0.15.0", default-features = false, features = ["esp32c3", "jtag-serial", "critical-section"] }
+esp-wifi = { version = "=0.15.1", features = ["esp32c3", "ble"] }
+heapless = "0.8.0"
+nb = "1.1"
+static_cell = "2.1"
+trouble-host = { version = "=0.2.4", default-features = false, features = ["peripheral", "gatt", "derive", "default-packet-pool", "default-packet-pool-mtu-128", "l2cap-rx-queue-size-8"] }
+
+[profile.dev]
+opt-level = 2
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+debug = 1
